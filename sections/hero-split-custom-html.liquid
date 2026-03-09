@@ -1,0 +1,159 @@
+{% comment %}
+  Hero Split Custom HTML (Growealth-style)
+  - Full width section
+  - Two columns: left 33% / right 67% (adjustable)
+  - Both sides are custom HTML blocks
+{% endcomment %}
+
+<section
+  class="hero-split"
+  style="
+    --hero-max: {{ section.settings.max_width }}px;
+    --hero-gap: {{ section.settings.gap }}px;
+    --hero-pad-y: {{ section.settings.pad_y }}px;
+    --hero-pad-x: {{ section.settings.pad_x }}px;
+    --left-w: {{ section.settings.left_width }}%;
+    --right-w: {{ 100 | minus: section.settings.left_width }}%;
+    --bg: {{ section.settings.bg_color }};
+  "
+>
+  <div class="hero-split__inner {% if section.settings.full_width %}is-full{% endif %}">
+    <div class="hero-split__grid {% if section.settings.mobile_stack %}is-stack{% endif %}">
+      {% assign left_html = '' %}
+      {% assign right_html = '' %}
+
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'left_html' %}
+            {% assign left_html = block.settings.html %}
+          {% when 'right_html' %}
+            {% assign right_html = block.settings.html %}
+        {% endcase %}
+      {% endfor %}
+
+      <div class="hero-split__col hero-split__left" {{ section.blocks.first.shopify_attributes }}>
+        {{ left_html }}
+      </div>
+
+      <div class="hero-split__col hero-split__right">
+        {{ right_html }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-split {
+    background: var(--bg);
+    width: 100%;
+  }
+
+  /* 外层容器：支持 full width 或 max width */
+  .hero-split__inner {
+    margin: 0 auto;
+    padding: var(--hero-pad-y) var(--hero-pad-x);
+    max-width: var(--hero-max);
+  }
+  .hero-split__inner.is-full {
+    max-width: none; /* full width */
+  }
+
+  /* 两列布局 */
+  .hero-split__grid {
+    display: flex;
+    gap: var(--hero-gap);
+    align-items: center;
+  }
+
+  .hero-split__left {
+    flex: 0 0 var(--left-w);
+    min-width: 280px;
+  }
+
+  .hero-split__right {
+    flex: 0 0 var(--right-w);
+    min-width: 320px;
+
+    /* 关键：让右边内容“贴近屏幕右侧”更像硬件品牌 hero */
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* 右侧媒体默认铺满它自己的区域 */
+  .hero-split__right video,
+  .hero-split__right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: {{ section.settings.media_radius }}px;
+  }
+
+  /* 如果想让视频“更贴边”，可以取消右侧内边距感 */
+  .hero-split__inner.is-full .hero-split__right {
+    margin-right: calc(var(--hero-pad-x) * -1);
+  }
+
+  /* 移动端堆叠 */
+  @media (max-width: 990px) {
+    .hero-split__grid.is-stack {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .hero-split__left,
+    .hero-split__right {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    .hero-split__right {
+      justify-content: center;
+      margin-right: 0;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Hero Split (Custom HTML)",
+  "settings": [
+    { "type": "checkbox", "id": "full_width", "label": "Full width (edge-to-edge)", "default": true },
+    { "type": "range", "id": "max_width", "label": "Max width (when not full width)", "min": 900, "max": 1600, "step": 50, "default": 1200 },
+    { "type": "color", "id": "bg_color", "label": "Background color", "default": "#000000" },
+
+    { "type": "range", "id": "left_width", "label": "Left column width (%)", "min": 25, "max": 50, "step": 1, "default": 33 },
+    { "type": "range", "id": "gap", "label": "Column gap (px)", "min": 0, "max": 80, "step": 4, "default": 24 },
+
+    { "type": "range", "id": "pad_y", "label": "Vertical padding (px)", "min": 0, "max": 120, "step": 8, "default": 56 },
+    { "type": "range", "id": "pad_x", "label": "Horizontal padding (px)", "min": 0, "max": 80, "step": 4, "default": 24 },
+
+    { "type": "range", "id": "media_radius", "label": "Media corner radius (px)", "min": 0, "max": 32, "step": 2, "default": 0 },
+    { "type": "checkbox", "id": "mobile_stack", "label": "Stack on mobile", "default": true }
+  ],
+  "blocks": [
+    {
+      "type": "left_html",
+      "name": "Left HTML",
+      "limit": 1,
+      "settings": [
+        { "type": "liquid", "id": "html", "label": "HTML/Liquid", "default": "<h1 style='color:#fff;font-size:56px;line-height:1.05;margin:0 0 18px;'><span style=\"color:#4EB99F;\">A New Way</span><br>To Grow</h1><p style='color:#fff;max-width:520px;opacity:.9;margin:0 0 24px;'>Growealth provides you with <b>smart LED Grow Light</b> technology that fits your preference of growing at home.</p><a href='/collections/led-grow-lights' style='display:inline-block;background:#f2f4f7;color:#111;padding:10px 16px;border-radius:10px;font-weight:800;text-decoration:none;'>SHOP NOW</a>" }
+      ]
+    },
+    {
+      "type": "right_html",
+      "name": "Right HTML",
+      "limit": 1,
+      "settings": [
+        { "type": "liquid", "id": "html", "label": "HTML/Liquid", "default": "<video autoplay muted loop playsinline><source src='https://cdn.shopify.com/s/files/1/0000/0000/0000/files/your-video.mp4' type='video/mp4'></video>" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Split (Custom HTML)",
+      "blocks": [
+        { "type": "left_html" },
+        { "type": "right_html" }
+      ]
+    }
+  ]
+}
+{% endschema %}

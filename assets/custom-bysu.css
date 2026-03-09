@@ -1,0 +1,60 @@
+/*custom spec*/
+        .specul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 35px !important;
+        }
+        .specul li {
+            width: 24.5%; 
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #fff; 
+            float: left;
+			border-bottom: 1px solid #ccc;
+        }
+        .specul li:nth-child(odd) {
+           font-weight: bold;
+         }
+
+        .specul li:nth-child(4n+1),
+        .specul li:nth-child(4n+2),
+        .specul li:nth-child(4n+3),
+        .specul li:nth-child(4n+4) {
+            background-color: #f0f0f0; 
+        }
+
+        .specul li:nth-child(8n+1),
+        .specul li:nth-child(8n+2),
+        .specul li:nth-child(8n+3),
+        .specul li:nth-child(8n+4) {
+            background-color: #f0f0f0; 
+        }
+
+        .specul li:nth-child(8n+5),
+        .specul li:nth-child(8n+6),
+        .specul li:nth-child(8n+7),
+        .specul li:nth-child(8n+8) {
+            background-color: #fff; 
+        }
+        .desciframe{
+          height:800px;
+        }
+        @media only screen and (max-width:789px) {
+            .specul li {
+                width: 48%; 
+            }
+            .specul li:nth-child(4n+1),
+            .specul li:nth-child(4n+2) {
+                background-color: #f0f0f0;
+            }
+            .specul li:nth-child(4n+3),
+            .specul li:nth-child(4n+4) {
+                background-color: #fff; 
+            }
+          .desciframe{
+           height:230px !important;
+          }
+       }

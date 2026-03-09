@@ -1,0 +1,88 @@
+<section class="gw-guarantee">
+  <div class="gw-container">
+    <div class="gw-guarantee__grid">
+      {% for block in section.blocks %}
+        <div class="gw-guarantee__item gw-fade-up gw-stagger-{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="gw-guarantee__icon">
+            {% case block.settings.icon %}
+              {% when 'truck' %}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              {% when 'support' %}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              {% when 'warranty' %}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg>
+              {% when 'guarantee' %}
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            {% endcase %}
+          </div>
+          <div>
+            <div class="gw-guarantee__text-title">{{ block.settings.title }}</div>
+            <div class="gw-guarantee__text-sub">{{ block.settings.subtitle }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "GW Guarantee Bar",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "guarantee",
+      "name": "Guarantee item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "truck", "label": "Shipping truck" },
+            { "value": "support", "label": "Support" },
+            { "value": "warranty", "label": "Warranty" },
+            { "value": "guarantee", "label": "Guarantee" }
+          ],
+          "default": "truck"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Free Shipping"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Subtitle",
+          "default": "On orders over $299"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GW Guarantee Bar",
+      "blocks": [
+        {
+          "type": "guarantee",
+          "settings": { "icon": "truck", "title": "Free Shipping", "subtitle": "On orders over $299" }
+        },
+        {
+          "type": "guarantee",
+          "settings": { "icon": "support", "title": "24/7 Support", "subtitle": "Expert assistance anytime" }
+        },
+        {
+          "type": "guarantee",
+          "settings": { "icon": "warranty", "title": "5-Year Warranty", "subtitle": "Comprehensive coverage" }
+        },
+        {
+          "type": "guarantee",
+          "settings": { "icon": "guarantee", "title": "Money-Back Guarantee", "subtitle": "30-day hassle-free returns" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
