@@ -29,6 +29,22 @@
   --gw-transition: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+/* ========================================
+   HOMEPAGE: Unified content width
+   All sections use max-width 1200px + 24px horizontal padding.
+   (growealth-homepage.css is loaded only on index via hero section.)
+   ======================================== */
+main .page-width,
+main .page-width-desktop,
+main .collection .collection__title.page-width,
+main .collection slider-component.page-width {
+  max-width: var(--gw-max-w) !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
 .gw-container {
   max-width: var(--gw-max-w);
   margin: 0 auto;
