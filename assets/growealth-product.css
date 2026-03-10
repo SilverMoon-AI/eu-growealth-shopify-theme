@@ -1,0 +1,14 @@
+/* Product page: unified content width (1200px + 24px), same as homepage / collection */
+
+:root {
+  --gw-max-w: 1200px;
+}
+
+.template-product main .page-width,
+.template-product main .page-width-desktop {
+  max-width: var(--gw-max-w);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
