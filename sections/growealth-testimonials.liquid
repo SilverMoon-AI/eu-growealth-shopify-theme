@@ -27,7 +27,15 @@
           <p class="gw-testimonial-card__text">"{{ block.settings.text }}"</p>
           <div class="gw-testimonial-card__author">
             <div class="gw-testimonial-card__avatar">
-              {% if block.settings.image != blank %}
+              {% if block.settings.image_asset != blank %}
+                <img
+                  src="{{ block.settings.image_asset | asset_url }}"
+                  alt="{{ block.settings.name | escape }}"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                >
+              {% elsif block.settings.image != blank %}
                 <img
                   src="{{ block.settings.image | image_url: width: 96 }}"
                   alt="{{ block.settings.name | escape }}"
@@ -131,10 +139,16 @@
           "default": "SJ"
         },
         {
+          "type": "text",
+          "id": "image_asset",
+          "label": "Author photo (theme asset)",
+          "info": "Filename in assets/ (e.g. 1-avatar.avif). Preferred for GitHub sync."
+        },
+        {
           "type": "image_picker",
           "id": "image",
-          "label": "Author photo",
-          "info": "Optional. Shows initials if empty."
+          "label": "Author photo (upload)",
+          "info": "Used when theme asset filename above is empty."
         }
       ]
     }
