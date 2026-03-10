@@ -195,7 +195,8 @@
             "text": "Great value for the price. Easy to install and the light output is very impressive. My plants responded within the first week. Would definitely buy again.",
             "name": "Sarah Johnson",
             "role": "Verified Customer",
-            "initials": "SJ"
+            "initials": "SJ",
+            "image_asset": "1-avatar.avif"
           }
         },
         "review_2": {
@@ -205,7 +206,8 @@
             "text": "I've tried several grow lights before, and this one stands out. Even coverage, low heat, and very stable operation. Highly recommended for indoor growing.",
             "name": "Emily Rodriguez",
             "role": "Verified Customer",
-            "initials": "ER"
+            "initials": "ER",
+            "image_asset": "2-avatar.avif"
           }
         },
         "review_3": {
@@ -215,7 +217,8 @@
             "text": "Works exactly as described. Easy setup, clear instructions, and noticeable improvement in plant growth. Great option for both beginners and experienced growers.",
             "name": "David Thompson",
             "role": "Verified Customer",
-            "initials": "DT"
+            "initials": "DT",
+            "image_asset": "3-avatar.webp"
           }
         },
         "review_4": {
@@ -225,7 +228,8 @@
             "text": "Replaced my old blurple with this. The full spectrum makes a real difference—my basil and tomatoes are much healthier. Quiet and runs cool.",
             "name": "Marcus Chen",
             "role": "Verified Customer",
-            "initials": "MC"
+            "initials": "MC",
+            "image_asset": "4-avatar.webp"
           }
         },
         "review_5": {
@@ -235,7 +239,8 @@
             "text": "Shipping was fast and the light arrived well packed. Using it in a 2x2 tent and the plants love it. Would recommend to anyone starting out.",
             "name": "Jessica Park",
             "role": "Verified Customer",
-            "initials": "JP"
+            "initials": "JP",
+            "image_asset": "5-avatar.webp"
           }
         },
         "review_6": {
@@ -245,7 +250,8 @@
             "text": "Solid build quality and the dimmer is really useful. Customer support answered my questions quickly. Happy with the purchase.",
             "name": "James Wilson",
             "role": "Verified Customer",
-            "initials": "JW"
+            "initials": "JW",
+            "image_asset": "6-avatar.avif"
           }
         }
       },
