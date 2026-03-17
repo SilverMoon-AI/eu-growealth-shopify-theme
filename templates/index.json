@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "gw_hero": {
@@ -43,18 +52,20 @@
           }
         }
       },
-      "block_order": ["value_1", "value_2", "value_3"]
+      "block_order": [
+        "value_1",
+        "value_2",
+        "value_3"
+      ],
+      "settings": {}
     },
     "gw_features": {
       "type": "growealth-features",
-      "settings": {
-        "label": "Technology",
-        "heading": "Technology That Powers<br><em>Creativity</em>"
-      },
       "blocks": {
         "feature_rg150": {
           "type": "feature",
           "settings": {
+            "image_asset": "rg150-home.webp",
             "eyebrow": "LED RG150W",
             "title": "RG150W: The Compact Power Expert<br>Versatile for 2×2 ft Tents",
             "text": "Perfect for 2×2 ft tents and multi-tier shelves. Full spectrum, UV & far-red in one light; 150W at 2.5 μmol/J efficiency. Fanless, IP65, 0–10V dimming with soft start. Ideal for clones, seedlings, and supplemental lighting.",
@@ -67,13 +78,13 @@
             "cta_text": "View RG150 Details",
             "cta_link": "/products/nanolux-rg150-led-grow-light-150w-full-spectrum",
             "reverse": false,
-            "image_asset": "rg150-home.webp",
             "media_ratio": "1/1"
           }
         },
         "feature_rg300": {
           "type": "feature",
           "settings": {
+            "image_asset": "nanolux-rg300-grow-light-03-grow-room.webp",
             "eyebrow": "LED RG300W",
             "title": "RG300W: The Core of Your Tent<br>Upgrade for 3×3 ft",
             "text": "Industry-standard for 3×3 ft tents with 800 μmol/s PPF and 2.5 μmol/J efficacy. Full spectrum, UV & far-red in one channel; 100% silent passive cooling, IP65. Built for high-yield flowering.",
@@ -86,7 +97,6 @@
             "cta_text": "View RG300 Details",
             "cta_link": "/products/nanolux-rg300w-led-grow-light",
             "reverse": true,
-            "image_asset": "nanolux-rg300-grow-light-03-grow-room.webp",
             "media_ratio": "1/1"
           }
         },
@@ -109,7 +119,15 @@
           }
         }
       },
-      "block_order": ["feature_rg150", "feature_rg300", "feature_1"]
+      "block_order": [
+        "feature_rg150",
+        "feature_rg300",
+        "feature_1"
+      ],
+      "settings": {
+        "label": "Technology",
+        "heading": "Technology That Powers<br><em>Creativity</em>"
+      }
     },
     "gw_products": {
       "type": "featured-collection",
@@ -154,39 +172,56 @@
     },
     "gw_trust": {
       "type": "growealth-trust",
+      "blocks": {
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "icon": "shield",
+            "value": "5 Years",
+            "label": "Product Warranty"
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "icon": "users",
+            "value": "24/7",
+            "label": "Expert Support"
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "settings": {
+            "icon": "clock",
+            "value": "Quality",
+            "label": "Tested & Verified"
+          }
+        },
+        "stat_4": {
+          "type": "stat",
+          "settings": {
+            "icon": "check",
+            "value": "6+",
+            "label": "Global Safety Certifications"
+          }
+        }
+      },
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3",
+        "stat_4"
+      ],
       "settings": {
         "label": "Our Story",
         "heading": "The Growealth Story",
         "text": "Growealth exists to bring professional-grade LED grow lights to home and small-scale growers. We work with partners who have deep experience in horticultural lighting, so every product we offer meets the same standards we'd use ourselves. No hype—just clear specs, real warranty, and support when you need it.",
         "youtube_id": "MMqBwfkOGW8",
         "image_asset": "4a355721-46cc-4c52-b64f-da9a96b3bafd.png"
-      },
-      "blocks": {
-        "stat_1": {
-          "type": "stat",
-          "settings": { "icon": "shield", "value": "5 Years", "label": "Product Warranty" }
-        },
-        "stat_2": {
-          "type": "stat",
-          "settings": { "icon": "users", "value": "24/7", "label": "Expert Support" }
-        },
-        "stat_3": {
-          "type": "stat",
-          "settings": { "icon": "clock", "value": "Quality", "label": "Tested & Verified" }
-        },
-        "stat_4": {
-          "type": "stat",
-          "settings": { "icon": "check", "value": "6+", "label": "Global Safety Certifications" }
-        }
-      },
-      "block_order": ["stat_1", "stat_2", "stat_3", "stat_4"]
+      }
     },
     "gw_testimonials": {
       "type": "growealth-testimonials",
-      "settings": {
-        "label": "Reviews",
-        "heading": "What Our Customers Say"
-      },
       "blocks": {
         "review_1": {
           "type": "testimonial",
@@ -255,7 +290,18 @@
           }
         }
       },
-      "block_order": ["review_1", "review_2", "review_3", "review_4", "review_5", "review_6"]
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3",
+        "review_4",
+        "review_5",
+        "review_6"
+      ],
+      "settings": {
+        "label": "Reviews",
+        "heading": "What Our Customers Say"
+      }
     },
     "gw_blog": {
       "type": "featured-blog",
