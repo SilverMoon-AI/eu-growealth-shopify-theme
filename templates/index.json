@@ -276,28 +276,6 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "gw_guarantee": {
-      "type": "growealth-guarantee",
-      "blocks": {
-        "g_1": {
-          "type": "guarantee",
-          "settings": { "icon": "truck", "title": "Free Shipping", "subtitle": "On orders over $299" }
-        },
-        "g_2": {
-          "type": "guarantee",
-          "settings": { "icon": "support", "title": "24/7 Support", "subtitle": "Expert assistance anytime" }
-        },
-        "g_3": {
-          "type": "guarantee",
-          "settings": { "icon": "warranty", "title": "5-Year Warranty", "subtitle": "Comprehensive coverage" }
-        },
-        "g_4": {
-          "type": "guarantee",
-          "settings": { "icon": "guarantee", "title": "Money-Back Guarantee", "subtitle": "30-day hassle-free returns" }
-        }
-      },
-      "block_order": ["g_1", "g_2", "g_3", "g_4"]
     }
   },
   "order": [
@@ -308,7 +286,6 @@
     "gw_lifestyle",
     "gw_trust",
     "gw_testimonials",
-    "gw_blog",
-    "gw_guarantee"
+    "gw_blog"
   ]
 }

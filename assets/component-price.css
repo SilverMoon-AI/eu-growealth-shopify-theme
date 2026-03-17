@@ -73,6 +73,18 @@
   margin-left: 0.5rem;
 }
 
+.price__badge-percent {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.2em 0.5em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  background: #e85d04;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
 .price--on-sale .price__sale {
   display: initial;
   flex-direction: row;
