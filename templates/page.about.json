@@ -185,156 +185,23 @@
         "padding_bottom": 52
       }
     },
-    "image_banner_AzR9JR": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/bg1.png",
-        "image_asset": "",
-        "image_asset_alt": "",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
-    "rich_text_BNe6xq": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_WkJ3jt": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Production Capabilities</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_npFFzr": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Nanolux adopted MES system enabling precise control over production by tracking each step and components and enhance overall product quality.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_WkJ3jt",
-        "text_npFFzr"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-cf34edac-dc71-47b2-bd1e-8fd831f1f0d2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
-    "multicolumn_A9RULw": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_iVWcKM": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icon1_c03555c9-a85c-4581-a510-725333bd307d.svg",
-            "title": "<strong>MES</strong>",
-            "text": "<p>Intelligent Manufacturing</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_QkH3yx": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icon2_e1e5bcb3-78f8-43fb-907b-3289cab34cc8.svg",
-            "title": "<strong>32%</strong>",
-            "text": "<p>Skilled Worker</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_XL9cYj": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icon3_03926982-4158-4de3-90a8-828ead6a3e58.svg",
-            "title": "<strong>10,000m²</strong>",
-            "text": "<p>Manufacture area</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_tLqDt7": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/icon4_2c8e9608-1389-4d3c-af83-4ec066925258.svg",
-            "title": "<strong>400,000PCS</strong>",
-            "text": "<p>Research Input</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_iVWcKM",
-        "column_QkH3yx",
-        "column_XL9cYj",
-        "column_tLqDt7"
-      ],
-      "custom_css": [
-        ".multicolumn-card {background: #fff !important;}",
-        ".inline-richtext {font-size: 3rem;}"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h0",
-        "image_width": "third",
-        "image_ratio": "circle",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "color_scheme": "scheme-cf34edac-dc71-47b2-bd1e-8fd831f1f0d2",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_7Q7H3G": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_GJ34Gi": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Real Shots</strong>",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_GJ34Gi"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-cf34edac-dc71-47b2-bd1e-8fd831f1f0d2",
-        "full_width": true,
-        "padding_top": 12,
-        "padding_bottom": 40
-      }
-    },
-    "custom_liquid_dzcCWd": {
+    "custom_liquid_tLPYN4": {
       "type": "custom-liquid",
-      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style>\n  .conimg {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    grid-gap: 30px;\n}\n@media only screen and (max-width: 600px) {\n.conimg {\n    grid-template-columns: repeat(1, 1fr)!important;\n }\n}\n</style>\n<div class=\"page-width\">\n\t<div class=\"conimg\">\n\t  <div class=\"image\">\n\t\t<img src=\"https://cdn.shopify.com/s/files/1/0868/3025/2317/files/t1.png?v=1713508052\" alt=\"Image 1\">\n\t  </div>\n\t  <div class=\"image\">\n\t\t<img src=\"https://cdn.shopify.com/s/files/1/0868/3025/2317/files/t2.png?v=1713508052\" alt=\"Image 2\">\n\t  </div>\n\t</div>\n\t<div>",
-        "color_scheme": "scheme-cf34edac-dc71-47b2-bd1e-8fd831f1f0d2",
-        "padding_top": 0,
+        "custom_liquid": "<div style=\"background:#16b443; padding:80px 40px; color:#fff;\">\n  <div style=\"max-width:1400px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:60px; flex-wrap:wrap;\">\n    <div style=\"flex:1; min-width:320px;\">\n      <h2 style=\"margin:0 0 20px; font-size:56px; line-height:1.1; font-weight:700; color:#fff;\">Why Growers Choose Growealth</h2>\n      <p style=\"margin:0; font-size:24px; line-height:1.8; color:#f3fdf5;\">\n        Growealth makes indoor growing easier with carefully selected products, practical guidance, and a focus on reliable performance. We aim to help home growers and small indoor setups choose more confidently and grow more successfully.\n      </p>\n    </div>\n\n    <div style=\"flex:1; min-width:320px; display:flex; justify-content:center; gap:60px; flex-wrap:wrap; text-align:center;\">\n      <div>\n        <div style=\"width:180px; height:180px; border:6px solid rgba(255,255,255,0.65); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:28px; font-weight:700; color:#fff;\">\n          Practical\n        </div>\n        <div style=\"font-size:22px; line-height:1.5; color:#fff;\">Product Selection</div>\n      </div>\n\n      <div>\n        <div style=\"width:180px; height:180px; border:6px solid rgba(255,255,255,0.65); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:28px; font-weight:700; color:#fff;\">\n          Reliable\n        </div>\n        <div style=\"font-size:22px; line-height:1.5; color:#fff;\">Growing Support</div>\n      </div>\n    </div>\n  </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_bDNHzm": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div style=\"padding: 80px 40px; background: #f7f7f7; text-align: center;\">\n  <div style=\"max-width: 1400px; margin: 0 auto;\">\n    <h2 style=\"margin: 0 0 28px; font-size: 64px; line-height: 1.1; font-weight: 700; color: #111;\">\n      What You Can Expect from Growealth\n    </h2>\n    <p style=\"max-width: 1100px; margin: 0 auto 80px; font-size: 24px; line-height: 1.8; color: #555;\">\n      Growealth focuses on helping home growers and small indoor cultivation setups find practical, reliable products with less confusion and a better buying experience.\n    </p>\n\n    <div style=\"display: grid; grid-template-columns: repeat(4, minmax(220px, 1fr)); gap: 40px; align-items: start;\">\n      <div>\n        <div style=\"width: 150px; height: 150px; margin: 0 auto 28px; border-radius: 50%; background: #18b33f; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 54px;\">✓</div>\n        <div style=\"font-size: 40px; font-weight: 700; color: #111; line-height: 1.2;\">Selected Products</div>\n        <div style=\"margin-top: 24px; font-size: 18px; line-height: 1.6; color: #666;\">Carefully Curated Choices</div>\n      </div>\n\n      <div>\n        <div style=\"width: 150px; height: 150px; margin: 0 auto 28px; border-radius: 50%; background: #18b33f; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 54px;\">i</div>\n        <div style=\"font-size: 40px; font-weight: 700; color: #111; line-height: 1.2;\">Clear Information</div>\n        <div style=\"margin-top: 24px; font-size: 18px; line-height: 1.6; color: #666;\">Easy-to-Understand Product Details</div>\n      </div>\n\n      <div>\n        <div style=\"width: 150px; height: 150px; margin: 0 auto 28px; border-radius: 50%; background: #18b33f; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 54px;\">↗</div>\n        <div style=\"font-size: 40px; font-weight: 700; color: #111; line-height: 1.2;\">Global Shipping</div>\n        <div style=\"margin-top: 24px; font-size: 18px; line-height: 1.6; color: #666;\">Support for International Orders</div>\n      </div>\n\n      <div>\n        <div style=\"width: 150px; height: 150px; margin: 0 auto 28px; border-radius: 50%; background: #18b33f; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 54px;\">★</div>\n        <div style=\"font-size: 40px; font-weight: 700; color: #111; line-height: 1.2;\">Reliable Support</div>\n        <div style=\"margin-top: 24px; font-size: 18px; line-height: 1.6; color: #666;\">A Better Buying Experience</div>\n      </div>\n    </div>\n  </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
         "padding_bottom": 52
       }
     }
@@ -347,10 +214,7 @@
     "image_with_text_7Bafym",
     "custom_liquid_aYnchp",
     "custom_liquid_LLrkRy",
-    "image_banner_AzR9JR",
-    "rich_text_BNe6xq",
-    "multicolumn_A9RULw",
-    "rich_text_7Q7H3G",
-    "custom_liquid_dzcCWd"
+    "custom_liquid_tLPYN4",
+    "custom_liquid_bDNHzm"
   ]
 }
