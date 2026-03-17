@@ -154,8 +154,9 @@ main .collection slider-component.page-width {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   min-height: 80vh;
-  max-width: var(--gw-max-w-wide);
-  margin: 0 auto;
+  max-width: none;
+  width: 100%;
+  margin: 0;
   align-items: center;
 }
 

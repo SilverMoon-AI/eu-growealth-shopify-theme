@@ -1,0 +1,16 @@
+/* About 页：image-with-text 区块左右贴边，消除右侧细线 */
+
+/* 含 overlap 的 image-with-text 所在 section 全宽贴边，无留白 */
+#MainContent .page-width:has(.image-with-text--overlap) {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#MainContent .image-with-text--overlap .image-with-text__media,
+#MainContent .image-with-text--overlap .image-with-text__media img {
+  display: block;
+  width: 100%;
+}

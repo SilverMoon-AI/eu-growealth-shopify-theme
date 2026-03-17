@@ -200,9 +200,9 @@
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#15a83b",
+          "button": "#4EB99F",
           "button_label": "#ffffff",
-          "secondary_button_label": "#15a83b",
+          "secondary_button_label": "#4EB99F",
           "shadow": "#ffffff"
         }
       },
@@ -255,9 +255,9 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#15a83b",
+          "button": "#4EB99F",
           "button_label": "#ffffff",
-          "secondary_button_label": "#15a83b",
+          "secondary_button_label": "#4EB99F",
           "shadow": "#121212"
         }
       },
