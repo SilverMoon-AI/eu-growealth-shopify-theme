@@ -97,15 +97,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_NwX3MA": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<style>\n  .container {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-auto-rows: auto;\n    gap: 20px;\n    row-gap: 40px;\n    margin-top: 15%;\n    max-width: 1200px;\n    margin: 0 auto;\n    background-color: #fff;\n    padding: 25px 20px 50px 20px;\n  }\n@media only screen and (max-width: 600px) {\n.container {\n    grid-template-columns: repeat(2, 1fr)!important;\n }\n}\n  .icons {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n  }\n  .icons svg {\n    width: 50px;\n    height: 50px;\n    fill: #333;\n    margin-right: 10px;\n  }\n  .icon-text {\n    font-size: 16px;\n    color: #333;\n    margin-left: 5%;\n  }\n  .icon-title {\n    font-weight: bold;\n    font-size: 5rem;\n    color: #00A73C;\n  }\n  .icon-subtitle {\n    color: #262626;\n  }\n.icons img{\n width:20%;\n}\n</style>\n</head>\n<body>\n\n<div class=\"container\">\n  <div class=\"icons \">\n    <div class=\"icon-text\">\n      <div class=\"icon-title\">20+</div>\n      <div class=\"icon-subtitle\">Nanolux History</div>\n    </div>\n  </div>\n  <div class=\"icons \">\n    <div class=\"icon-text\">\n      <div class=\"icon-title\">3+</div>\n      <div class=\"icon-subtitle\">Production Sites</div>\n    </div>\n  </div>\n  <div class=\"icons \">\n    <div class=\"icon-text\">\n      <div class=\"icon-title\">40+</div>\n      <div class=\"icon-subtitle\">Horticultural Experience</div>\n    </div>\n  </div>\n  <div class=\"icons \">\n    <div class=\"icon-text\">\n      <div class=\"icon-title\">15+</div>\n      <div class=\"icon-subtitle\">Service Center\n</div>\n    </div>\n  </div>\n</div>",
-        "color_scheme": "scheme-cf34edac-dc71-47b2-bd1e-8fd831f1f0d2",
-        "padding_top": 40,
-        "padding_bottom": 80
-      }
-    },
     "collage_nRnRiU": {
       "type": "collage",
       "blocks": {
@@ -144,14 +135,14 @@
         "heading_PVTjaL": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Quality Certification</strong>",
+            "heading": "Quality & Compliance",
             "heading_size": "h1"
           }
         },
         "text_rmTq3w": {
           "type": "text",
           "settings": {
-            "text": "<p>Nanolux products meet global standards (UL, ETL, CE, ROHS, FCC, DLC, EAC, SAA,TISI, etc.) to ensure their safety and compliance. With robust IP management and R&D strength, nanolux lead the growth horticultural lighting field.</p>",
+            "text": "<p>Growealth offers carefully selected products developed with a strong focus on safety, quality, and compliance for global markets. Selected product lines meet recognized standards such as UL, ETL, CE, FCC, and DLC, helping indoor growers shop with greater confidence.</p>",
             "text_style": "subtitle"
           }
         }
@@ -179,7 +170,7 @@
     "custom_liquid_aYnchp": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n  .container1 {\n    display: grid;\n    grid-template-columns: repeat(5, 1fr);\n    grid-auto-rows: auto;\n    gap: 20px;\n    row-gap: 40px;\n    margin-top: 15%;\n    max-width: 1200px;\n    margin: 0 auto;\n    background-color: #fff;\n    padding: 25px 20px 50px 20px;\n  }\n@media only screen and (max-width: 600px) {\n.container1 {\n    grid-template-columns: repeat(2, 1fr)!important;\n }\n}\n  .icons {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n  }\n  .icons svg {\n    width: 50px;\n    height: 50px;\n    fill: #333;\n    margin-right: 10px;\n  }\n  .icon-text {\n    font-size: 16px;\n    color: #333;\n    margin-left: 5%;\n  }\n  .icon-title {\n    font-weight: bold;\n    font-size: 5rem;\n    color: #00A73C;\n  }\n  .icon-subtitle {\n    color: #262626;\n  }\n.icons img{\n width:20%;\n}\n</style>\n</head>\n<body>\n\n<div class=\"container1\">\n  <div class=\"icons \">\n    <div class=\"icon-text\">\n      <div class=\"icon-title\">16+</div>\n      <div class=\"icon-subtitle\">Patent For Invention</div>\n    </div>\n  </div>\n  <div class=\"icons \">\n    <div class=\"icon-text\">\n      <div class=\"icon-title\">35+</div>\n      <div class=\"icon-subtitle\">Utility Model Patent</div>\n    </div>\n  </div>\n  <div class=\"icons \">\n    <div class=\"icon-text\">\n      <div class=\"icon-title\">42+</div>\n      <div class=\"icon-subtitle\">Design Patent</div>\n    </div>\n  </div>\n  <div class=\"icons \">\n    <div class=\"icon-text\">\n      <div class=\"icon-title\">18+</div>\n      <div class=\"icon-subtitle\">Software Copyright</div>\n  </div>\n </div>\n <div class=\"icons \">\n    <div class=\"icon-text\">\n      <div class=\"icon-title\">12+</div>\n      <div class=\"icon-subtitle\">Trademark</div>\n  </div>\n </div>\n</div>",
+        "custom_liquid": "<div style=\"padding: 70px 40px; background: #f7f7f7;\">\n  <div style=\"\n    max-width: 1400px;\n    margin: 0 auto;\n    display: grid;\n    grid-template-columns: repeat(5, minmax(180px, 1fr));\n    gap: 40px;\n    text-align: center;\n    align-items: start;\n  \">\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #18a34a; line-height: 1.1;\">Carefully</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Selected Products</div>\n    </div>\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #18a34a; line-height: 1.1;\">Simple</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Indoor Growing Solutions</div>\n    </div>\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #18a34a; line-height: 1.1;\">Reliable</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Product Performance</div>\n    </div>\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #18a34a; line-height: 1.1;\">Practical</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Growing Support</div>\n    </div>\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #18a34a; line-height: 1.1;\">Better</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Buying Experience</div>\n    </div>\n\n  </div>\n</div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -352,7 +343,6 @@
     "image_banner_wTwNDb",
     "main",
     "image_with_text_RhqPpw",
-    "custom_liquid_NwX3MA",
     "collage_nRnRiU",
     "image_with_text_7Bafym",
     "custom_liquid_aYnchp",
