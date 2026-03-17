@@ -18,10 +18,18 @@
             "heading": "<strong>About Growealth</strong>",
             "heading_size": "h0"
           }
+        },
+        "text_Yp3PPC": {
+          "type": "text",
+          "settings": {
+            "text": "Growealth is a retail-focused indoor growing platform serving home growers and small cultivation setups. We offer carefully selected grow lighting and related products designed to make indoor growing simpler, more reliable, and more accessible.",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
-        "heading_qB4TBT"
+        "heading_qB4TBT",
+        "text_Yp3PPC"
       ],
       "custom_css": [
         "@media (min-width: 768px) {.gradient {background: #f3f3f300; color: #fff; } .banner__heading {color: #fff; } .button[aria-disabled=\"true\"] {opacity: 1; }}"
@@ -34,7 +42,7 @@
         "image_height": "medium",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "show_text_box": true,
         "color_scheme": "scheme-5",
         "stack_images_on_mobile": true,
@@ -57,14 +65,14 @@
         "heading_3khytU": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>About Us</strong>",
+            "heading": "<strong>Who We Serve</strong>",
             "heading_size": "h1"
           }
         },
         "text_kqRVKe": {
           "type": "text",
           "settings": {
-            "text": "<p>Nanolux, one of the leading global brands in horticultural lighting, was originated in California, United States in 2004. With dedicated R&D teams based in the United States and Europe, as well as manufacturing facilities located in China, the Philippines, and Vietnam, Nanolux has successfully developed an extensive range of LED and HID products with power outputs ranging from 18 to 2000 Watts. These cutting-edge solutions cater to various applications within the horticulture industry including indoor growing operations, vertical farming systems, greenhouses, and more. Nanolux is committed to providing diverse cultivation solutions for horticulturists worldwide.</p>",
+            "text": "<p>We design products for growers who want better results in grow tents, propagation setups, nursery racks, and other compact indoor environments. Whether you are starting seedlings, maintaining mother plants, or optimizing a home grow space, Growealth is built to support your journey.diverse cultivation solutions for horticulturists worldwide.</p>",
             "text_style": "body"
           }
         }
