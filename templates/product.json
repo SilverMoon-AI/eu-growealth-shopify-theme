@@ -1,1 +1,226 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","disabled":true,"settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatch_shape":"circle"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"icon_with_text_bt7ggV":{"type":"icon-with-text","disabled":true,"settings":{"layout":"vertical","icon_1":"truck","heading_1":"Free Express Delivery","icon_2":"chat_bubble","heading_2":"30-Day Money-Back Guarantee","icon_3":"star","heading_3":"1-Year Warranty"}},"description":{"type":"description","disabled":true,"settings":{}},"share":{"type":"share","settings":{"share_label":"Share"}}},"block_order":["vendor","title","price","variant_picker","quantity_selector","buy_buttons","icon_with_text_bt7ggV","description","share"],"custom_css":["\/* ========= 主售价（Sale Price） ========= *\/.price__sale .price-item--sale {font-size: 32px !important; font-weight: 700 !important; color: #2bbbad !important; \/* Growealth 主色 *\/}"," \/* ========= 划线原价（Compare at Price） ========= *\/.price__sale .price-item--regular {font-size: 15px !important; font-weight: 400 !important; color: #555 !important; \/* 深灰 \/ 黑 *\/ text-decoration: line-through !important; margin-right: 8px !important;}"],"settings":{"enable_sticky_info":true,"color_scheme":"scheme-bad231d6-1dcc-4f98-a6a1-c7f3d7f6f8ff","media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"thumbnail_slider","mobile_thumbnails":"show","media_position":"left","image_zoom":"lightbox","hide_variants":true,"enable_video_looping":true,"padding_top":36,"padding_bottom":12}},"slideshow_product_dTpiKV":{"type":"slideshow_product","blocks":{"slide_hpAPPW":{"type":"slide","disabled":true,"settings":{"image":"{{ product.metafields.custom.slideshow_product_one.value }}","image_overlay_opacity":0,"color_scheme":"","text_alignment_mobile":"center"}},"slide_NfJdhe":{"type":"slide","disabled":true,"settings":{"image":"{{ product.metafields.custom.slideshow_product_two.value }}","image_overlay_opacity":0,"color_scheme":"","text_alignment_mobile":"center"}},"slide_tgCFyY":{"type":"slide","disabled":true,"settings":{"image":"{{ product.metafields.custom.slideshow_product_three.value }}","image_overlay_opacity":0,"color_scheme":"scheme-1","text_alignment_mobile":"center"}},"slide_fnWy7b":{"type":"slide","disabled":true,"settings":{"image":"{{ product.metafields.custom.slideshow_product_four.value }}","image_overlay_opacity":0,"color_scheme":"scheme-1","text_alignment_mobile":"center"}},"slide_NgYiry":{"type":"slide","disabled":true,"settings":{"image":"{{ product.metafields.custom.slideshow_product_five.value }}","image_overlay_opacity":0,"color_scheme":"scheme-1","text_alignment_mobile":"center"}}},"block_order":["slide_hpAPPW","slide_NfJdhe","slide_tgCFyY","slide_fnWy7b","slide_NgYiry"],"settings":{"layout":"full_bleed","overview_content":"<p>{{ product.metafields.custom.overview_content | metafield_tag }}<\/p>","slide_height":"adapt_image","slider_visual":"dots","auto_rotate":true,"change_slides_speed":5,"image_behavior":"none","show_text_below":true,"accessibility_info":"Slideshow about our brand"}},"17128881277c20e42d":{"type":"apps","blocks":{"judge_me_reviews_review_widget_Tr6FHD":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{"review_data":"","max_width":1200,"show_shop_reviews":true,"empty_state":"empty_widget"}}},"block_order":["judge_me_reviews_review_widget_Tr6FHD"],"settings":{"include_margins":true}},"related-products":{"type":"related-products","custom_css":[".related-products__heading {text-align: center;}"],"settings":{"heading":"You may also like","heading_size":"h2","products_to_show":4,"columns_desktop":4,"columns_mobile":"2","color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"padding_top":36,"padding_bottom":28}}},"order":["main","slideshow_product_dTpiKV","17128881277c20e42d","related-products"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "icon_with_text_bt7ggV": {
+          "type": "icon-with-text",
+          "disabled": true,
+          "settings": {
+            "layout": "vertical",
+            "icon_1": "truck",
+            "heading_1": "Free Express Delivery",
+            "icon_2": "chat_bubble",
+            "heading_2": "30-Day Money-Back Guarantee",
+            "icon_3": "star",
+            "heading_3": "1-Year Warranty"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "icon_with_text_bt7ggV",
+        "description",
+        "share"
+      ],
+      "custom_css": [
+        "/* ========= 主售价（Sale Price） ========= */.price__sale .price-item--sale {font-size: 32px !important; font-weight: 700 !important; color: #2bbbad !important; /* Growealth 主色 */}",
+        " /* ========= 划线原价（Compare at Price） ========= */.price__sale .price-item--regular {font-size: 15px !important; font-weight: 400 !important; color: #555 !important; /* 深灰 / 黑 */ text-decoration: line-through !important; margin-right: 8px !important;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-bad231d6-1dcc-4f98-a6a1-c7f3d7f6f8ff",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "slideshow_product_dTpiKV": {
+      "type": "slideshow_product",
+      "blocks": {
+        "slide_hpAPPW": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "{{ product.metafields.custom.slideshow_product_one.value }}",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_NfJdhe": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "{{ product.metafields.custom.slideshow_product_two.value }}",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_tgCFyY": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "{{ product.metafields.custom.slideshow_product_three.value }}",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_fnWy7b": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "{{ product.metafields.custom.slideshow_product_four.value }}",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_NgYiry": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "{{ product.metafields.custom.slideshow_product_five.value }}",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_hpAPPW",
+        "slide_NfJdhe",
+        "slide_tgCFyY",
+        "slide_fnWy7b",
+        "slide_NgYiry"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "overview_content": "<p>{{ product.metafields.custom.overview_content | metafield_tag }}</p>",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "17128881277c20e42d": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Tr6FHD": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "",
+            "max_width": 1200,
+            "show_shop_reviews": true,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Tr6FHD"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+        ".related-products__heading {text-align: center;}"
+      ],
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_product_dTpiKV",
+    "17128881277c20e42d",
+    "related-products"
+  ]
+}
