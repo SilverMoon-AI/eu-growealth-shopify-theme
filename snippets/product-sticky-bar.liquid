@@ -25,16 +25,14 @@
   <div class="product-sticky-bar__inner page-width">
     <div class="product-sticky-bar__price">
       <div class="product-sticky-bar__total-row">
-        <span class="product-sticky-bar__total-label">{{ 'products.product.sticky_bar_total' | t }}</span>
         <span class="product-sticky-bar__total-value" data-sticky-total="{{ section.id }}">{{ money_price }}</span>
-      </div>
-      <div
-        class="product-sticky-bar__retail"
-        data-sticky-retail-row="{{ section.id }}"
-        {% unless show_retail %}hidden{% endunless %}
-      >
-        <span class="product-sticky-bar__retail-label">{{ 'products.product.sticky_bar_retail' | t }}</span>
-        <span class="product-sticky-bar__retail-value" data-sticky-retail="{{ section.id }}">{{ money_compare }}</span>
+        <s
+          class="product-sticky-bar__compare"
+          data-sticky-retail-row="{{ section.id }}"
+          {% unless show_retail %}hidden{% endunless %}
+        >
+          <span data-sticky-retail="{{ section.id }}">{{ money_compare }}</span>
+        </s>
       </div>
     </div>
     <div class="product-sticky-bar__actions">

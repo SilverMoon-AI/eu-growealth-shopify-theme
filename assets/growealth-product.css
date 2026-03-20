@@ -429,18 +429,13 @@ body.template-product {
   letter-spacing: -0.02em;
 }
 
-.product-sticky-bar__retail {
-  margin-top: 0.35rem;
+.product-sticky-bar__compare {
+  margin-left: 0.8rem;
   font-size: 1.3rem;
-  color: rgba(var(--color-foreground), 0.55);
-}
-
-.product-sticky-bar__retail-label {
-  margin-right: 0.35rem;
-}
-
-.product-sticky-bar__retail-value {
+  font-weight: 400;
+  color: rgba(var(--color-foreground), 0.5);
   text-decoration: line-through;
+  vertical-align: middle;
 }
 
 .product-sticky-bar__actions {
