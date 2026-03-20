@@ -1908,7 +1908,13 @@
       "name": "Order"
     },
     "main-page": {
-      "name": "Page"
+      "name": "Page",
+      "settings": {
+        "show_page_title": {
+          "label": "Show page title",
+          "info": "Disable if the title is shown in a banner or hero above this section."
+        }
+      }
     },
     "main-password-footer": {
       "name": "Password footer"
