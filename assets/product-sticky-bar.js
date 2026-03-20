@@ -114,6 +114,14 @@
       updateStickyButtonStates(sectionId, root);
     };
 
+    // On initial page load, only sync qty/buttons; leave prices as Liquid-rendered
+    // (JS variant init can overwrite price--on-sale in the main price container)
+    const refreshInitial = () => {
+      syncStickyQtyFromMain(sectionId, stickyQty);
+      copyQtyRules(mainQty(), stickyQty);
+      updateStickyButtonStates(sectionId, root);
+    };
+
     root.querySelector('[data-sticky-qty-decrease]')?.addEventListener('click', () => {
       const main = mainQty();
       if (!main || !stickyQty) return;
@@ -161,7 +169,7 @@
       document.getElementById(`ProductBuyNowButton-${sectionId}`)?.click();
     });
 
-    refresh();
+    refreshInitial();
 
     const mainSubmit = document.getElementById(`ProductSubmitButton-${sectionId}`);
     if (mainSubmit) {
