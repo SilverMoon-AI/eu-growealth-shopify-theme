@@ -1,0 +1,97 @@
+{% comment %}
+  Sticky bottom purchase bar on product page (price + qty + Add to cart + Buy now).
+  Requires main product form and #price-{{ section.id }} on the page.
+{% endcomment %}
+{%- liquid
+  assign v = product.selected_or_first_available_variant
+  assign show_retail = false
+  if v.compare_at_price > v.price
+    assign show_retail = true
+  endif
+  if settings.currency_code_enabled
+    assign money_price = v.price | money_with_currency
+    assign money_compare = v.compare_at_price | money_with_currency
+  else
+    assign money_price = v.price | money
+    assign money_compare = v.compare_at_price | money
+  endif
+-%}
+<div
+  class="product-sticky-bar"
+  id="ProductStickyBar-{{ section.id }}"
+  data-sticky-product-bar
+  data-section-id="{{ section.id }}"
+>
+  <div class="product-sticky-bar__inner page-width">
+    <div class="product-sticky-bar__price">
+      <div class="product-sticky-bar__total-row">
+        <span class="product-sticky-bar__total-label">{{ 'products.product.sticky_bar_total' | t }}</span>
+        <span class="product-sticky-bar__total-value" data-sticky-total="{{ section.id }}">{{ money_price }}</span>
+      </div>
+      <div
+        class="product-sticky-bar__retail"
+        data-sticky-retail-row="{{ section.id }}"
+        {% unless show_retail %}hidden{% endunless %}
+      >
+        <span class="product-sticky-bar__retail-label">{{ 'products.product.sticky_bar_retail' | t }}</span>
+        <span class="product-sticky-bar__retail-value" data-sticky-retail="{{ section.id }}">{{ money_compare }}</span>
+      </div>
+    </div>
+    <div class="product-sticky-bar__actions">
+      <div class="product-sticky-bar__qty">
+        <button
+          type="button"
+          class="product-sticky-bar__qty-btn"
+          data-sticky-qty-decrease
+          aria-label="{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}"
+        >
+          <span aria-hidden="true">−</span>
+        </button>
+        <input
+          type="number"
+          class="product-sticky-bar__qty-input"
+          data-sticky-quantity-input
+          id="StickyQuantity-{{ section.id }}"
+          min="{{ v.quantity_rule.min }}"
+          {% if v.quantity_rule.max != null %}
+            max="{{ v.quantity_rule.max }}"
+          {% endif %}
+          step="{{ v.quantity_rule.increment }}"
+          value="{{ v.quantity_rule.min }}"
+          inputmode="numeric"
+          aria-label="{{ 'products.product.quantity.label' | t }}"
+        >
+        <button
+          type="button"
+          class="product-sticky-bar__qty-btn"
+          data-sticky-qty-plus
+          aria-label="{{ 'products.product.quantity.increase' | t: product: product.title | escape }}"
+        >
+          <span aria-hidden="true">+</span>
+        </button>
+      </div>
+      <button
+        type="button"
+        class="product-sticky-bar__btn product-sticky-bar__btn--outline"
+        data-sticky-add-to-cart
+        {% if v.available == false %}
+          disabled
+        {% endif %}
+      >
+        {{ 'products.product.add_to_cart' | t }}
+      </button>
+      {%- unless product.gift_card? -%}
+        <button
+          type="button"
+          class="product-sticky-bar__btn product-sticky-bar__btn--solid"
+          data-sticky-buy-now
+          {% if v.available == false %}
+            disabled
+          {% endif %}
+        >
+          {{ 'products.product.buy_now' | t }}
+        </button>
+      {%- endunless -%}
+    </div>
+  </div>
+</div>

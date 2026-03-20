@@ -12,6 +12,11 @@
   }
 }
 
+.rte__placeholder {
+  color: rgba(var(--color-foreground), 0.55);
+  font-style: italic;
+}
+
 .page-placeholder-wrapper {
   display: flex;
   justify-content: center;

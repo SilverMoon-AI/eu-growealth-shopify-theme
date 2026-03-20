@@ -93,6 +93,23 @@
             </span>
             {%- render 'loading-spinner' -%}
           </button>
+          {%- unless gift_card_recipient_feature_active -%}
+            <button
+              type="button"
+              id="ProductBuyNowButton-{{ section_id }}"
+              class="product-form__buy-now button button--full-width button--secondary"
+              data-buy-now
+              {% if product.selected_or_first_available_variant.available == false
+                or quantity_rule_soldout
+                or product.selected_or_first_available_variant == null
+              %}
+                disabled
+              {% endif %}
+            >
+              <span>{{ 'products.product.buy_now' | t }}</span>
+              {%- render 'loading-spinner' -%}
+            </button>
+          {%- endunless -%}
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}

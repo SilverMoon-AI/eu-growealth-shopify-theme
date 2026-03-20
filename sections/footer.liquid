@@ -88,6 +88,13 @@
                     </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
+                      {%- liquid
+                        assign footer_payment_policy = false
+                        if block.settings.menu.handle == 'footer'
+                          assign footer_payment_policy = true
+                        endif
+                        assign payment_policy_link_added = false
+                      -%}
                       <ul class="footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
@@ -98,7 +105,28 @@
                               {{ link.title | escape }}
                             </a>
                           </li>
+                          {%- if footer_payment_policy and payment_policy_link_added == false and link.url contains 'shipping-policy' -%}
+                            <li>
+                              <a
+                                href="{{ routes.root_url }}pages/payment-policy"
+                                class="link link--text list-menu__item list-menu__item--link"
+                              >
+                                {{- 'sections.footer.payment_policy_link' | t -}}
+                              </a>
+                            </li>
+                            {%- assign payment_policy_link_added = true -%}
+                          {%- endif -%}
                         {%- endfor -%}
+                        {%- if footer_payment_policy and payment_policy_link_added == false -%}
+                          <li>
+                            <a
+                              href="{{ routes.root_url }}pages/payment-policy"
+                              class="link link--text list-menu__item list-menu__item--link"
+                            >
+                              {{- 'sections.footer.payment_policy_link' | t -}}
+                            </a>
+                          </li>
+                        {%- endif -%}
                       </ul>
                     {%- endif -%}
                   {%- when 'brand_information' -%}

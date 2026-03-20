@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "rich_text_payment_policy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_payment_policy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Payment Policy",
+            "heading_size": "h0"
+          }
+        },
+        "text_payment_policy": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Payment Methods</h2><p>Growealth accepts secure online payments through the payment methods displayed at checkout.</p><p>Available payment methods may include major credit and debit cards, PayPal, Shop Pay, Google Pay, Venmo, and other supported express checkout options, depending on your location, device, browser, and checkout eligibility.</p><p>All payment transactions are encrypted and processed securely. We do not store your full payment details on our website.</p><p>Payments are generally captured at the time an order is placed. The payment methods shown during checkout may vary based on your country, currency, device, and supported payment providers.</p><p>If you have any questions regarding payment options or encounter issues during checkout, please contact us at <a href=\"mailto:info@growealth.com\">info@growealth.com</a>.</p>"
+          }
+        }
+      },
+      "block_order": ["heading_payment_policy", "text_payment_policy"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": ["rich_text_payment_policy"]
+}

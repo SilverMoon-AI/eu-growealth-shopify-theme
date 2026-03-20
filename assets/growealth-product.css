@@ -242,8 +242,42 @@
   margin-top: 2rem;
 }
 
+/* 无动态结账时主按钮更醒目：品牌色 + 更大字号 + 轻微阴影 */
+.template-product .product-form__buttons .product-form__submit.button--primary:not([disabled]):not([aria-disabled='true']) {
+  --color-button: 78, 185, 159;
+  --color-button-text: 255, 255, 255;
+  --alpha-button-background: 1;
+  min-height: calc(5.6rem + var(--buttons-border-width) * 2);
+  font-size: 1.65rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 18px rgba(78, 185, 159, 0.35);
+  transition: box-shadow var(--duration-short) ease, transform var(--duration-short) ease;
+}
+
+.template-product .product-form__buttons .product-form__submit.button--primary:not([disabled]):not([aria-disabled='true']):hover {
+  box-shadow: 0 6px 22px rgba(78, 185, 159, 0.45);
+  transform: translateY(-1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .template-product .product-form__buttons .product-form__submit.button--primary:not([disabled]):not([aria-disabled='true']),
+  .template-product .product-form__buttons .product-form__submit.button--primary:not([disabled]):not([aria-disabled='true']):hover {
+    transform: none;
+    transition: box-shadow var(--duration-short) ease;
+  }
+}
+
 .template-product .product-form__buttons .product-form__submit {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
+}
+
+.template-product .product-form__buttons .product-form__buy-now {
+  margin-top: 1rem;
+  min-height: calc(4.8rem + var(--buttons-border-width) * 2);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 /* 产品页底部信任图标 - 深绿底白字样式，整体加高更醒目 */
@@ -332,5 +366,204 @@
   }
   .trust-badge-text {
     font-size: 1.1rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Sticky bottom purchase bar (product page)
+   -------------------------------------------------------------------------- */
+body.template-product {
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media screen and (min-width: 750px) {
+  body.template-product {
+    padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+.product-sticky-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  background: #fff;
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.12);
+  box-shadow: 0 -0.4rem 2.4rem rgba(0, 0, 0, 0.08);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.product-sticky-bar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem 1.6rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.product-sticky-bar__price {
+  flex: 1 1 auto;
+  min-width: min(100%, 16rem);
+}
+
+.product-sticky-bar__total-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.6rem;
+}
+
+.product-sticky-bar__total-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.product-sticky-bar__total-value {
+  font-size: clamp(1.8rem, 4vw, 2.2rem);
+  font-weight: 800;
+  color: #e85d04;
+  letter-spacing: -0.02em;
+}
+
+.product-sticky-bar__retail {
+  margin-top: 0.35rem;
+  font-size: 1.3rem;
+  color: rgba(var(--color-foreground), 0.55);
+}
+
+.product-sticky-bar__retail-label {
+  margin-right: 0.35rem;
+}
+
+.product-sticky-bar__retail-value {
+  text-decoration: line-through;
+}
+
+.product-sticky-bar__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  flex: 1 1 auto;
+}
+
+.product-sticky-bar__qty {
+  display: inline-flex;
+  align-items: center;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.18);
+  border-radius: var(--inputs-radius, 0.4rem);
+  overflow: hidden;
+  background: #fff;
+}
+
+.product-sticky-bar__qty-btn {
+  width: 4rem;
+  min-height: 4.4rem;
+  border: none;
+  background: rgba(var(--color-foreground), 0.04);
+  color: rgb(var(--color-foreground));
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--duration-short) ease;
+}
+
+.product-sticky-bar__qty-btn:hover {
+  background: rgba(var(--color-foreground), 0.08);
+}
+
+.product-sticky-bar__qty-input {
+  width: 4.2rem;
+  min-height: 4.4rem;
+  border: none;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+  -moz-appearance: textfield;
+}
+
+.product-sticky-bar__qty-input::-webkit-outer-spin-button,
+.product-sticky-bar__qty-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.product-sticky-bar__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4.4rem;
+  padding: 0 1.8rem;
+  border-radius: var(--buttons-radius-outset, 0.4rem);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: box-shadow var(--duration-short) ease, transform var(--duration-short) ease,
+    background-color var(--duration-short) ease, color var(--duration-short) ease;
+  border: 0.2rem solid #4eb99f;
+  white-space: nowrap;
+}
+
+.product-sticky-bar__btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.product-sticky-bar__btn--outline {
+  background: #fff;
+  color: #4eb99f;
+}
+
+.product-sticky-bar__btn--outline:hover:not(:disabled) {
+  background: rgba(78, 185, 159, 0.08);
+}
+
+.product-sticky-bar__btn--solid {
+  background: #4eb99f;
+  color: #fff;
+  border-color: #4eb99f;
+}
+
+.product-sticky-bar__btn--solid:hover:not(:disabled) {
+  background: #3da88e;
+  border-color: #3da88e;
+  box-shadow: 0 4px 14px rgba(78, 185, 159, 0.35);
+}
+
+@media (max-width: 749px) {
+  .product-sticky-bar__inner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .product-sticky-bar__actions {
+    justify-content: stretch;
+  }
+
+  .product-sticky-bar__qty {
+    flex: 0 0 auto;
+  }
+
+  .product-sticky-bar__btn {
+    flex: 1 1 auto;
+    min-width: 0;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-sticky-bar__btn {
+    transition: none;
   }
 }

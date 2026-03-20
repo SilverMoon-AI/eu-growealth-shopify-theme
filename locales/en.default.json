@@ -107,6 +107,9 @@
   "products": {
     "product": {
       "add_to_cart": "Add to cart",
+      "buy_now": "Buy now",
+      "sticky_bar_total": "Total:",
+      "sticky_bar_retail": "Retail price:",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
@@ -316,7 +319,8 @@
       }
     },
     "footer": {
-      "payment": "Payment methods"
+      "payment": "Payment methods",
+      "payment_policy_link": "Payment Policy"
     },
     "featured_blog": {
       "view_all": "View all",
@@ -349,6 +353,9 @@
     },
     "page": {
       "title": "Page title"
+    },
+    "main_page": {
+      "content_placeholder": "This page has no content yet. For policy pages, add it in Shopify admin: Settings → Legal."
     },
     "quick_order_list": {
       "product_total": "Product subtotal",

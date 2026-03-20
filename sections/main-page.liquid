@@ -19,7 +19,11 @@
     {{ page.title | escape }}
   </h1>
   <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-    {{ page.content }}
+    {%- if page.content != blank -%}
+      {{ page.content }}
+    {%- else -%}
+      <p class="rte__placeholder">{{ 'sections.main_page.content_placeholder' | t }}</p>
+    {%- endif -%}
   </div>
 </div>
 
