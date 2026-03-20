@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_wTwNDb": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_qB4TBT": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>About Growealth</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "text_Yp3PPC": {
+          "type": "text",
+          "settings": {
+            "text": "Growealth is a retail-focused indoor growing platform serving home growers and small cultivation setups. We offer carefully selected grow lighting and related products designed to make indoor growing simpler, more reliable, and more accessible.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qB4TBT",
+        "text_Yp3PPC"
+      ],
+      "custom_css": [
+        "@media (min-width: 768px) {.gradient {background: #f3f3f300; color: #fff; } .banner__heading {color: #fff; } .button[aria-disabled=\"true\"] {opacity: 1; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/for_website_homepage_banner-1.jpg",
+        "image_asset": "",
+        "image_asset_alt": "",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-5",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "left",
+        "show_text_below": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_with_text_RhqPpw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3khytU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Built for Home Growers",
+            "heading_size": "h1"
+          }
+        },
+        "text_kqRVKe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Growealth serves home growers and small indoor cultivation setups with carefully selected lighting and growing products. From propagation and nursery racks to compact grow tents and everyday indoor growing, our goal is to make product selection easier and growing results more reliable.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3khytU",
+        "text_kqRVKe"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/nowatermark_IMG_7826.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-cf34edac-dc71-47b2-bd1e-8fd831f1f0d2",
+        "color_scheme": "scheme-cf34edac-dc71-47b2-bd1e-8fd831f1f0d2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_nRnRiU": {
+      "type": "collage",
+      "blocks": {
+        "image_9b6pGa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/im1.png"
+          }
+        },
+        "image_aYk4JG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/im2.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_9b6pGa",
+        "image_aYk4JG"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_7Bafym": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_PVTjaL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality & Compliance",
+            "heading_size": "h1"
+          }
+        },
+        "text_rmTq3w": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Growealth offers carefully selected products developed with a strong focus on safety, quality, and compliance for global markets. Selected product lines meet recognized standards such as UL, ETL, CE, FCC, and DLC, helping indoor growers shop with greater confidence.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PVTjaL",
+        "text_rmTq3w"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/im3.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-cf34edac-dc71-47b2-bd1e-8fd831f1f0d2",
+        "color_scheme": "scheme-cf34edac-dc71-47b2-bd1e-8fd831f1f0d2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_aYnchp": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"padding: 70px 40px; background: #f7f7f7;\">\n  <div style=\"\n    max-width: 1400px;\n    margin: 0 auto;\n    display: grid;\n    grid-template-columns: repeat(5, minmax(180px, 1fr));\n    gap: 40px;\n    text-align: center;\n    align-items: start;\n  \">\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #4EB99F; line-height: 1.1;\">Carefully</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Selected Products</div>\n    </div>\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #4EB99F; line-height: 1.1;\">Simple</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Indoor Growing Solutions</div>\n    </div>\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #4EB99F; line-height: 1.1;\">Reliable</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Product Performance</div>\n    </div>\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #4EB99F; line-height: 1.1;\">Practical</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Growing Support</div>\n    </div>\n\n    <div>\n      <div style=\"font-size: 52px; font-weight: 700; color: #4EB99F; line-height: 1.1;\">Better</div>\n      <div style=\"margin-top: 22px; font-size: 20px; line-height: 1.5; color: #222; font-weight: 500;\">Buying Experience</div>\n    </div>\n\n  </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_LLrkRy": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.page-width img{\n  width: 100%;\n}\n</style>\n<div class=\"page-width\">\n<img src=\"https://cdn.shopify.com/s/files/1/0868/3025/2317/files/im4.png?v=1713509352\"/>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_tLPYN4": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div style=\"background:linear-gradient(165deg, #45ad96 0%, #4EB99F 40%, #6ec9b5 100%); padding:80px 40px; color:#fff;\">\n  <div style=\"max-width:1400px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:60px; flex-wrap:wrap;\">\n    <div style=\"flex:1; min-width:320px;\">\n      <h2 style=\"margin:0 0 20px; font-size:56px; line-height:1.1; font-weight:700; color:#fff;\">Why Growers Choose Growealth</h2>\n      <p style=\"margin:0; font-size:24px; line-height:1.8; color:rgba(255,255,255,0.95);\">\n        Growealth makes indoor growing easier with carefully selected products, practical guidance, and a focus on reliable performance. We aim to help home growers and small indoor setups choose more confidently and grow more successfully.\n      </p>\n    </div>\n\n    <div style=\"flex:1; min-width:320px; display:flex; justify-content:center; gap:60px; flex-wrap:wrap; text-align:center;\">\n      <div>\n        <div style=\"width:180px; height:180px; border:6px solid rgba(255,255,255,0.65); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:28px; font-weight:700; color:#fff;\">\n          Practical\n        </div>\n        <div style=\"font-size:22px; line-height:1.5; color:#fff;\">Product Selection</div>\n      </div>\n\n      <div>\n        <div style=\"width:180px; height:180px; border:6px solid rgba(255,255,255,0.65); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:28px; font-weight:700; color:#fff;\">\n          Reliable\n        </div>\n        <div style=\"font-size:22px; line-height:1.5; color:#fff;\">Growing Support</div>\n      </div>\n    </div>\n  </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_bDNHzm": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div style=\"padding: 80px 40px; background: #f7f7f7; text-align: center;\">\n  <div style=\"max-width: 1400px; margin: 0 auto;\">\n    <h2 style=\"margin: 0 0 28px; font-size: 64px; line-height: 1.1; font-weight: 700; color: #111;\">\n      What You Can Expect from Growealth\n    </h2>\n    <p style=\"max-width: 1100px; margin: 0 auto 80px; font-size: 24px; line-height: 1.8; color: #555;\">\n      Growealth focuses on helping home growers and small indoor cultivation setups find practical, reliable products with less confusion and a better buying experience.\n    </p>\n\n    <div style=\"display: grid; grid-template-columns: repeat(4, minmax(220px, 1fr)); gap: 40px; align-items: start;\">\n      <div>\n        <div style=\"width: 150px; height: 150px; margin: 0 auto 28px; border-radius: 50%; background: #4EB99F; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 54px;\">✓</div>\n        <div style=\"font-size: 40px; font-weight: 700; color: #111; line-height: 1.2;\">Selected Products</div>\n        <div style=\"margin-top: 24px; font-size: 18px; line-height: 1.6; color: #666;\">Carefully Curated Choices</div>\n      </div>\n\n      <div>\n        <div style=\"width: 150px; height: 150px; margin: 0 auto 28px; border-radius: 50%; background: #4EB99F; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 54px;\">i</div>\n        <div style=\"font-size: 40px; font-weight: 700; color: #111; line-height: 1.2;\">Clear Information</div>\n        <div style=\"margin-top: 24px; font-size: 18px; line-height: 1.6; color: #666;\">Easy-to-Understand Product Details</div>\n      </div>\n\n      <div>\n        <div style=\"width: 150px; height: 150px; margin: 0 auto 28px; border-radius: 50%; background: #4EB99F; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 54px;\">↗</div>\n        <div style=\"font-size: 40px; font-weight: 700; color: #111; line-height: 1.2;\">Global Shipping</div>\n        <div style=\"margin-top: 24px; font-size: 18px; line-height: 1.6; color: #666;\">Support for International Orders</div>\n      </div>\n\n      <div>\n        <div style=\"width: 150px; height: 150px; margin: 0 auto 28px; border-radius: 50%; background: #4EB99F; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 54px;\">★</div>\n        <div style=\"font-size: 40px; font-weight: 700; color: #111; line-height: 1.2;\">Reliable Support</div>\n        <div style=\"margin-top: 24px; font-size: 18px; line-height: 1.6; color: #666;\">A Better Buying Experience</div>\n      </div>\n    </div>\n  </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner_wTwNDb",
+    "main",
+    "image_with_text_RhqPpw",
+    "collage_nRnRiU",
+    "image_with_text_7Bafym",
+    "custom_liquid_aYnchp",
+    "custom_liquid_LLrkRy",
+    "custom_liquid_tLPYN4",
+    "custom_liquid_bDNHzm"
+  ]
+}

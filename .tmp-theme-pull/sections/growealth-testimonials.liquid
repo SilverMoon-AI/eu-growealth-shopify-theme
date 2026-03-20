@@ -1,0 +1,194 @@
+<section class="gw-testimonials" id="gw-testimonials-{{ section.id }}">
+  <div class="gw-container">
+    <div class="gw-testimonials__header gw-fade-up">
+      <div class="gw-section-label">{{ section.settings.label }}</div>
+      <h2 class="gw-section-title">{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="gw-testimonials__slider-wrap">
+      <button type="button" class="gw-testimonials__nav gw-testimonials__nav--prev" aria-label="Previous reviews">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button type="button" class="gw-testimonials__nav gw-testimonials__nav--next" aria-label="Next reviews">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <div class="gw-testimonials__track" data-gw-testimonials-track>
+        {% for block in section.blocks %}
+          <div class="gw-testimonial-card gw-testimonial-card--slide" {{ block.shopify_attributes }}>
+          <div class="gw-testimonial-card__stars">
+            {% for i in (1..5) %}
+              {% if i <= block.settings.rating %}
+                <svg class="gw-testimonial-card__star" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              {% else %}
+                <svg class="gw-testimonial-card__star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26"/></svg>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <p class="gw-testimonial-card__text">"{{ block.settings.text }}"</p>
+          <div class="gw-testimonial-card__author">
+            <div class="gw-testimonial-card__avatar">
+              {% if block.settings.image_asset != blank %}
+                <img
+                  src="{{ block.settings.image_asset | asset_url }}"
+                  alt="{{ block.settings.name | escape }}"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                >
+              {% elsif block.settings.image != blank %}
+                <img
+                  src="{{ block.settings.image | image_url: width: 96 }}"
+                  alt="{{ block.settings.name | escape }}"
+                  width="42"
+                  height="42"
+                  loading="lazy"
+                >
+              {% else %}
+                <span class="gw-testimonial-card__initials">{{ block.settings.initials }}</span>
+              {% endif %}
+            </div>
+            <div>
+              <div class="gw-testimonial-card__name">{{ block.settings.name }}</div>
+              <div class="gw-testimonial-card__role">{{ block.settings.role }}</div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    var section = document.getElementById('gw-testimonials-{{ section.id }}');
+    if (!section) return;
+    var track = section.querySelector('[data-gw-testimonials-track]');
+    var prevBtn = section.querySelector('.gw-testimonials__nav--prev');
+    var nextBtn = section.querySelector('.gw-testimonials__nav--next');
+    if (!track || !prevBtn || !nextBtn) return;
+    var card = track.querySelector('.gw-testimonial-card');
+    var gap = 24;
+    function getScrollDistance() {
+      if (!card) return 320;
+      return card.offsetWidth + gap;
+    }
+    function scrollTo(dir) {
+      var d = getScrollDistance() * (dir === 'next' ? 1 : -1);
+      track.scrollBy({ left: d, behavior: 'smooth' });
+    }
+    prevBtn.addEventListener('click', function() { scrollTo('prev'); });
+    nextBtn.addEventListener('click', function() { scrollTo('next'); });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "GW Testimonials",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section label",
+      "default": "Reviews"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What Our Customers Say"
+    }
+  ],
+  "max_blocks": 8,
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Star rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Review text",
+          "default": "Great value for the price. Easy to install and the light output is very impressive."
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Author name",
+          "default": "Sarah Johnson"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Author role",
+          "default": "Verified Customer"
+        },
+        {
+          "type": "text",
+          "id": "initials",
+          "label": "Author initials (when no photo)",
+          "default": "SJ"
+        },
+        {
+          "type": "text",
+          "id": "image_asset",
+          "label": "Author photo (theme asset)",
+          "info": "Filename in assets/ (e.g. 1-avatar.avif). Preferred for GitHub sync."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Author photo (upload)",
+          "info": "Used when theme asset filename above is empty."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GW Testimonials",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Great value for the price. Easy to install and the light output is very impressive. My plants responded within the first week. Would definitely buy again.",
+            "name": "Sarah Johnson",
+            "role": "Verified Customer",
+            "initials": "SJ"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "I've tried several grow lights before, and this one stands out. Even coverage, low heat, and very stable operation. Highly recommended for indoor growing.",
+            "name": "Emily Rodriguez",
+            "role": "Verified Customer",
+            "initials": "ER"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Works exactly as described. Easy setup, clear instructions, and noticeable improvement in plant growth. Great option for both beginners and experienced growers.",
+            "name": "David Thompson",
+            "role": "Verified Customer",
+            "initials": "DT"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

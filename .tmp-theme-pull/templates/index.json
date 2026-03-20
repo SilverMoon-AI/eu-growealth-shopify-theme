@@ -1,0 +1,337 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gw_hero": {
+      "type": "growealth-hero",
+      "settings": {
+        "badge_text": "Professional Grow Lighting",
+        "heading_line1": "Lighting Designed",
+        "heading_line2": "for Real Growing",
+        "heading_line3": "Scenarios",
+        "subtitle": "Precision-engineered LED grow lights for tents, rooms, and small-scale cultivation. Built to perform, designed to last.",
+        "primary_btn_text": "Shop Now",
+        "primary_btn_link": "/collections/led-grow-lights",
+        "secondary_btn_text": "Explore Solutions",
+        "secondary_btn_link": "#features",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/ccce66980b114dc79693405b86ce4850.mp4"
+      }
+    },
+    "gw_values": {
+      "type": "growealth-values",
+      "blocks": {
+        "value_1": {
+          "type": "value",
+          "settings": {
+            "icon": "lightning",
+            "title": "Energy Efficient",
+            "text": "Up to 2.9 μmol/J efficacy — maximum output with minimal power consumption."
+          }
+        },
+        "value_2": {
+          "type": "value",
+          "settings": {
+            "icon": "sun",
+            "title": "Full Controllability",
+            "text": "Stepless dimming from 0–100%. Precisely dial in the intensity your plants need at every stage."
+          }
+        },
+        "value_3": {
+          "type": "value",
+          "settings": {
+            "icon": "shield",
+            "title": "Built to Last",
+            "text": "5-year warranty backed by 40+ years of horticultural engineering expertise."
+          }
+        }
+      },
+      "block_order": [
+        "value_1",
+        "value_2",
+        "value_3"
+      ],
+      "settings": {}
+    },
+    "gw_features": {
+      "type": "growealth-features",
+      "blocks": {
+        "feature_rg150": {
+          "type": "feature",
+          "settings": {
+            "image_asset": "rg150-home.webp",
+            "eyebrow": "LED RG150W",
+            "title": "RG150W: The Compact Power Expert<br>Versatile for 2×2 ft Tents",
+            "text": "Perfect for 2×2 ft tents and multi-tier shelves. Full spectrum, UV & far-red in one light; 150W at 2.5 μmol/J efficiency. Fanless, IP65, 0–10V dimming with soft start. Ideal for clones, seedlings, and supplemental lighting.",
+            "spec1_value": "150W",
+            "spec1_label": "Power Draw",
+            "spec2_value": "2.5 μmol/J",
+            "spec2_label": "Efficacy",
+            "spec3_value": "2×2 ft",
+            "spec3_label": "Optimal Coverage",
+            "cta_text": "View RG150 Details",
+            "cta_link": "/products/nanolux-rg150-led-grow-light-150w-full-spectrum",
+            "reverse": false,
+            "media_ratio": "1/1"
+          }
+        },
+        "feature_rg300": {
+          "type": "feature",
+          "settings": {
+            "image_asset": "nanolux-rg300-grow-light-03-grow-room.webp",
+            "eyebrow": "LED RG300W",
+            "title": "RG300W: The Core of Your Tent<br>Upgrade for 3×3 ft",
+            "text": "Industry-standard for 3×3 ft tents with 800 μmol/s PPF and 2.5 μmol/J efficacy. Full spectrum, UV & far-red in one channel; 100% silent passive cooling, IP65. Built for high-yield flowering.",
+            "spec1_value": "800 μmol/s",
+            "spec1_label": "PPF Output",
+            "spec2_value": "2.5 μmol/J",
+            "spec2_label": "Efficacy",
+            "spec3_value": "3×3 ft",
+            "spec3_label": "Optimal Coverage",
+            "cta_text": "View RG300 Details",
+            "cta_link": "/products/nanolux-rg300w-led-grow-light",
+            "reverse": true,
+            "media_ratio": "1/1"
+          }
+        },
+        "feature_1": {
+          "type": "feature",
+          "settings": {
+            "youtube_id": "Nu1vWJNiKsU",
+            "eyebrow": "Growealth G3000",
+            "title": "G3000: The Smart Spectrum Master<br>Samsung LM301B & UV/IR Control",
+            "text": "Full-cycle veg & bloom with 800 μmol/s PPF. Independent physical UV and IR switches for oil and potency; 2.65 μmol/J efficiency, 95% reflective hood, fanless, IP65. App-ready for scheduling and remote dimming.",
+            "spec1_value": "800 μmol/s",
+            "spec1_label": "PPF Output",
+            "spec2_value": "UV + IR",
+            "spec2_label": "Physical Switches",
+            "spec3_value": "2.65 μmol/J",
+            "spec3_label": "Efficacy",
+            "cta_text": "View G3000 Details",
+            "cta_link": "/products/300w-led-grow-light-for-home-grow-grow-tents-growealth-g3000",
+            "reverse": false
+          }
+        }
+      },
+      "block_order": [
+        "feature_rg150",
+        "feature_rg300",
+        "feature_1"
+      ],
+      "settings": {
+        "label": "Technology",
+        "heading": "Technology That Powers<br><em>Creativity</em>"
+      }
+    },
+    "gw_products": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".title {text-align: center; font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; font-weight: 800; letter-spacing: -0.03em;}",
+        ".collection__description {text-align: center;}"
+      ],
+      "settings": {
+        "collection": "led",
+        "products_to_show": 3,
+        "title": "LED Grow Lights",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 3,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "gw_lifestyle": {
+      "type": "growealth-lifestyle",
+      "settings": {
+        "heading": "Your taste buds<br>will <em>thank you</em>.",
+        "subtext": "From herb walls to indoor harvests — grow fresher, healthier produce at home with light you can trust.",
+        "cta_text": "Start Growing",
+        "cta_link": "/collections/led-grow-lights"
+      }
+    },
+    "gw_trust": {
+      "type": "growealth-trust",
+      "blocks": {
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "icon": "shield",
+            "value": "5 Years",
+            "label": "Product Warranty"
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "icon": "users",
+            "value": "24/7",
+            "label": "Expert Support"
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "settings": {
+            "icon": "clock",
+            "value": "Quality",
+            "label": "Tested & Verified"
+          }
+        },
+        "stat_4": {
+          "type": "stat",
+          "settings": {
+            "icon": "check",
+            "value": "6+",
+            "label": "Global Safety Certifications"
+          }
+        }
+      },
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3",
+        "stat_4"
+      ],
+      "settings": {
+        "label": "Our Story",
+        "heading": "The Growealth Story",
+        "text": "Growealth exists to bring professional-grade LED grow lights to home and small-scale growers. We work with partners who have deep experience in horticultural lighting, so every product we offer meets the same standards we'd use ourselves. No hype—just clear specs, real warranty, and support when you need it.",
+        "youtube_id": "MMqBwfkOGW8",
+        "image_asset": "4a355721-46cc-4c52-b64f-da9a96b3bafd.png"
+      }
+    },
+    "gw_testimonials": {
+      "type": "growealth-testimonials",
+      "blocks": {
+        "review_1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Great value for the price. Easy to install and the light output is very impressive. My plants responded within the first week. Would definitely buy again.",
+            "name": "Sarah Johnson",
+            "role": "Verified Customer",
+            "initials": "SJ",
+            "image_asset": "1-avatar.avif"
+          }
+        },
+        "review_2": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "I've tried several grow lights before, and this one stands out. Even coverage, low heat, and very stable operation. Highly recommended for indoor growing.",
+            "name": "Emily Rodriguez",
+            "role": "Verified Customer",
+            "initials": "ER",
+            "image_asset": "2-avatar.avif"
+          }
+        },
+        "review_3": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Works exactly as described. Easy setup, clear instructions, and noticeable improvement in plant growth. Great option for both beginners and experienced growers.",
+            "name": "David Thompson",
+            "role": "Verified Customer",
+            "initials": "DT",
+            "image_asset": "3-avatar.webp"
+          }
+        },
+        "review_4": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Replaced my old blurple with this. The full spectrum makes a real difference—my basil and tomatoes are much healthier. Quiet and runs cool.",
+            "name": "Marcus Chen",
+            "role": "Verified Customer",
+            "initials": "MC",
+            "image_asset": "4-avatar.webp"
+          }
+        },
+        "review_5": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Shipping was fast and the light arrived well packed. Using it in a 2x2 tent and the plants love it. Would recommend to anyone starting out.",
+            "name": "Jessica Park",
+            "role": "Verified Customer",
+            "initials": "JP",
+            "image_asset": "5-avatar.webp"
+          }
+        },
+        "review_6": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Solid build quality and the dimmer is really useful. Customer support answered my questions quickly. Happy with the purchase.",
+            "name": "James Wilson",
+            "role": "Verified Customer",
+            "initials": "JW",
+            "image_asset": "6-avatar.avif"
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3",
+        "review_4",
+        "review_5",
+        "review_6"
+      ],
+      "settings": {
+        "label": "Reviews",
+        "heading": "What Our Customers Say"
+      }
+    },
+    "gw_blog": {
+      "type": "featured-blog",
+      "custom_css": [
+        ".blog__title {text-align: center; font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; font-weight: 800; letter-spacing: -0.03em;}"
+      ],
+      "settings": {
+        "blog": "news",
+        "post_limit": 3,
+        "heading": "From the Grow Lab",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "gw_hero",
+    "gw_values",
+    "gw_features",
+    "gw_products",
+    "gw_lifestyle",
+    "gw_trust",
+    "gw_testimonials",
+    "gw_blog"
+  ]
+}

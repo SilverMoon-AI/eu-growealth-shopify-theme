@@ -1,0 +1,519 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collapsible_content_yFLGmB": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_9Dnm3F": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why choose DE over traditional HPS?",
+            "icon": "check_mark",
+            "row_content": "<p>DE lights are the next step in HID lighting. The basic components remain the same, but the technology has evolved to allow the DE fixture to produce more blues and more reds in the PAR spectrum. This means the type of light your plants receive is closer to that of the sun. Another advantage of a DE ballast is that is produces more light than any 1000W HPS. Our class leading 160,300lumens not only gives your plants more light to feed on, but this is what allows the light to render a more comprehensive PAR value.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JKXYEA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What frequency does the NanoluxDE Fixture operate at?",
+            "icon": "check_mark",
+            "row_content": "<p>Input frequency is 50/60Hz<br/>Output Frequency is ≥30KHz</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_cwT3Ht": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the circuit protection or safety on DE Fixtures?",
+            "icon": "check_mark",
+            "row_content": "<p>When the electrical current to the fixture is not within operational range the ballast will shut itself off in order to protect the components from damage. The fixture will automatically restart when the operational electrical current range stabilizes.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pQ3kNb": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the running KHz of the DE Ballast?",
+            "icon": "check_mark",
+            "row_content": "<p>≥100KHz</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gGtrYW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the footprint of the NanoluxDE Double Ended Fixture?",
+            "icon": "check_mark",
+            "row_content": "<p>The NanoluxDE Double Ended Fixture was designed for a 5’ x 5’ growing grid.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EfpKjr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the NanoluxDE Double Ended Fixture and RemoteDE Digital Ballast dimmable?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, both the ballast and fixture come equipped with 6 phase dimming (600-1215w).</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8Wjaam": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the luminous flux output of the NanoluxDE Double Ended Fixture?",
+            "icon": "check_mark",
+            "row_content": "<p>The Nanolux DE fixture has the highest luminous flux output currently on the market at 160,300lm and an output of 1215 watts.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_PTLmYL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the NanoluxDE Double Ended Fixture have plastic sockets for the bulb?",
+            "icon": "check_mark",
+            "row_content": "<p>No, The NanoluxDE has exclusive ceramic receptacles instead of the industry standard plastic receptacles which can melt.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7CAXi9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What bulbs are recommended for the NanoluxDE Double Ended Fixture and Remote DE Digital Ballast?",
+            "icon": "check_mark",
+            "row_content": "<p>Doubled Ended HPS (High Pressure Sodium) bulbs must be used in the NanoluxDE Fixture and Nanolux Remote DE Ballast. Both of the DE ballast and fixture are compatible with industry DE bulbs currently on the market.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_33tR6y": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long with the NanoluxDE Bulb last?",
+            "icon": "check_mark",
+            "row_content": "<p>We recommend you change you bulb every 8-9 months to maintain peak performance. After this period of time the spectrum and lumen output begin to diminish.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8DwjyH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I pair a DE bulb with a regular HPS Ballast?",
+            "icon": "check_mark",
+            "row_content": "<p>No</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_9Dnm3F",
+        "collapsible_row_JKXYEA",
+        "collapsible_row_cwT3Ht",
+        "collapsible_row_pQ3kNb",
+        "collapsible_row_gGtrYW",
+        "collapsible_row_EfpKjr",
+        "collapsible_row_8Wjaam",
+        "collapsible_row_PTLmYL",
+        "collapsible_row_7CAXi9",
+        "collapsible_row_33tR6y",
+        "collapsible_row_8DwjyH"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "DE SERIES",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_mtTJHz": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_dzQeV9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the warranty on the OG series?",
+            "icon": "check_mark",
+            "row_content": "<p>3 years.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mtmEtF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use the NCCS software with the OG series?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_C6tm7p": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the typical expected radius of harmonic disruption (RF) on the 1000W OG Series?",
+            "icon": "check_mark",
+            "row_content": "<p>&lt;10% THD</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_dzQeV9",
+        "collapsible_row_mtmEtF",
+        "collapsible_row_C6tm7p"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "OG SERIES",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_3gQkCt": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_MCKycN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can the Nanolux Flip Series Digital Ballast run two lights at once?",
+            "icon": "check_mark",
+            "row_content": "<p>No, it has a flip relay that drives two reflectors/sockets on a 12/12 cycle.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wF6ntG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can the Nanolux Flip Series Digital Ballast be used to light only a single bulb?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, the Nanolux Flip series can be used as a single (non-flip) ballast. Simply turn the knob of “light 2” to the off position.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_p4diHU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can Nanolux Flip Series run MH for 12 hours and flip to HPS for 12 hours?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, Nanolux Flip Series can run both MH and HPS bulbs in the same cycle. The Nanolux Flip will run HPS and flip over to MH for the other 12 hours.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_MCKycN",
+        "collapsible_row_wF6ntG",
+        "collapsible_row_p4diHU"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "FLIP SERIES",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_3Eawfi": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_V3EU8p": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can the Nanolux Dual series run MH and HPS bulbs at the same time?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, the Nanolux Dual 600W can strike both MH and HPS bulbs at the same time. The Dual series will also run 2 HPS or 2 MH bulbs</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_UP9h4K": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the Dual Series NCCS ready?",
+            "icon": "check_mark",
+            "row_content": "<p>No. The Dual Series, along with the Flip Series, is not compatible with NCCS software.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8m3cct": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What’s the warranty for the Dual Series?",
+            "icon": "check_mark",
+            "row_content": "<p>2 years.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_TXdfXG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the Dual Series have a dim feature?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, the Dual Series features 50%-75%-100%-110% SuperLux settings.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JCR7Pp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the dual series require both outputs to be running simultaneously or can the user choose to power just one lamp without concern?",
+            "icon": "check_mark",
+            "row_content": "<p>The dual series can run one ballast instead of two. Turn the dial position to “off” on either Lamp 1 or Lamp 2 on the Nanolux Dual Series ballast.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_V3EU8p",
+        "collapsible_row_UP9h4K",
+        "collapsible_row_8m3cct",
+        "collapsible_row_TXdfXG",
+        "collapsible_row_JCR7Pp"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Dual SERIES",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_TJGW8j": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_dm6gKG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the warranty for the NF Series?",
+            "icon": "check_mark",
+            "row_content": "<p>3 years</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qa9qhJ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why is the NF Series more expensive than the OG or Cube Series?",
+            "icon": "check_mark",
+            "row_content": "<p>Due to the fact that the NF series has no fan, we upgraded the interior components making them more heat resistant. Also, the shell of the ballast is fitted with larger heat sinks which also raises the price slightly.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fGMhjT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the NF Series NCCS ready?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, the NF Series can be used with our NCCS software.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RbtHNg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the NF Series dimmable?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes, the NF Series has 50%-75%-100%-110% SuperLux settings.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_dm6gKG",
+        "collapsible_row_qa9qhJ",
+        "collapsible_row_fGMhjT",
+        "collapsible_row_RbtHNg"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "NF SERIES",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_JtqjCa": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_ARiLTa": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does the NCCS (Nanolux Cloud Control System) work?",
+            "icon": "check_mark",
+            "row_content": "<p>The NCCS was designed and engineered to provide a complete solution for the control of the lighting in a grow room. The NCCS allows for precision control of lighting in the grow room through a simple and intuitive app that runs on your phone. The heart of the NCCS is a software program which allows you to specify all of the parameters of your lighting schedule. The DTU is the brain of the system and communicates and controls all of the selected functions in the grow room through wireless radio communication. The DTU controls lighting ballasts and environmental control devices by communicating wirelessly with each individual RTU (Remote Terminal Unit) – a USB/Antenna device. In the near future, added to the NCCS, will be CO2 functions, humidity and temperature control hardware, pH and nutrient control, pump control, and even a remote camera. Please see this 10 minute video for a quick primer: https://www.youtube.com/watch?v=SrgtC8UlN7A</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_A7n6nt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does the DTU (Data Transfer Unit) do?",
+            "icon": "check_mark",
+            "row_content": "<p>The DTU (Data Transfer Unit) is the brain of the NCCS (Nanolux Cloud Control System) and communicates and controls all of the selected functions in the grow room through wireless radio communication. The DTU controls lighting ballasts and environmental control devices by communicating wirelessly with each individual RTU (Remote Terminal Unit) USB devices. The DTU unit runs off of 120v/240v typical 5-volt USB phone charger.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WCTrJY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does the RTU (Remote Terminal Unit) do?",
+            "icon": "check_mark",
+            "row_content": "<p>The RTU is the data transfer communication device that is installed on the Nanolux Ballasts (with the exception of the Nanolux Flip Series,Dual Series) which allows them to communicate with the DTU. They receive the instructrions from the DTU of when to dim and turn on and off. They also send data back to the DTU on the status of the ballast.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9QHcti": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can the DTU (Data Transfer Unit) and RTU (Remote Terminal Unit) be used with other brand ballasts?",
+            "icon": "check_mark",
+            "row_content": "<p>No, the NCCS (Nanolux Cloud Control System), DTU and RTU units are only compatible with most all Nanolux Technology ballasts, including CMH and double ended fixtures at this time.<br/>The NCCS can control all Nanolux ballasts and DE fixtures, with the exception of the Nanolux Flip Series and Nanolux Dual Series.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XArEqk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I add a ballast to the NCCS system?",
+            "icon": "check_mark",
+            "row_content": "<p>First, you Identify and add into inventory the RTU unit by plugging it in the back of the DTU via the USB port. Then place the RTU back in the ballast USB port. The NCCS program will now recognize and control the desired ballast. See this video for further explanation:<a href=\"https://www.youtube.com/watch?v=SrgtC8UlN7A\">https://www.youtube.com/watch?v=SrgtC8UlN7A</a></p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_LMgL68": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many ballast can I run on the NCCS?",
+            "icon": "check_mark",
+            "row_content": "<p>Up to 300 ballasts can be controlled through each DTU. A total of 10 DTU’s per account.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BF7agG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many rooms can I run on the NCCS?",
+            "icon": "check_mark",
+            "row_content": "<p>The radio has an effective range of a 100-foot radius. You can create a total of four virtual rooms per DTU but the DTU only comes with ONLY ONE attached temperature sensor. So ideally, you want one DTU per room to take advantage of the ever so important temperature-control feature of your lights.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_fF8tJr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many times a day can you dim a light with NCCS?",
+            "icon": "check_mark",
+            "row_content": "<p>You can set up to 5 dim cycles per day with the NCCS.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qcnCwc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the NCCS software require Wifi?",
+            "icon": "check_mark",
+            "row_content": "<p>No. In order to communicate with the DTU you need Bluetooth on your phone. We have an available paid service which allows you to monitor your plants remotely and that service does require a local WiFi connection.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_hxTrtw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need a DTU to run the NCCS APP?",
+            "icon": "check_mark",
+            "row_content": "<p>Yes.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_ARiLTa",
+        "collapsible_row_A7n6nt",
+        "collapsible_row_WCTrJY",
+        "collapsible_row_9QHcti",
+        "collapsible_row_XArEqk",
+        "collapsible_row_LMgL68",
+        "collapsible_row_BF7agG",
+        "collapsible_row_fF8tJr",
+        "collapsible_row_qcnCwc",
+        "collapsible_row_hxTrtw"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "NCCS",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_yFLGmB",
+    "collapsible_content_mtTJHz",
+    "collapsible_content_3gQkCt",
+    "collapsible_content_3Eawfi",
+    "collapsible_content_TJGW8j",
+    "collapsible_content_JtqjCa"
+  ]
+}

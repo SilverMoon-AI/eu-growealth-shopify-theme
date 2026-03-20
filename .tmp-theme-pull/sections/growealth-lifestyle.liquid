@@ -1,0 +1,53 @@
+<section class="gw-lifestyle">
+  <div class="gw-lifestyle__inner">
+    <div class="gw-lifestyle__content gw-fade-up">
+      <h2 class="gw-lifestyle__quote">
+        {{ section.settings.heading }}
+      </h2>
+      <p class="gw-lifestyle__subtext">
+        {{ section.settings.subtext }}
+      </p>
+      {% if section.settings.cta_text != blank %}
+        <a href="{{ section.settings.cta_link }}" class="gw-lifestyle__cta">
+          {{ section.settings.cta_text }} <span>→</span>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "GW Lifestyle Banner",
+  "settings": [
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Your taste buds<br>will <em>thank you</em>."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "From herb walls to indoor harvests — grow fresher, healthier produce at home with light you can trust."
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA text",
+      "default": "Start Growing"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "GW Lifestyle Banner"
+    }
+  ]
+}
+{% endschema %}

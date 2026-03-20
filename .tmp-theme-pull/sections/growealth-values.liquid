@@ -1,0 +1,97 @@
+<section class="gw-values">
+  <div class="gw-container">
+    <div class="gw-values__grid">
+      {% for block in section.blocks %}
+        <div class="gw-value-card gw-fade-up gw-stagger-{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="gw-value-card__icon">
+            {% case block.settings.icon %}
+              {% when 'lightning' %}
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              {% when 'sun' %}
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              {% when 'shield' %}
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              {% when 'leaf' %}
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66L17 8z"/><path d="M20.59 5.41a2 2 0 00-2.83 0L12 11.17V14h2.83l5.76-5.76a2 2 0 000-2.83z"/></svg>
+              {% when 'check' %}
+                <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            {% endcase %}
+          </div>
+          <h3 class="gw-value-card__title">{{ block.settings.title }}</h3>
+          <p class="gw-value-card__text">{{ block.settings.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "GW Values",
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "value",
+      "name": "Value card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "lightning", "label": "Lightning" },
+            { "value": "sun", "label": "Sun" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "leaf", "label": "Leaf" },
+            { "value": "check", "label": "Checkmark" }
+          ],
+          "default": "lightning"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Energy Efficient"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Up to 2.9 μmol/J efficacy — maximum output with minimal power consumption."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GW Values",
+      "blocks": [
+        {
+          "type": "value",
+          "settings": {
+            "icon": "lightning",
+            "title": "Energy Efficient",
+            "text": "Up to 2.9 μmol/J efficacy — maximum output with minimal power consumption."
+          }
+        },
+        {
+          "type": "value",
+          "settings": {
+            "icon": "sun",
+            "title": "Full Controllability",
+            "text": "Stepless dimming from 0–100%. Precisely dial in the intensity your plants need at every stage."
+          }
+        },
+        {
+          "type": "value",
+          "settings": {
+            "icon": "shield",
+            "title": "Built to Last",
+            "text": "5-year warranty backed by 40+ years of horticultural engineering expertise."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

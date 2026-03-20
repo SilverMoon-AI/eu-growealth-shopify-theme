@@ -1,0 +1,120 @@
+{{ 'growealth-homepage.css' | asset_url | stylesheet_tag }}
+
+<section class="gw-hero">
+  <div class="gw-hero__inner">
+    <div class="gw-hero__content">
+      <div class="gw-hero__badge">{{ section.settings.badge_text }}</div>
+      <h1 class="gw-hero__title">
+        {{ section.settings.heading_line1 }} <em>{{ section.settings.heading_line2 }}</em> {{ section.settings.heading_line3 }}
+      </h1>
+      <p class="gw-hero__subtitle">
+        {{ section.settings.subtitle }}
+      </p>
+      <div class="gw-hero__actions">
+        {% if section.settings.primary_btn_text != blank %}
+          <a href="{{ section.settings.primary_btn_link }}" class="gw-btn gw-btn--primary">
+            {{ section.settings.primary_btn_text }}
+            <span class="gw-btn__arrow">→</span>
+          </a>
+        {% endif %}
+        {% if section.settings.secondary_btn_text != blank %}
+          <a href="{{ section.settings.secondary_btn_link }}" class="gw-btn gw-btn--secondary">
+            {{ section.settings.secondary_btn_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="gw-hero__media">
+      {% if section.settings.video_url != blank %}
+        <video class="gw-hero__video" autoplay muted loop playsinline preload="auto">
+          <source src="{{ section.settings.video_url }}" type="video/mp4">
+        </video>
+      {% elsif section.settings.image != blank %}
+        <img
+          class="gw-hero__video"
+          src="{{ section.settings.image | image_url: width: 1200 }}"
+          alt="{{ section.settings.image.alt | default: section.settings.heading_line1 }}"
+          loading="eager"
+          width="{{ section.settings.image.width }}"
+          height="{{ section.settings.image.height }}"
+        >
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "GW Hero",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "Professional Grow Lighting"
+    },
+    {
+      "type": "text",
+      "id": "heading_line1",
+      "label": "Heading line 1",
+      "default": "Lighting Designed"
+    },
+    {
+      "type": "text",
+      "id": "heading_line2",
+      "label": "Heading line 2 (accent)",
+      "default": "for Real Growing"
+    },
+    {
+      "type": "text",
+      "id": "heading_line3",
+      "label": "Heading line 3",
+      "default": "Scenarios"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Precision-engineered LED grow lights for tents, rooms, and small-scale cultivation. Built to perform, designed to last."
+    },
+    {
+      "type": "text",
+      "id": "primary_btn_text",
+      "label": "Primary button text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "primary_btn_link",
+      "label": "Primary button link"
+    },
+    {
+      "type": "text",
+      "id": "secondary_btn_text",
+      "label": "Secondary button text",
+      "default": "Explore Solutions"
+    },
+    {
+      "type": "url",
+      "id": "secondary_btn_link",
+      "label": "Secondary button link"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Video URL (mp4)",
+      "info": "Paste a direct URL to an mp4 video file (e.g. from Shopify CDN)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Fallback image (if no video)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "GW Hero"
+    }
+  ]
+}
+{% endschema %}

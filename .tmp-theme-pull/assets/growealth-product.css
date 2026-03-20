@@ -1,0 +1,336 @@
+/* Product page: unified content width (1200px + 24px), same as homepage / collection */
+
+:root {
+  --gw-max-w: 1200px;
+}
+
+.template-product main .page-width,
+.template-product main .page-width-desktop {
+  max-width: var(--gw-max-w);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* 左右栏等宽：图片区与产品信息区各 50% */
+@media screen and (min-width: 990px) {
+  .template-product .product--large:not(.product--no-media) .product__media-wrapper {
+    max-width: 50%;
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+  .template-product .product--large:not(.product--no-media) .product__info-wrapper {
+    max-width: 50%;
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+  .template-product .product--large:not(.product--no-media).product--right .product__info-wrapper {
+    padding: 0 0 0 3rem;
+  }
+  .template-product .product--large:not(.product--no-media).product--left .product__info-wrapper {
+    padding: 0 0 0 3rem;
+  }
+}
+
+/* 产品图缩略图左右箭头：缩小按钮，接近 Vivosun 的圆钮 */
+.template-product .product__media-wrapper .slider-button {
+  width: 32px;
+  height: 32px;
+}
+.template-product .product__media-wrapper .slider-button .icon {
+  height: 0.5rem;
+}
+
+/* 学习 Vivosun 比例：主图为主，缩略图为一排紧凑条带 */
+@media screen and (min-width: 750px) {
+  .template-product .product--thumbnail_slider .thumbnail-slider {
+    margin-top: 1rem;
+  }
+  .template-product .thumbnail-list.slider--tablet-up {
+    max-height: 88px;
+    align-items: center;
+  }
+  .template-product .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
+    width: 80px;
+    min-width: 80px;
+    flex-shrink: 0;
+  }
+  .template-product .thumbnail-list__item::before {
+    padding-bottom: 100%;
+  }
+}
+
+/* Product title: Vivosun-style, prominent but not oversized */
+.template-product .product__title h1 {
+  font-size: 1.75rem;
+  line-height: 1.35;
+}
+
+@media screen and (min-width: 750px) {
+  .template-product .product__title h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* 售价在前、划线价在后：参考 Vivosun，售价醒目橙色，划线价灰色删除线 */
+.template-product .price--on-sale .price-item--sale.price-item--first {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #e85d04;
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 750px) {
+  .template-product .price--on-sale .price-item--sale.price-item--first {
+    font-size: 1.8rem;
+  }
+}
+.template-product .price--on-sale .price-item--regular {
+  text-decoration: line-through;
+  color: #555;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+.template-product .price__badge-percent {
+  font-size: 1rem;
+  padding: 0.35em 0.6em;
+  line-height: 1.3;
+}
+
+/* 右侧产品信息区：加大垂直间距，参考 Vivosun 疏朗布局 */
+.template-product .product__info-container > * + * {
+  margin-top: 2.25rem;
+}
+
+.template-product .product__title {
+  margin-bottom: 2rem;
+}
+
+.template-product .product__info-container .price {
+  margin-bottom: 0.25rem;
+}
+
+.template-product .product-form .product-form__input,
+.template-product .product-form .product-form__quantity {
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+}
+
+.template-product .product__highlights {
+  margin-top: 1.25rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: rgba(var(--color-foreground), 0.85);
+}
+/* Model、Quantity、Key Features：统一字号并加粗 */
+.template-product .product-form__input .form__label,
+.template-product .quantity__label .form__label,
+.template-product .product__highlights-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.template-product .product__highlights-title {
+  margin: 0 0 0.5rem 0;
+}
+.template-product .product__highlights-content {
+  margin: 0;
+}
+.template-product .product__highlights ul {
+  margin: 0.5em 0 0 0;
+  padding-left: 1.5em;
+}
+.template-product .product__highlights li {
+  margin-bottom: 0.25em;
+}
+
+/* 产品政策：Free shipping / Warranty / Returns，与主色一致 */
+.template-product .product__policies {
+  margin-top: 1.75rem;
+  padding: 1.25rem 1.25rem 1rem;
+  background: rgba(var(--color-foreground), 0.04);
+  border-radius: 8px;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.template-product .product__policy-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.template-product .product__policy-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.15rem;
+  color: rgb(var(--color-foreground));
+}
+.template-product .product__policy-icon .svg-wrapper {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.template-product .product__policy-icon .icon {
+  width: 100%;
+  height: 100%;
+}
+.template-product .product__policy-icon .icon {
+  width: 100%;
+  height: 100%;
+}
+.template-product .product__policy-text {
+  flex: 1;
+}
+.template-product .product__policy-title {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgb(var(--color-foreground));
+  margin-bottom: 0.2rem;
+}
+.template-product .product__policy-desc {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: rgba(var(--color-foreground), 0.75);
+  line-height: 1.4;
+}
+.template-product .product__policy-link {
+  color: #e85d04;
+  text-decoration: none;
+}
+.template-product .product__policy-link:hover {
+  text-decoration: underline;
+}
+
+/* 产品详情图区块（来自后台 Description）：左对齐 */
+.product-detail-section {
+  text-align: left;
+}
+.product-detail-section .product__description--detail {
+  text-align: left;
+}
+.product-detail-section .product__description--detail img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Description 里的表格：修复高度和宽度问题 */
+.product-detail-section .product__description--detail table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.product-detail-section .product__description--detail table td,
+.product-detail-section .product__description--detail table th {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
+}
+.product-detail-section .product__description--detail table tr:first-child td,
+.product-detail-section .product__description--detail table tr:first-child th {
+  background: rgba(var(--color-foreground), 0.04);
+  font-weight: 600;
+}
+
+.template-product .product-form__buttons {
+  margin-top: 2rem;
+}
+
+.template-product .product-form__buttons .product-form__submit {
+  margin-bottom: 0.75rem;
+}
+
+/* 产品页底部信任图标 - 深绿底白字样式，整体加高更醒目 */
+.product-trust-badges {
+  margin-top: 3rem;
+  background: #1a4d2e;
+  padding: 5rem 1.5rem 4.75rem;
+}
+.product-trust-badges__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.product-trust-badges__heading {
+  margin: 0 0 1.25rem;
+  font-size: clamp(2.1rem, 5vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.25;
+}
+.product-trust-badges__desc {
+  margin: 0 0 3.25rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.55;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 附图5 排版：每项为图标在左、文字在右 */
+.trust-badges-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem 2rem;
+  align-items: center;
+  justify-items: center;
+}
+.trust-badge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: left;
+}
+.trust-badge-icon {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 白图+黑底的 PNG 在绿底上：用 lighten 让黑色透出背景绿，只保留白色图标 */
+.trust-badge-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: lighten;
+}
+.trust-badge-text {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.35;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .product-trust-badges {
+    padding: 3.5rem 1rem 2.75rem;
+  }
+  .product-trust-badges__heading {
+    margin-bottom: 1rem;
+    font-size: clamp(1.7rem, 5vw, 2.1rem);
+  }
+  .product-trust-badges__desc {
+    margin-bottom: 2.5rem;
+    font-size: 1.05rem;
+  }
+  .trust-badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 1rem;
+  }
+  .trust-badge-icon {
+    width: 4.25rem;
+    height: 4.25rem;
+  }
+  .trust-badge-text {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,279 @@
+<section class="gw-features" id="features">
+  <div class="gw-container">
+    <div class="gw-features__header gw-fade-up">
+      <div class="gw-section-label">{{ section.settings.label }}</div>
+      <h2 class="gw-section-title">{{ section.settings.heading }}</h2>
+    </div>
+
+    {% for block in section.blocks %}
+      <div class="gw-feature-row {% if block.settings.reverse %}gw-feature-row--reverse{% endif %} gw-fade-up" {{ block.shopify_attributes }}>
+        <div class="gw-feature-row__media {% if block.settings.media_ratio == '1/1' %}gw-feature-row__media--square{% endif %}">
+          {% if block.settings.youtube_id != blank %}
+            <div class="gw-feature-row__video-wrap">
+              <iframe
+                src="https://www.youtube.com/embed/{{ block.settings.youtube_id }}?rel=0&modestbranding=1"
+                title="{{ block.settings.title | strip_html }}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          {% elsif block.settings.image != blank %}
+            <img
+              src="{{ block.settings.image | image_url: width: 800 }}"
+              alt="{{ block.settings.image.alt | default: block.settings.title }}"
+              loading="lazy"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+            >
+          {% elsif block.settings.image_asset != blank %}
+            <img
+              src="{{ block.settings.image_asset | asset_url }}"
+              alt="{{ block.settings.title | strip_html | default: 'Feature image' }}"
+              loading="lazy"
+            >
+          {% else %}
+            <span class="gw-feature-row__placeholder">{{ block.settings.placeholder_text }}</span>
+          {% endif %}
+        </div>
+        <div class="gw-feature-row__content">
+          <div class="gw-feature-row__eyebrow">{{ block.settings.eyebrow }}</div>
+          <h3 class="gw-feature-row__title">{{ block.settings.title }}</h3>
+          <p class="gw-feature-row__text">{{ block.settings.text }}</p>
+          {% if block.settings.spec1_value != blank %}
+            <div class="gw-feature-row__specs">
+              <div class="gw-spec">
+                <span class="gw-spec__value">{{ block.settings.spec1_value }}</span>
+                <span class="gw-spec__label">{{ block.settings.spec1_label }}</span>
+              </div>
+              {% if block.settings.spec2_value != blank %}
+                <div class="gw-spec">
+                  <span class="gw-spec__value">{{ block.settings.spec2_value }}</span>
+                  <span class="gw-spec__label">{{ block.settings.spec2_label }}</span>
+                </div>
+              {% endif %}
+              {% if block.settings.spec3_value != blank %}
+                <div class="gw-spec">
+                  <span class="gw-spec__value">{{ block.settings.spec3_value }}</span>
+                  <span class="gw-spec__label">{{ block.settings.spec3_label }}</span>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+          {% if block.settings.cta_text != blank %}
+            <div class="gw-feature-row__cta">
+              {%- liquid
+                assign cta_url = block.settings.cta_link | default: '#'
+                if block.settings.cta_product != blank
+                  assign cta_url = block.settings.cta_product.url
+                endif
+              -%}
+              <a href="{{ cta_url }}" class="gw-btn gw-btn--primary">
+                {{ block.settings.cta_text }}
+                <span class="gw-btn__arrow">→</span>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "GW Features",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section label",
+      "default": "Technology"
+    },
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "Technology That Powers<br><em>Creativity</em>"
+    }
+  ],
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "youtube_id",
+          "label": "YouTube video ID",
+          "info": "e.g. 'dQw4w9WgXcQ' from youtube.com/watch?v=dQw4w9WgXcQ"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image (used if no YouTube ID)"
+        },
+        {
+          "type": "text",
+          "id": "image_asset",
+          "label": "Theme asset image (filename in assets/)"
+        },
+        {
+          "type": "text",
+          "id": "placeholder_text",
+          "label": "Placeholder text (when no media)",
+          "default": "[ Feature image ]"
+        },
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "Eyebrow",
+          "default": "Precision Control"
+        },
+        {
+          "type": "html",
+          "id": "title",
+          "label": "Title",
+          "default": "Stepless Dimming<br>for Every Growth Stage"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description",
+          "default": "Adjust intensity from seedling to harvest with a 0–100% stepless dimmer."
+        },
+        {
+          "type": "text",
+          "id": "spec1_value",
+          "label": "Spec 1 value",
+          "default": "0–100%"
+        },
+        {
+          "type": "text",
+          "id": "spec1_label",
+          "label": "Spec 1 label",
+          "default": "Dimming Range"
+        },
+        {
+          "type": "text",
+          "id": "spec2_value",
+          "label": "Spec 2 value",
+          "default": "±1%"
+        },
+        {
+          "type": "text",
+          "id": "spec2_label",
+          "label": "Spec 2 label",
+          "default": "Precision"
+        },
+        {
+          "type": "text",
+          "id": "spec3_value",
+          "label": "Spec 3 value"
+        },
+        {
+          "type": "text",
+          "id": "spec3_label",
+          "label": "Spec 3 label"
+        },
+        {
+          "type": "text",
+          "id": "cta_text",
+          "label": "Button text"
+        },
+        {
+          "type": "product",
+          "id": "cta_product",
+          "label": "Link to product (overrides link below)"
+        },
+        {
+          "type": "url",
+          "id": "cta_link",
+          "label": "Button link (used if no product selected)"
+        },
+        {
+          "type": "checkbox",
+          "id": "reverse",
+          "label": "Reverse layout (image on right)",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "media_ratio",
+          "label": "Media aspect ratio",
+          "default": "4/3",
+          "options": [
+            { "value": "4/3", "label": "4:3" },
+            { "value": "1/1", "label": "1:1 (square)" }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GW Features",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "eyebrow": "Precision Control",
+            "title": "Stepless Dimming<br>for Every Growth Stage",
+            "text": "Adjust intensity from seedling to harvest with a 0–100% stepless dimmer. Fine-tune your light output without compromising spectrum quality — giving your plants exactly what they need, when they need it.",
+            "spec1_value": "0–100%",
+            "spec1_label": "Dimming Range",
+            "spec2_value": "±1%",
+            "spec2_label": "Precision",
+            "reverse": false,
+            "placeholder_text": "[ Dimmer close-up / dial interface photo ]"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "eyebrow": "Optimized Spectrum",
+            "title": "Full Spectrum Coverage<br>That Plants Crave",
+            "text": "Samsung LM301H diodes deliver a balanced full spectrum tailored for photosynthesis. Enhanced red and far-red wavelengths maximize flowering potential and overall yield.",
+            "spec1_value": "660nm",
+            "spec1_label": "Deep Red",
+            "spec2_value": "3500K",
+            "spec2_label": "Warm White",
+            "reverse": true,
+            "placeholder_text": "[ Full spectrum diagram / LED board close-up ]"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "eyebrow": "Uniform Distribution",
+            "title": "Edge-to-Edge<br>Even Light Coverage",
+            "text": "Precisely angled reflectors and optimized diode layout ensure uniform PPFD across your entire canopy. No hot spots, no dead zones — just consistent, productive light.",
+            "spec1_value": "95%+",
+            "spec1_label": "Uniformity",
+            "spec2_value": "4×4 ft",
+            "spec2_label": "Max Coverage",
+            "reverse": false,
+            "placeholder_text": "[ PPFD map / coverage footprint visual ]"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "eyebrow": "Thermal Engineering",
+            "title": "Whisper-Quiet,<br>Cool-Running Design",
+            "text": "Fanless passive cooling keeps temperatures low and eliminates noise. Aluminum heat-sink architecture maximizes airflow while maintaining a clean, silent grow environment.",
+            "spec1_value": "0 dB",
+            "spec1_label": "Noise Level",
+            "spec2_value": "50,000h",
+            "spec2_label": "Lifespan",
+            "reverse": true,
+            "placeholder_text": "[ Passive cooling / heat sink detail shot ]"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

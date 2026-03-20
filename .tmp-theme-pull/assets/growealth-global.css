@@ -1,0 +1,27 @@
+/* Growealth 全局：Custom Liquid 保证条等区块统一主题色 #4EB99F */
+
+/* ufcontainer 保证条：背景改为浅品牌色，图标/标题改为主题绿 */
+.bg-ufcontainer {
+  background: #e8f6f2 !important;
+}
+
+.ufcontainer.page-width svg,
+.ufcontainer svg {
+  color: #4EB99F !important;
+  fill: #4EB99F !important;
+}
+
+.ufcontainer [class*="title"],
+.ufcontainer [class*="heading"],
+.ufcontainer strong,
+.ufcontainer .icon {
+  color: #4EB99F !important;
+}
+
+.ufcontainer a {
+  color: #4EB99F !important;
+}
+
+.ufcontainer a:hover {
+  color: #3a9a83 !important;
+}

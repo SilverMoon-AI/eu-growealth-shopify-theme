@@ -1,0 +1,169 @@
+<section class="gw-trust">
+  <div class="gw-container">
+    <div class="gw-trust__grid">
+      <div class="gw-trust__media-wrap gw-fade-up">
+        {% if section.settings.youtube_id != blank %}
+          <div class="gw-trust__video">
+            <iframe
+              src="https://www.youtube.com/embed/{{ section.settings.youtube_id }}?rel=0&modestbranding=1"
+              title="Growealth brand story"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        {% endif %}
+        {% if section.settings.image_asset != blank or section.settings.image != blank %}
+          <div class="gw-trust__media">
+            {% if section.settings.image_asset != blank %}
+              <img
+                src="{{ section.settings.image_asset | asset_url }}"
+                alt="{{ section.settings.heading | strip_html | default: 'Our Story' }}"
+                loading="lazy"
+                width="800"
+                height="600"
+              >
+            {% else %}
+              <img
+                src="{{ section.settings.image | image_url: width: 800 }}"
+                alt="{{ section.settings.image.alt | default: 'Our Story' }}"
+                loading="lazy"
+                width="{{ section.settings.image.width }}"
+                height="{{ section.settings.image.height }}"
+              >
+            {% endif %}
+          </div>
+        {% elsif section.settings.youtube_id == blank %}
+          <div class="gw-trust__media">
+            <span>[ Brand story photo — lab / grow room / team ]</span>
+          </div>
+        {% endif %}
+      </div>
+      <div class="gw-trust__content gw-fade-up">
+        <div class="gw-section-label">{{ section.settings.label }}</div>
+        <h2 class="gw-trust__title">{{ section.settings.heading }}</h2>
+        <p class="gw-trust__text">{{ section.settings.text }}</p>
+        <div class="gw-trust__stats">
+          {% for block in section.blocks %}
+            <div class="gw-stat-card" {{ block.shopify_attributes }}>
+              <div class="gw-stat-card__icon">
+                {% case block.settings.icon %}
+                  {% when 'shield' %}
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  {% when 'users' %}
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                  {% when 'clock' %}
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  {% when 'check' %}
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                {% endcase %}
+              </div>
+              <div class="gw-stat-card__value">{{ block.settings.value }}</div>
+              <div class="gw-stat-card__label">{{ block.settings.label }}</div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "GW Trust",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section label",
+      "default": "Our Story"
+    },
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Growealth Story"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "Growealth exists to bring professional-grade LED grow lights to home and small-scale growers. We work with partners who have deep experience in horticultural lighting, so every product we offer meets the same standards we'd use ourselves. No hype—just clear specs, real warranty, and support when you need it."
+    },
+    {
+      "type": "text",
+      "id": "youtube_id",
+      "label": "YouTube video ID",
+      "info": "Optional. e.g. MMqBwfkOGW8 from youtube.com/watch?v=MMqBwfkOGW8"
+    },
+    {
+      "type": "text",
+      "id": "image_asset",
+      "label": "Theme asset image",
+      "info": "Filename in assets/ (e.g. 4a355721-46cc-4c52-b64f-da9a96b3bafd.png). Shown below video or alone."
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image (fallback)",
+      "info": "Used when image_asset is blank"
+    }
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "shield", "label": "Shield" },
+            { "value": "users", "label": "Users" },
+            { "value": "clock", "label": "Clock" },
+            { "value": "check", "label": "Checkmark" }
+          ],
+          "default": "shield"
+        },
+        {
+          "type": "text",
+          "id": "value",
+          "label": "Value",
+          "default": "5 Years"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Product Warranty"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GW Trust",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": { "icon": "shield", "value": "5 Years", "label": "Product Warranty" }
+        },
+        {
+          "type": "stat",
+          "settings": { "icon": "users", "value": "24/7", "label": "Expert Support" }
+        },
+        {
+          "type": "stat",
+          "settings": { "icon": "clock", "value": "40+ Years", "label": "Horticultural Experience" }
+        },
+        {
+          "type": "stat",
+          "settings": { "icon": "check", "value": "6+", "label": "Global Safety Certifications" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
