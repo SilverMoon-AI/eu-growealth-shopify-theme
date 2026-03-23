@@ -65,7 +65,7 @@
         "feature_rg150": {
           "type": "feature",
           "settings": {
-            "image_asset": "rg150-home.webp",
+            "image_asset": "home-rg150w.jpg",
             "eyebrow": "LED RG150W",
             "title": "RG150W: The Compact Power Expert<br>Versatile for 2×2 ft Tents",
             "text": "Perfect for 2×2 ft tents and multi-tier shelves. Full spectrum, UV & far-red in one light; 150W at 2.5 μmol/J efficiency. Fanless, IP65, 0–10V dimming with soft start. Ideal for clones, seedlings, and supplemental lighting.",
@@ -84,7 +84,7 @@
         "feature_rg300": {
           "type": "feature",
           "settings": {
-            "image_asset": "nanolux-rg300-grow-light-03-grow-room.webp",
+            "image_asset": "home-rg300w.jpg",
             "eyebrow": "LED RG300W",
             "title": "RG300W: The Core of Your Tent<br>Upgrade for 3×3 ft",
             "text": "Industry-standard for 3×3 ft tents with 800 μmol/s PPF and 2.5 μmol/J efficacy. Full spectrum, UV & far-red in one channel; 100% silent passive cooling, IP65. Built for high-yield flowering.",
