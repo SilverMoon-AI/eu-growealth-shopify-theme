@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -180,7 +189,9 @@
       "product_variants": "Variantes de producto",
       "taxes_included": "Impuestos incluidos.",
       "duties_included": "Aranceles incluidos.",
-      "duties_and_taxes_included": "Aranceles e impuestos incluidos."
+      "duties_and_taxes_included": "Aranceles e impuestos incluidos.",
+      "buy_now": "Comprar ahora",
+      "sticky_bar_retail": "Precio de venta al público:"
     },
     "modal": {
       "label": "Galería multimedia"
@@ -318,7 +329,8 @@
       "taxes_at_checkout_shipping_at_checkout_without_policy": "Impuestos, descuentos y envío calculados en la pantalla de pago."
     },
     "footer": {
-      "payment": "Formas de pago"
+      "payment": "Formas de pago",
+      "payment_policy_link": "Política de pago"
     },
     "featured_blog": {
       "view_all": "Ver todo",
@@ -385,6 +397,9 @@
       "min_error": "Este artículo tiene un mínimo de {{ min }}.",
       "max_error": "Este artículo tiene un máximo de {{ max }}.",
       "step_error": "Solo puedes agregar este artículo en incrementos de {{ step }}"
+    },
+    "main_page": {
+      "content_placeholder": "Esta página no tiene contenido aún. Para las páginas de políticas, agrégalo en el panel de control de Shopify: Configuración → Legal."
     }
   },
   "localization": {
