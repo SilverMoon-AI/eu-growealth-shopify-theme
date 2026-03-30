@@ -599,32 +599,56 @@
 
 <div class="product-trust-badges">
   <div class="product-trust-badges__inner page-width">
-    <h2 class="product-trust-badges__heading">No Risk 100% Money Back Guarantee</h2>
-    <p class="product-trust-badges__desc">For each Growealth Grow-Light we offer a 3-Year Warrantee, 30 Days Free Return Policy and 30 Days Full Refund Guarantee. In the USA we also ship to you for FREE.</p>
+    <h2 class="product-trust-badges__heading">{{ 'products.product.trust_badges.heading' | t }}</h2>
+    <p class="product-trust-badges__desc">{{ 'products.product.trust_badges.description' | t }}</p>
     <div class="trust-badges-grid">
       <div class="trust-badge">
         <div class="trust-badge-icon">
-          <img src="{{ 'trust-icon-warehouse.png' | asset_url }}" alt="" width="56" height="56" loading="lazy">
+          <img
+            src="{{ 'trust-icon-warehouse.png' | asset_url }}"
+            alt="{{ 'products.product.trust_badges.badge_warehouse' | t }}"
+            width="56"
+            height="56"
+            loading="lazy"
+          >
         </div>
-        <div class="trust-badge-text">Warehouse &amp; Fast Delivery</div>
+        <div class="trust-badge-text">{{ 'products.product.trust_badges.badge_warehouse' | t }}</div>
       </div>
       <div class="trust-badge">
         <div class="trust-badge-icon">
-          <img src="{{ 'trust-icon-warranty.png' | asset_url }}" alt="" width="56" height="56" loading="lazy">
+          <img
+            src="{{ 'trust-icon-warranty.png' | asset_url }}"
+            alt="{{ 'products.product.trust_badges.badge_warranty' | t }}"
+            width="56"
+            height="56"
+            loading="lazy"
+          >
         </div>
-        <div class="trust-badge-text">3 Years Warranty</div>
+        <div class="trust-badge-text">{{ 'products.product.trust_badges.badge_warranty' | t }}</div>
       </div>
       <div class="trust-badge">
         <div class="trust-badge-icon">
-          <img src="{{ 'trust-icon-30day.png' | asset_url }}" alt="" width="56" height="56" loading="lazy">
+          <img
+            src="{{ 'trust-icon-30day.png' | asset_url }}"
+            alt="{{ 'products.product.trust_badges.badge_return' | t }}"
+            width="56"
+            height="56"
+            loading="lazy"
+          >
         </div>
-        <div class="trust-badge-text">30 Day Return &amp; Refund</div>
+        <div class="trust-badge-text">{{ 'products.product.trust_badges.badge_return' | t }}</div>
       </div>
       <div class="trust-badge">
         <div class="trust-badge-icon">
-          <img src="{{ 'trust-icon-payment.png' | asset_url }}" alt="" width="56" height="56" loading="lazy">
+          <img
+            src="{{ 'trust-icon-payment.png' | asset_url }}"
+            alt="{{ 'products.product.trust_badges.badge_payment' | t }}"
+            width="56"
+            height="56"
+            loading="lazy"
+          >
         </div>
-        <div class="trust-badge-text">Safe Payment</div>
+        <div class="trust-badge-text">{{ 'products.product.trust_badges.badge_payment' | t }}</div>
       </div>
     </div>
   </div>

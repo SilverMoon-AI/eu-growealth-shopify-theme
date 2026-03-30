@@ -200,6 +200,14 @@
         "warranty_desc": "Up to 5-year after-sale service",
         "returns_title": "Returns",
         "returns_desc": "Free return within 30 days of delivery"
+      },
+      "trust_badges": {
+        "heading": "No risk — 100% money-back guarantee",
+        "description": "For every Growealth grow light we offer a 3-year warranty, a 30-day free return policy, and a 30-day full refund guarantee. In the USA we also ship to you for free.",
+        "badge_warehouse": "Warehouse & fast delivery",
+        "badge_warranty": "3-year warranty",
+        "badge_return": "30-day return & refund",
+        "badge_payment": "Safe payment"
       }
     },
     "modal": {

@@ -200,6 +200,14 @@
         "warranty_desc": "Bis zu 5 Jahre Kundenservice nach dem Kauf",
         "returns_title": "Rückgabe",
         "returns_desc": "Kostenlose Rückgabe innerhalb von 30 Tagen nach Lieferung"
+      },
+      "trust_badges": {
+        "heading": "Ohne Risiko – 100 % Geld-zurück-Garantie",
+        "description": "Für jede Growealth Pflanzenlampe bieten wir eine 3-Jahres-Garantie, 30 Tage kostenlose Rückgabe und 30 Tage volle Rückerstattung. Qualifizierte Bestellungen versenden wir versandkostenfrei.",
+        "badge_warehouse": "Lager & schneller Versand",
+        "badge_warranty": "3 Jahre Garantie",
+        "badge_return": "30 Tage Rückgabe & Erstattung",
+        "badge_payment": "Sichere Zahlung"
       }
     },
     "modal": {
