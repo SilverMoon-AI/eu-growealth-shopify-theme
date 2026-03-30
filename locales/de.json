@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "password_page": {
@@ -179,7 +188,10 @@
       "product_variants": "Produktvarianten",
       "taxes_included": "Inkl. Steuern.",
       "duties_included": "Inkl. Zollgebühren.",
-      "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern."
+      "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern.",
+      "buy_now": "Jetzt kaufen",
+      "sticky_bar_total": "Gesamtsumme:",
+      "sticky_bar_retail": "Verkaufspreis:"
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -308,7 +320,8 @@
       "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versand werden beim Checkout berechnet."
     },
     "footer": {
-      "payment": "Zahlungsmethoden"
+      "payment": "Zahlungsmethoden",
+      "payment_policy_link": "Zahlungsrichtlinie"
     },
     "featured_blog": {
       "view_all": "Alle anzeigen",
@@ -373,6 +386,9 @@
       "min_error": "Dieser Artikel hat ein Minimum von {{ min }}",
       "max_error": "Dieser Artikel hat ein Maximum von {{ max }}",
       "step_error": "Du kannst diesen Artikel nur in Abstufungen von {{ step }} hinzufügen."
+    },
+    "main_page": {
+      "content_placeholder": "Diese Seite hat noch keinen Inhalt. Füge ihn für Richtlinienseiten im Shopify Adminbereich hinzu: Einstellungen → Rechtliches."
     }
   },
   "localization": {
