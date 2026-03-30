@@ -1,1 +1,102 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"custom_liquid_WnmyCR":{"type":"custom-liquid","settings":{"custom_liquid":"<style>\n.bg-ufcontainer{\nbackground-color: rgba(20, 168, 59, 0.2);\n}\n.ufcontainer {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-auto-rows: auto;\n    gap: 20px;\n  }\n  .uficons {\n    display: flex;\n    align-items: center;\npadding:25px 0px 25px 0px;\n  }\n  .uficon-text {\n    font-size: 1.2rem;\n    color: #333;\n    margin-left: 5%;\n  }\n  .uficon-title {\n    font-weight: bold;\n    font-size: 1.6rem;\n  }\n  .uficon-subtitle {\n    color: #262626;\n  }\n.uficons img{\n width:15%;\n}\n@media only screen and (max-width: 789px) {\n.ufcontainer {\n grid-template-columns: repeat(2, 1fr); \n }\n.uficons img {\n  width: 25%;\n }\n.uficon-title {\n  font-size: 1.4rem;\n }\n}\n<\/style>\n<\/head>\n<body>\n<div class=\"bg-ufcontainer\">\n<div class=\"ufcontainer page-width\">\n  <div class=\"uficons \">\n   <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0868\/3025\/2317\/files\/tb1.svg?v=1713249184\"\/>\n    <div class=\"uficon-text\">\n      <div class=\"uficon-title\">Free Shipping<\/div>\n      <div class=\"uficon-subtitle\">Free Express Delivery<\/div>\n    <\/div>\n  <\/div>\n  <div class=\"uficons \">\n     <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0868\/3025\/2317\/files\/tb2.svg?v=1713249185\"\/>\n    <div class=\"uficon-text\">\n      <div class=\"uficon-title\">24\/7 Support<\/div>\n      <div class=\"uficon-subtitle\">Customer Service<\/div>\n    <\/div>\n  <\/div>\n  <div class=\"uficons \">\n     <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0868\/3025\/2317\/files\/tb3.svg?v=1713249184\"\/>\n    <div class=\"uficon-text\">\n      <div class=\"uficon-title\">Warranty<\/div>\n      <div class=\"uficon-subtitle\">Minimum Warranty of 2-5 Years.<\/div>\n    <\/div>\n  <\/div>\n  <div class=\"uficons \">\n     <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0868\/3025\/2317\/files\/tb4.svg?v=1713249184\"\/>\n    <div class=\"uficon-text\">\n      <div class=\"uficon-title\">Money-Back Guarantee<\/div>\n      <div class=\"uficon-subtitle\">30-Days Money Back Guarantee<\/div>\n    <\/div>\n  <\/div>\n <\/div>\n <\/div>","color_scheme":"","padding_top":0,"padding_bottom":0}},"custom_liquid_A8CwQC":{"type":"custom-liquid","disabled":true,"custom_css":[],"settings":{"custom_liquid":"<style>\n.wimg{\n  width: 100%; \n  margin-bottom: -10px;\n}\n<\/style>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0868\/3025\/2317\/files\/fn.jpg?v=1713750455\" class=\"wimg\"\/>","color_scheme":"","padding_top":0,"padding_bottom":0}},"footer":{"type":"footer","blocks":{"text_e63HNg":{"type":"text","disabled":true,"settings":{"heading":"Heading","subtext":"<p>Share contact information, store details, and brand content with your customers.<\/p>"}},"link_list_kMxUkn":{"type":"link_list","settings":{"heading":"Policies","menu":"footer"}},"link_list_apiakg":{"type":"link_list","settings":{"heading":"Products","menu":"products"}},"link_list_pdFxFM":{"type":"link_list","settings":{"heading":"Our Company","menu":"our-company"}},"link_list_4LGk8z":{"type":"link_list","settings":{"heading":"Support","menu":"support"}}},"block_order":["text_e63HNg","link_list_kMxUkn","link_list_apiakg","link_list_pdFxFM","link_list_4LGk8z"],"settings":{"color_scheme":"scheme-8ef968b6-aa71-4326-a0b3-1da22023d8ac","newsletter_enable":true,"newsletter_heading":"Exclusive Subscribe","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":true,"show_policy":false,"margin_top":0,"padding_top":36,"padding_bottom":36}}},"order":["custom_liquid_WnmyCR","custom_liquid_A8CwQC","footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "custom_liquid_WnmyCR": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.bg-ufcontainer{\nbackground-color: rgba(20, 168, 59, 0.2);\n}\n.ufcontainer {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-auto-rows: auto;\n    gap: 20px;\n  }\n  .uficons {\n    display: flex;\n    align-items: center;\npadding:25px 0px 25px 0px;\n  }\n  .uficon-text {\n    font-size: 1.2rem;\n    color: #333;\n    margin-left: 5%;\n  }\n  .uficon-title {\n    font-weight: bold;\n    font-size: 1.6rem;\n  }\n  .uficon-subtitle {\n    color: #262626;\n  }\n.uficons img{\n width:15%;\n}\n@media only screen and (max-width: 789px) {\n.ufcontainer {\n grid-template-columns: repeat(2, 1fr); \n }\n.uficons img {\n  width: 25%;\n }\n.uficon-title {\n  font-size: 1.4rem;\n }\n}\n</style>\n</head>\n<body>\n<div class=\"bg-ufcontainer\">\n<div class=\"ufcontainer page-width\">\n  <div class=\"uficons \">\n   <img src=\"https://cdn.shopify.com/s/files/1/0868/3025/2317/files/tb1.svg?v=1713249184\"/>\n    <div class=\"uficon-text\">\n      <div class=\"uficon-title\">Free Shipping</div>\n      <div class=\"uficon-subtitle\">Free Express Delivery</div>\n    </div>\n  </div>\n  <div class=\"uficons \">\n     <img src=\"https://cdn.shopify.com/s/files/1/0868/3025/2317/files/tb2.svg?v=1713249185\"/>\n    <div class=\"uficon-text\">\n      <div class=\"uficon-title\">24/7 Support</div>\n      <div class=\"uficon-subtitle\">Customer Service</div>\n    </div>\n  </div>\n  <div class=\"uficons \">\n     <img src=\"https://cdn.shopify.com/s/files/1/0868/3025/2317/files/tb3.svg?v=1713249184\"/>\n    <div class=\"uficon-text\">\n      <div class=\"uficon-title\">Warranty</div>\n      <div class=\"uficon-subtitle\">Minimum Warranty of 2-5 Years.</div>\n    </div>\n  </div>\n  <div class=\"uficons \">\n     <img src=\"https://cdn.shopify.com/s/files/1/0868/3025/2317/files/tb4.svg?v=1713249184\"/>\n    <div class=\"uficon-text\">\n      <div class=\"uficon-title\">Money-Back Guarantee</div>\n      <div class=\"uficon-subtitle\">30-Days Money Back Guarantee</div>\n    </div>\n  </div>\n </div>\n </div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_A8CwQC": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "custom_liquid": "<style>\n.wimg{\n  width: 100%; \n  margin-bottom: -10px;\n}\n</style>\n<img src=\"https://cdn.shopify.com/s/files/1/0868/3025/2317/files/fn.jpg?v=1713750455\" class=\"wimg\"/>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_e63HNg": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+          }
+        },
+        "link_list_kMxUkn": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Policies",
+            "menu": "footer"
+          }
+        },
+        "link_list_apiakg": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Products",
+            "menu": "products"
+          }
+        },
+        "link_list_pdFxFM": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Our Company",
+            "menu": "our-company"
+          }
+        },
+        "link_list_4LGk8z": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
+            "menu": "support"
+          }
+        }
+      },
+      "block_order": [
+        "text_e63HNg",
+        "link_list_kMxUkn",
+        "link_list_apiakg",
+        "link_list_pdFxFM",
+        "link_list_4LGk8z"
+      ],
+      "settings": {
+        "color_scheme": "scheme-8ef968b6-aa71-4326-a0b3-1da22023d8ac",
+        "newsletter_enable": true,
+        "newsletter_heading": "Exclusive Subscribe",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_WnmyCR",
+    "custom_liquid_A8CwQC",
+    "footer"
+  ]
+}
