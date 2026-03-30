@@ -481,32 +481,38 @@
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
                 {%- if product.metafields.custom.product_highlights != blank -%}
                   <div class="product__highlights" {{ block.shopify_attributes }}>
-                    <h3 class="product__highlights-title">Key Features</h3>
+                    <h3 class="product__highlights-title">{{ 'products.product.highlights_title' | t }}</h3>
                     <div class="product__highlights-content rte">
                       {{ product.metafields.custom.product_highlights | newline_to_br }}
                     </div>
                   </div>
                 {%- endif -%}
+                {%- liquid
+                  assign policy_free_shipping_cents = 4900
+                  assign policy_free_shipping_money = policy_free_shipping_cents | money
+                -%}
                 <div class="product__policies">
                   <div class="product__policy-item">
                     <span class="product__policy-icon">{% render 'icon-accordion', icon: 'truck' %}</span>
                     <div class="product__policy-text">
-                      <span class="product__policy-title">Free shipping on orders over $49</span>
-                      <p class="product__policy-desc">Worry-free delivery on qualifying orders</p>
+                      <span class="product__policy-title">
+                        {{- 'products.product.policies.shipping_title' | t: amount: policy_free_shipping_money -}}
+                      </span>
+                      <p class="product__policy-desc">{{ 'products.product.policies.shipping_desc' | t }}</p>
                     </div>
                   </div>
                   <div class="product__policy-item">
                     <span class="product__policy-icon">{% render 'icon-accordion', icon: 'check_mark' %}</span>
                     <div class="product__policy-text">
-                      <span class="product__policy-title">Warranty</span>
-                      <p class="product__policy-desc">Up to 5-year after-sale service</p>
+                      <span class="product__policy-title">{{ 'products.product.policies.warranty_title' | t }}</span>
+                      <p class="product__policy-desc">{{ 'products.product.policies.warranty_desc' | t }}</p>
                     </div>
                   </div>
                   <div class="product__policy-item">
                     <span class="product__policy-icon">{% render 'icon-accordion', icon: 'return' %}</span>
                     <div class="product__policy-text">
-                      <span class="product__policy-title">Returns</span>
-                      <p class="product__policy-desc">Free return within 30 days of delivery</p>
+                      <span class="product__policy-title">{{ 'products.product.policies.returns_title' | t }}</span>
+                      <p class="product__policy-desc">{{ 'products.product.policies.returns_desc' | t }}</p>
                     </div>
                   </div>
                 </div>

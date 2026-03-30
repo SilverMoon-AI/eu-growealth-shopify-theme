@@ -191,7 +191,16 @@
       "taxes_included": "Taxes included.",
       "duties_included": "Duties included.",
       "duties_and_taxes_included": "Duties and taxes included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "highlights_title": "Key Features",
+      "policies": {
+        "shipping_title": "Free shipping on orders over {{ amount }}",
+        "shipping_desc": "Worry-free delivery on qualifying orders",
+        "warranty_title": "Warranty",
+        "warranty_desc": "Up to 5-year after-sale service",
+        "returns_title": "Returns",
+        "returns_desc": "Free return within 30 days of delivery"
+      }
     },
     "modal": {
       "label": "Media gallery"

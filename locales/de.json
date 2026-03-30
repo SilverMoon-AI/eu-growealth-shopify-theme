@@ -191,7 +191,16 @@
       "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern.",
       "buy_now": "Jetzt kaufen",
       "sticky_bar_total": "Gesamtsumme:",
-      "sticky_bar_retail": "Verkaufspreis:"
+      "sticky_bar_retail": "Verkaufspreis:",
+      "highlights_title": "Hauptmerkmale",
+      "policies": {
+        "shipping_title": "Kostenloser Versand ab {{ amount }}",
+        "shipping_desc": "Sorgenfreie Lieferung für qualifizierte Bestellungen",
+        "warranty_title": "Garantie",
+        "warranty_desc": "Bis zu 5 Jahre Kundenservice nach dem Kauf",
+        "returns_title": "Rückgabe",
+        "returns_desc": "Kostenlose Rückgabe innerhalb von 30 Tagen nach Lieferung"
+      }
     },
     "modal": {
       "label": "Medien-Galerie"
