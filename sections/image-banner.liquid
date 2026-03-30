@@ -1,12 +1,36 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
-{%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
+{%- liquid
+  assign eff_image = section.settings.image
+  assign eff_image_2 = section.settings.image_2
+  assign eff_image_asset = section.settings.image_asset
+  assign eff_image_asset_alt = section.settings.image_asset_alt
+  assign eff_file_fallback = ''
+
+  if eff_image == blank and eff_image_asset == blank
+    if template.name == 'collection'
+      case template.suffix
+        when 'led'
+          assign eff_file_fallback = 'LED.jpg'
+        when 'hid'
+          assign eff_file_fallback = 'collection-2.jpg'
+        when 'accessories'
+          assign eff_file_fallback = 'Accessory_Master_Pro.jpg'
+      endcase
+      if eff_file_fallback == blank and template.suffix == blank
+        assign eff_file_fallback = 'HID-connecetion.jpg'
+      endif
+    endif
+  endif
+-%}
+
+{%- if section.settings.image_height == 'adapt' and eff_image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Banner-{{ section.id }}::before,
       #Banner-{{ section.id }} .banner__media::before,
       #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        padding-bottom: {{ 1 | divided_by: eff_image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
@@ -15,7 +39,7 @@
     @media screen and (min-width: 750px) {
       #Banner-{{ section.id }}::before,
       #Banner-{{ section.id }} .banner__media::before {
-        padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+        padding-bottom: {{ 1 | divided_by: eff_image.aspect_ratio | times: 100 }}%;
         content: '';
         display: block;
       }
@@ -53,13 +77,13 @@
 
 <div
   id="Banner-{{ section.id }}"
-  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+  class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and eff_image != blank and eff_image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and eff_image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
-  {%- if section.settings.image_asset != blank -%}
+  {%- if eff_image_asset != blank -%}
     <div class="banner__media media{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       <img
-        src="{{ section.settings.image_asset | asset_url }}"
-        alt="{{ section.settings.image_asset_alt | default: '' }}"
+        src="{{ eff_image_asset | asset_url }}"
+        alt="{{ eff_image_asset_alt | default: '' }}"
         class="banner__media-image"
         width="1920"
         height="640"
@@ -68,32 +92,45 @@
         style="object-fit: cover; width: 100%; height: 100%;"
       >
     </div>
-  {%- elsif section.settings.image != blank -%}
-    <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  {%- elsif eff_image != blank -%}
+    <div class="banner__media media{% if eff_image == blank and eff_image_2 == blank %} placeholder{% endif %}{% if eff_image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {%- liquid
-        assign image_height = section.settings.image.width | divided_by: section.settings.image.aspect_ratio
-        if section.settings.image_2 != blank
+        assign image_height = eff_image.width | divided_by: eff_image.aspect_ratio
+        if eff_image_2 != blank
           assign image_class = 'banner__media-image-half'
         endif
-        if section.settings.image_2 != blank and section.settings.stack_images_on_mobile
+        if eff_image_2 != blank and section.settings.stack_images_on_mobile
           assign sizes = stacked_sizes
-        elsif section.settings.image_2 != blank
+        elsif eff_image_2 != blank
           assign sizes = half_width
         else
           assign sizes = full_width
         endif
       -%}
       {{
-        section.settings.image
+        eff_image
         | image_url: width: 3840
         | image_tag:
-          width: section.settings.image.width,
+          width: eff_image.width,
           height: image_height,
           class: image_class,
           sizes: sizes,
           widths: widths,
           fetchpriority: fetch_priority
       }}
+    </div>
+  {%- elsif eff_file_fallback != blank -%}
+    <div class="banner__media media{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      <img
+        src="{{ eff_file_fallback | file_url }}"
+        alt="{{ eff_image_asset_alt | default: collection.title | default: shop.name | escape }}"
+        class="banner__media-image"
+        width="1920"
+        height="640"
+        loading="eager"
+        fetchpriority="high"
+        style="object-fit: cover; width: 100%; height: 100%;"
+      >
     </div>
   {%- elsif section.settings.image_2 == blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -191,23 +228,27 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "t:sections.image-banner.settings.image.label"
+      "label": "t:sections.image-banner.settings.image.label",
+      "translate": false
     },
     {
       "type": "image_picker",
       "id": "image_2",
-      "label": "t:sections.image-banner.settings.image_2.label"
+      "label": "t:sections.image-banner.settings.image_2.label",
+      "translate": false
     },
     {
       "type": "text",
       "id": "image_asset",
       "label": "Banner from theme asset (optional)",
-      "info": "Filename in assets/ folder, e.g. led-collection-banner.webp. Overrides image above when set."
+      "info": "Filename in assets/ folder, e.g. led-collection-banner.webp. Overrides image above when set.",
+      "translate": false
     },
     {
       "type": "text",
       "id": "image_asset_alt",
-      "label": "Theme asset image alt text"
+      "label": "Theme asset image alt text",
+      "translate": false
     },
     {
       "type": "range",
