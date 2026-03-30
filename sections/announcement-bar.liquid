@@ -12,6 +12,11 @@
   if section.blocks.size > 0
     assign announcement_bar = true
   endif
+  if all_products['rg150'] != blank
+    assign clearance_url = all_products['rg150'].url
+  else
+    assign clearance_url = routes.root_url | append: 'products/rg150'
+  endif
 -%}
 
 {% if social_icons %}
@@ -32,23 +37,21 @@
         aria-label="{{ 'sections.header.announcement' | t }}"
         {{ section.blocks.first.shopify_attributes }}
       >
-        {%- if section.blocks.first.settings.text != blank -%}
-          {%- if section.blocks.first.settings.link != blank -%}
-            <a
-              href="{{ section.blocks.first.settings.link }}"
-              class="announcement-bar__link link link--text focus-inset animate-arrow"
-            >
-          {%- endif -%}
+        <a
+          href="{{ clearance_url }}"
+          class="announcement-bar__link link link--text focus-inset animate-arrow"
+        >
           <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
-            {%- if section.blocks.first.settings.link != blank -%}
-              {{- 'icon-arrow.svg' | inline_asset_content -}}
-            {%- endif -%}
+            <span>
+              {%- if request.locale.iso_code == 'de' -%}
+                🚨 EU-Lagerräumung: 100% Zollfrei | 3-5 Tage Lieferung aus Spanien
+              {%- else -%}
+                🚨 EU Warehouse Clearance: 100% Duty-Free | 3-5 Days Delivery from Spain
+              {%- endif -%}
+            </span>
+            {{- 'icon-arrow.svg' | inline_asset_content -}}
           </p>
-          {%- if section.blocks.first.settings.link != blank -%}
-            </a>
-          {%- endif -%}
-        {%- endif -%}
+        </a>
       </div>
     {%- elsif section.blocks.size > 1 -%}
       <slideshow-component
@@ -92,23 +95,21 @@
                   role="region"
                   aria-label="{{ 'sections.header.announcement' | t }}"
                 >
-                  {%- if block.settings.text != blank -%}
-                    {%- if block.settings.link != blank -%}
-                      <a
-                        href="{{ block.settings.link }}"
-                        class="announcement-bar__link link link--text focus-inset animate-arrow"
-                      >
-                    {%- endif -%}
+                  <a
+                    href="{{ clearance_url }}"
+                    class="announcement-bar__link link link--text focus-inset animate-arrow"
+                  >
                     <p class="announcement-bar__message h5">
-                      <span>{{ block.settings.text | escape }}</span>
-                      {%- if block.settings.link != blank -%}
-                        {{- 'icon-arrow.svg' | inline_asset_content -}}
-                      {%- endif -%}
+                      <span>
+                        {%- if request.locale.iso_code == 'de' -%}
+                          🚨 EU-Lagerräumung: 100% Zollfrei | 3-5 Tage Lieferung aus Spanien
+                        {%- else -%}
+                          🚨 EU Warehouse Clearance: 100% Duty-Free | 3-5 Days Delivery from Spain
+                        {%- endif -%}
+                      </span>
+                      {{- 'icon-arrow.svg' | inline_asset_content -}}
                     </p>
-                    {%- if block.settings.link != blank -%}
-                      </a>
-                    {%- endif -%}
-                  {%- endif -%}
+                  </a>
                 </div>
               </div>
             {%- endfor -%}
