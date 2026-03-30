@@ -9,6 +9,19 @@
 
   if eff_image == blank and eff_image_asset == blank
     if template.name == 'collection'
+      if collection.image != blank
+        assign eff_image = collection.image
+      else
+        assign col_first = collection.products | first
+        if col_first != blank and col_first.featured_image != blank
+          assign eff_image = col_first.featured_image
+        endif
+      endif
+    endif
+  endif
+
+  if eff_image == blank and eff_image_asset == blank
+    if template.name == 'collection'
       case template.suffix
         when 'led'
           assign eff_file_fallback = 'LED.jpg'
@@ -79,20 +92,8 @@
   id="Banner-{{ section.id }}"
   class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and eff_image != blank and eff_image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and eff_image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
-  {%- if eff_image_asset != blank -%}
-    <div class="banner__media media{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-      <img
-        src="{{ eff_image_asset | asset_url }}"
-        alt="{{ eff_image_asset_alt | default: '' }}"
-        class="banner__media-image"
-        width="1920"
-        height="640"
-        loading="eager"
-        fetchpriority="high"
-        style="object-fit: cover; width: 100%; height: 100%;"
-      >
-    </div>
-  {%- elsif eff_image != blank -%}
+  {%- comment -%} Prefer CDN image (stable across locales), then theme asset, then Files fallback {%- endcomment -%}
+  {%- if eff_image != blank -%}
     <div class="banner__media media{% if eff_image == blank and eff_image_2 == blank %} placeholder{% endif %}{% if eff_image_2 != blank %} banner__media-half{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       {%- liquid
         assign image_height = eff_image.width | divided_by: eff_image.aspect_ratio
@@ -118,6 +119,19 @@
           widths: widths,
           fetchpriority: fetch_priority
       }}
+    </div>
+  {%- elsif eff_image_asset != blank -%}
+    <div class="banner__media media{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      <img
+        src="{{ eff_image_asset | asset_url }}"
+        alt="{{ eff_image_asset_alt | default: '' }}"
+        class="banner__media-image"
+        width="1920"
+        height="640"
+        loading="eager"
+        fetchpriority="high"
+        style="object-fit: cover; width: 100%; height: 100%;"
+      >
     </div>
   {%- elsif eff_file_fallback != blank -%}
     <div class="banner__media media{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -212,6 +226,20 @@
             </div>
         {%- endcase -%}
       {%- endfor -%}
+      {%- liquid
+        assign show_collection_fallback_title = false
+        if template.name == 'collection' and collection != blank
+          assign show_collection_fallback_title = true
+          for block in section.blocks
+            if block.type == 'heading' and block.disabled == false and block.settings.heading != blank
+              assign show_collection_fallback_title = false
+            endif
+          endfor
+        endif
+      -%}
+      {%- if show_collection_fallback_title -%}
+        <h2 class="banner__heading inline-richtext h1">{{ collection.title | escape }}</h2>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -228,27 +256,23 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "t:sections.image-banner.settings.image.label",
-      "translate": false
+      "label": "t:sections.image-banner.settings.image.label"
     },
     {
       "type": "image_picker",
       "id": "image_2",
-      "label": "t:sections.image-banner.settings.image_2.label",
-      "translate": false
+      "label": "t:sections.image-banner.settings.image_2.label"
     },
     {
       "type": "text",
       "id": "image_asset",
       "label": "Banner from theme asset (optional)",
-      "info": "Filename in assets/ folder, e.g. led-collection-banner.webp. Overrides image above when set.",
-      "translate": false
+      "info": "Filename in assets/ folder, e.g. led-collection-banner.webp. Overrides image above when set."
     },
     {
       "type": "text",
       "id": "image_asset_alt",
-      "label": "Theme asset image alt text",
-      "translate": false
+      "label": "Theme asset image alt text"
     },
     {
       "type": "range",
