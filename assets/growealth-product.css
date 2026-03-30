@@ -394,6 +394,11 @@ body.template-product {
   padding-bottom: env(safe-area-inset-bottom, 0);
 }
 
+/* While the header nav drawer is open, hide the sticky bar (it sat above the menu on mobile). */
+body.template-product:has(.section-header.menu-open) .product-sticky-bar {
+  display: none;
+}
+
 .product-sticky-bar__inner {
   display: flex;
   flex-wrap: wrap;
