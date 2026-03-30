@@ -9,35 +9,6 @@
  */
 {
   "sections": {
-    "image_banner_C8P6GW": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_3jUwcU": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_3jUwcU"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Accessory_Master_Pro.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -67,7 +38,6 @@
     }
   },
   "order": [
-    "image_banner_C8P6GW",
     "banner",
     "product-grid"
   ]
