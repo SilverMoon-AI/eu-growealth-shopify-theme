@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/growealth-white-color-logo_180x_5afa05b0-c18b-4d10-a865-db12adc3d944.avif",
+    "logo": "shopify://shop_images/growealth-white-color-logo_180x_5afa05b0-c18b-4d10-a865-db12adc3d944.webp",
     "logo_width": 120,
     "favicon": "shopify://shop_images/icon.png",
     "type_header_font": "inter_n4",
@@ -143,13 +143,6 @@
       }
     },
     "content_for_index": [],
-    "blocks": {
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      }
-    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -200,9 +193,9 @@
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#4EB99F",
+          "button": "#4eb99f",
           "button_label": "#ffffff",
-          "secondary_button_label": "#4EB99F",
+          "secondary_button_label": "#4eb99f",
           "shadow": "#ffffff"
         }
       },
@@ -255,9 +248,9 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#4EB99F",
+          "button": "#4eb99f",
           "button_label": "#ffffff",
-          "secondary_button_label": "#4EB99F",
+          "secondary_button_label": "#4eb99f",
           "shadow": "#121212"
         }
       },

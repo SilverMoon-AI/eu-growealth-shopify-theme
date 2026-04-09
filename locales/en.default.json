@@ -116,9 +116,6 @@
   "products": {
     "product": {
       "add_to_cart": "Add to cart",
-      "buy_now": "Buy now",
-      "sticky_bar_total": "Total:",
-      "sticky_bar_retail": "Retail price:",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
@@ -191,24 +188,7 @@
       "taxes_included": "Taxes included.",
       "duties_included": "Duties included.",
       "duties_and_taxes_included": "Duties and taxes included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
-      "highlights_title": "Key Features",
-      "policies": {
-        "shipping_title": "Free shipping on orders over {{ amount }}",
-        "shipping_desc": "Worry-free delivery on qualifying orders",
-        "warranty_title": "Warranty",
-        "warranty_desc": "Up to 5-year after-sale service",
-        "returns_title": "Returns",
-        "returns_desc": "Free return within 30 days of delivery"
-      },
-      "trust_badges": {
-        "heading": "No risk — 100% money-back guarantee",
-        "description": "For every Growealth grow light, we offer a 3-Year Warranty and a 30-Day Money-Back Guarantee. We provide fast, free shipping directly from our EU warehouse in Spain (100% duty-free within the EU).",
-        "badge_warehouse": "Warehouse & fast delivery",
-        "badge_warranty": "3-year warranty",
-        "badge_return": "30-day return & refund",
-        "badge_payment": "Safe payment"
-      }
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
     },
     "modal": {
       "label": "Media gallery"
@@ -345,8 +325,7 @@
       }
     },
     "footer": {
-      "payment": "Payment methods",
-      "payment_policy_link": "Payment Policy"
+      "payment": "Payment methods"
     },
     "featured_blog": {
       "view_all": "View all",
