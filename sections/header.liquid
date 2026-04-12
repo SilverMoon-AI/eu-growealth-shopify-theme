@@ -154,7 +154,12 @@
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- comment -%}使用固定的团队 logo 图片{%- endcomment -%}
             <div class="header__heading-logo-wrapper">
-              {{ 'growealth-team.webp' | asset_url | image_tag: class: 'header__heading-logo motion-reduce', alt: shop.name, preload: true }}
+              <img src="{{ 'growealth-team.webp' | asset_url }}" 
+                   class="header__heading-logo motion-reduce" 
+                   alt="{{ shop.name }}" 
+                   loading="eager" 
+                   width="150" 
+                   height="auto">
             </div>
           </a>
       {%- if request.page_type == 'index' -%}
@@ -178,7 +183,12 @@
   {%- if request.page_type == 'index' -%}<h1 class="header__heading">{% endif %}
   <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
     <div class="header__heading-logo-wrapper">
-      {{ 'growealth-team.webp' | asset_url | image_tag: class: 'header__heading-logo motion-reduce', alt: shop.name, preload: true }}
+      <img src="{{ 'growealth-team.webp' | asset_url }}" 
+           class="header__heading-logo motion-reduce" 
+           alt="{{ shop.name }}" 
+           loading="eager" 
+           width="150" 
+           height="auto">
     </div>
   </a>
   {%- if request.page_type == 'index' -%}</h1>{% endif %}
