@@ -3,6 +3,10 @@
 {%- liquid
   assign eff_image = section.settings.image
   assign eff_image_2 = section.settings.image_2
+  
+  {%- comment -%}
+    Force use of asset image from main config to bypass translation lock
+  {%- endcomment -%}
   assign eff_image_asset = section.settings.image_asset
   assign eff_image_asset_alt = section.settings.image_asset_alt
   assign eff_file_fallback = ''

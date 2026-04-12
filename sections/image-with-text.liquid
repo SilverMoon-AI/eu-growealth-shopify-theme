@@ -1,4 +1,3 @@
-<!-- ANTIGRAVITY-DEBUG-V1 -->
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -20,8 +19,22 @@
   if section.index == 1
     assign fetch_priority = 'high'
   endif
-  if section.settings.color_scheme == section.settings.section_color_scheme and section.settings.content_layout == 'no-overlap'
-    assign remove_color_classes = true
+
+  {%- comment -%}
+    强制穿透逻辑：直接使用 settings 里的原始值，不走翻译覆盖
+  {%- endcomment -%}
+  assign forced_image_asset = section.settings.image_asset
+
+  if section.settings.image != blank or forced_image_asset != blank
+    if forced_image_asset != blank
+      assign image_url = forced_image_asset | asset_url
+      assign image_alt = section.settings.image.alt | default: forced_image_asset
+    else
+      assign widths = '165, 360, 535, 750, 1070, 1500'
+      capture sizes
+        render 'sizes-attribute', min_width: '100vw', desktop_width: '50vw'
+      endcapture
+    endif
   endif
 -%}
 
