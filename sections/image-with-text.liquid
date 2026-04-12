@@ -20,9 +20,7 @@
     assign fetch_priority = 'high'
   endif
 
-  {%- comment -%}
-    强制穿透逻辑：直接使用 settings 里的原始值，不走翻译覆盖
-  {%- endcomment -%}
+  # 强制穿透逻辑：直接使用 settings 里的原始值，不走翻译覆盖
   assign forced_image_asset = section.settings.image_asset
 
   if section.settings.image != blank or forced_image_asset != blank
