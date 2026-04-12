@@ -83,6 +83,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/nowatermark_IMG_7826.png",
+        "image_asset": "growealth-team.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
