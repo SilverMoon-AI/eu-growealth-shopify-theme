@@ -35,7 +35,6 @@
         "@media (min-width: 768px) {.gradient {background: #f3f3f300; color: #fff; } .banner__heading {color: #fff; } .button[aria-disabled=\"true\"] {opacity: 1; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/for_website_homepage_banner-1.jpg",
         "image_asset": "",
         "image_asset_alt": "",
         "image_overlay_opacity": 20,
@@ -72,7 +71,7 @@
         "text_kqRVKe": {
           "type": "text",
           "settings": {
-            "text": "<p>Founded in 2019. Growealth serves home growers and small indoor cultivation setups with carefully selected lighting and growing products. From propagation and nursery racks to compact grow tents and everyday indoor growing, our goal is to make product selection easier and growing results more reliable.</p>",
+            "text": "<p>Growealth serves home growers and small indoor cultivation setups with carefully selected lighting and growing products. From propagation and nursery racks to compact grow tents and everyday indoor growing, our goal is to make product selection easier and growing results more reliable.</p>",
             "text_style": "body"
           }
         }
@@ -82,8 +81,7 @@
         "text_kqRVKe"
       ],
       "settings": {
-        "image": "shopify://shop_images/nowatermark_IMG_7826.png",
-        "image_asset": "growealth-team.webp",
+        "image": "shopify://shop_images/growealth-team.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -103,15 +101,11 @@
       "blocks": {
         "image_9b6pGa": {
           "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/im1.png"
-          }
+          "settings": {}
         },
         "image_aYk4JG": {
           "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/im2.png"
-          }
+          "settings": {}
         }
       },
       "block_order": [
