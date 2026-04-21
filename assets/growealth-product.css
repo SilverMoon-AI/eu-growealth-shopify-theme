@@ -1,10 +1,16 @@
 /* Product page: unified content width (1200px + 24px), same as homepage / collection */
+/* DEBUG: prevent horizontal overflow on product pages */
+html, body { overflow-x: hidden; }
+body.template-product { overflow-x: hidden; }
 
 :root {
   --gw-max-w: 1200px;
 }
 
-.template-product main .page-width,
+.template-product {
+  overflow-x: hidden;
+}
+
 .template-product main .page-width-desktop {
   max-width: var(--gw-max-w);
   margin-left: auto;

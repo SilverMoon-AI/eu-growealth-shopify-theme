@@ -76,7 +76,7 @@
             "spec3_value": "2×2 ft",
             "spec3_label": "Optimal Coverage",
             "cta_text": "View RG150 Details",
-            "cta_link": "/products/nanolux-rg150-led-grow-light-150w-full-spectrum",
+            "cta_link": "/products/rg150",
             "reverse": false,
             "media_ratio": "1/1"
           }
@@ -95,7 +95,7 @@
             "spec3_value": "3×3 ft",
             "spec3_label": "Optimal Coverage",
             "cta_text": "View RG300 Details",
-            "cta_link": "/products/nanolux-rg300w-led-grow-light",
+            "cta_link": "/products/rg-series",
             "reverse": true,
             "media_ratio": "1/1"
           }
@@ -114,7 +114,7 @@
             "spec3_value": "2.65 μmol/J",
             "spec3_label": "Efficacy",
             "cta_text": "View G3000 Details",
-            "cta_link": "/products/300w-led-grow-light-for-home-grow-grow-tents-growealth-g3000",
+            "cta_link": "/products/growealth-g3000-300w-full-spectrum-led-grow-light-for-grow-tents",
             "reverse": false
           }
         }

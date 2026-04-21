@@ -46,7 +46,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Policies",
-            "menu": "footer"
+            "menu": "policies"
           }
         },
         "link_list_apiakg": {
@@ -60,7 +60,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Our Company",
-            "menu": "our-company"
+            "menu": "footer"
           }
         },
         "link_list_4LGk8z": {
@@ -82,7 +82,7 @@
         "color_scheme": "scheme-8ef968b6-aa71-4326-a0b3-1da22023d8ac",
         "newsletter_enable": true,
         "newsletter_heading": "Exclusive Subscribe",
-        "enable_follow_on_shop": true,
+        "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,

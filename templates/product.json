@@ -24,6 +24,10 @@
           "type": "title",
           "settings": {}
         },
+        "judge_me_reviews_preview_badge_rbY78A": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -74,6 +78,7 @@
       "block_order": [
         "vendor",
         "title",
+        "judge_me_reviews_preview_badge_rbY78A",
         "price",
         "variant_picker",
         "quantity_selector",
@@ -175,8 +180,22 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "17128881277c20e42d": {
+    "17761490698ce1ceb7": {
       "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_rhJE6p": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_rhJE6p"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -206,7 +225,7 @@
   "order": [
     "main",
     "slideshow_product_dTpiKV",
-    "17128881277c20e42d",
+    "17761490698ce1ceb7",
     "related-products"
   ]
 }

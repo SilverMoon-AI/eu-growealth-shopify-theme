@@ -188,7 +188,24 @@
       "product_variants": "Produktvarianten",
       "taxes_included": "Inkl. Steuern.",
       "duties_included": "Inkl. Zollgebühren.",
-      "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern."
+      "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern.",
+      "highlights_title": "Produkt-Highlights",
+      "policies": {
+        "shipping_title": "Kostenloser Versand ab {{ amount }}",
+        "shipping_desc": "Schnelle und zuverlässige Lieferung direkt zu dir nach Hause.",
+        "warranty_title": "2 Jahre Garantie",
+        "warranty_desc": "Wir stehen hinter der Qualität unserer Produkte.",
+        "returns_title": "30 Tage Rückgaberecht",
+        "returns_desc": "Problemlose Rückgabe, wenn du nicht zufrieden bist."
+      },
+      "trust_badges": {
+        "heading": "Warum Grower uns vertrauen",
+        "description": "Premium-Qualität und erstklassiger Support für deinen Erfolg.",
+        "badge_warehouse": "EU-Lager & schneller Versand",
+        "badge_warranty": "2 Jahre Premium-Garantie",
+        "badge_return": "30 Tage Rückgaberecht",
+        "badge_payment": "Sichere Bezahlung"
+      }
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -317,7 +334,8 @@
       "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versand werden beim Checkout berechnet."
     },
     "footer": {
-      "payment": "Zahlungsmethoden"
+      "payment": "Zahlungsmethoden",
+      "payment_policy_link": "Zahlungsbedingungen"
     },
     "featured_blog": {
       "view_all": "Alle anzeigen",
