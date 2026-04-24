@@ -167,7 +167,8 @@
       "nested_label": "{{ title }} für {{ parent_title }}",
       "view_full_details": "Vollständige Details anzeigen",
       "shipping_policy_html": "<a href=\"{{ link }}\">Versand</a> wird beim Checkout berechnet",
-      "choose_options": "Optionen auswählen",
+      "buy_now": "Jetzt kaufen",
+      "choose_options": "Optionen wählen",
       "choose_product_options": "Optionen für {{ product_name }} auswählen",
       "value_unavailable": "{{ option_value }} – nicht verfügbar",
       "variant_sold_out_or_unavailable": "Variante ausverkauft oder nicht verfügbar",
@@ -197,8 +198,7 @@
         "warranty_desc": "Wir stehen hinter der Qualität unserer Produkte.",
         "returns_title": "30 Tage Rückgaberecht",
         "returns_desc": "Problemlose Rückgabe, wenn du nicht zufrieden bist."
-      },
-
+      }
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -295,12 +295,16 @@
       "badge_payment": "Sichere Bezahlung",
       "badge_shipping_title": "Kostenloser Versand",
       "badge_shipping_sub": "Kostenloser Expressversand",
-      "badge_support_title": "24/7 Support",
-      "badge_support_sub": "Kundenservice",
+      "badge_support_title": "24/7 Kundenservice",
+      "badge_support_sub": "Kompetente Unterstützung",
       "badge_warranty_title": "Garantie",
       "badge_warranty_sub": "Mindestens 2-5 Jahre Garantie.",
-      "badge_guarantee_title": "Geld-zurück-Garantie",
-      "badge_guarantee_sub": "30 Tage Rückgabegarantie"
+      "badge_guarantee_title": "30 Tage Geld-zurück-Garantie",
+      "badge_guarantee_sub": "30 Tage Rückgabegarantie",
+      "hero_title": "Professionelle LED-Pflanzenlampen für gesundes Wachstum",
+      "hero_subtitle": "Präzisionsgefertigte LED-Wachstumsleuchten für Zelte, Räume und kleine Kulturen. Leistungsstark und langlebig.",
+      "features_eyebrow": "Technologie",
+      "features_heading": "LED-Technologie für effizientes Pflanzenwachstum"
     },
     "header": {
       "announcement": "Ankündigung",

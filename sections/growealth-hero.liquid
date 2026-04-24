@@ -4,12 +4,12 @@
   <div class="gw-hero__inner">
     <div class="gw-hero__content">
       <div class="gw-hero__badge">{{ section.settings.badge_text }}</div>
-      <h1 class="gw-hero__title">
-        {{ section.settings.heading_line1 }} <em>{{ section.settings.heading_line2 }}</em> {{ section.settings.heading_line3 }}
-      </h1>
-      <p class="gw-hero__subtitle">
-        {{ section.settings.subtitle }}
-      </p>
+       <h1 class="gw-hero__title">
+         {{ 'sections.trust_badges.hero_title' | t }}
+       </h1>
+       <p class="gw-hero__subtitle">
+         {{ 'sections.trust_badges.hero_subtitle' | t }}
+       </p>
       <div class="gw-hero__actions">
         {% if section.settings.primary_btn_text != blank %}
           <a href="{{ section.settings.primary_btn_link }}" class="gw-btn gw-btn--primary">
