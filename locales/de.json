@@ -198,22 +198,7 @@
         "returns_title": "30 Tage Rückgaberecht",
         "returns_desc": "Problemlose Rückgabe, wenn du nicht zufrieden bist."
       },
-      "trust_badges": {
-        "heading": "Warum Grower uns vertrauen",
-        "description": "Premium-Qualität und erstklassiger Support für deinen Erfolg.",
-        "badge_warehouse": "EU-Lager & schneller Versand",
-        "badge_warranty": "2 Jahre Premium-Garantie",
-        "badge_return": "30 Tage Rückgaberecht",
-        "badge_payment": "Sichere Bezahlung",
-        "badge_shipping_title": "Kostenloser Versand",
-        "badge_shipping_sub": "Kostenloser Expressversand",
-        "badge_support_title": "24/7 Support",
-        "badge_support_sub": "Kundenservice",
-        "badge_warranty_title": "Garantie",
-        "badge_warranty_sub": "Mindestens 2-5 Jahre Garantie.",
-        "badge_guarantee_title": "Geld-zurück-Garantie",
-        "badge_guarantee_sub": "30 Tage Rückgabegarantie"
-      }
+
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -301,6 +286,22 @@
     }
   },
   "sections": {
+    "trust_badges": {
+      "heading": "Warum Grower uns vertrauen",
+      "description": "Premium-Qualität und erstklassiger Support für deinen Erfolg.",
+      "badge_warehouse": "EU-Lager & schneller Versand",
+      "badge_warranty": "2 Jahre Premium-Garantie",
+      "badge_return": "30 Tage Rückgaberecht",
+      "badge_payment": "Sichere Bezahlung",
+      "badge_shipping_title": "Kostenloser Versand",
+      "badge_shipping_sub": "Kostenloser Expressversand",
+      "badge_support_title": "24/7 Support",
+      "badge_support_sub": "Kundenservice",
+      "badge_warranty_title": "Garantie",
+      "badge_warranty_sub": "Mindestens 2-5 Jahre Garantie.",
+      "badge_guarantee_title": "Geld-zurück-Garantie",
+      "badge_guarantee_sub": "30 Tage Rückgabegarantie"
+    },
     "header": {
       "announcement": "Ankündigung",
       "menu": "Menü",

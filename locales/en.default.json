@@ -198,22 +198,7 @@
         "returns_title": "30-Day Returns",
         "returns_desc": "Hassle-free returns if you're not satisfied."
       },
-      "trust_badges": {
-        "heading": "Why Growers Trust Us",
-        "description": "Premium quality and first-class support for your success.",
-        "badge_warehouse": "EU Warehouse & Fast Shipping",
-        "badge_warranty": "2-Year Premium Warranty",
-        "badge_return": "30-Day Money-Back",
-        "badge_payment": "Secure Payment",
-        "badge_shipping_title": "Free Shipping",
-        "badge_shipping_sub": "Free Express Delivery",
-        "badge_support_title": "24/7 Support",
-        "badge_support_sub": "Customer Service",
-        "badge_warranty_title": "Warranty",
-        "badge_warranty_sub": "Minimum Warranty of 2-5 Years.",
-        "badge_guarantee_title": "Money-Back Guarantee",
-        "badge_guarantee_sub": "30-Days Money Back Guarantee"
-      }
+
     },
     "modal": {
       "label": "Media gallery"
@@ -301,6 +286,22 @@
     }
   },
   "sections": {
+    "trust_badges": {
+      "heading": "Why Growers Trust Us",
+      "description": "Premium quality and first-class support for your success.",
+      "badge_warehouse": "EU Warehouse & Fast Shipping",
+      "badge_warranty": "2-Year Premium Warranty",
+      "badge_return": "30-Day Money-Back",
+      "badge_payment": "Secure Payment",
+      "badge_shipping_title": "Free Shipping",
+      "badge_shipping_sub": "Free Express Delivery",
+      "badge_support_title": "24/7 Support",
+      "badge_support_sub": "Customer Service",
+      "badge_warranty_title": "Warranty",
+      "badge_warranty_sub": "Minimum Warranty of 2-5 Years.",
+      "badge_guarantee_title": "Money-Back Guarantee",
+      "badge_guarantee_sub": "30-Days Money Back Guarantee"
+    },
     "announcements": {
       "previous_announcement": "Previous announcement",
       "next_announcement": "Next announcement",
