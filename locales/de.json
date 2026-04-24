@@ -326,7 +326,10 @@
       "feat_spec_eff": "Effizienz",
       "feat_spec_cov": "Optimale Abdeckung",
       "feat_spec_ppf": "PPF Leistung",
-      "feat_btn_details": "Details anzeigen"
+      "feat_btn_details": "Details anzeigen",
+      "ls_title": "Deine Geschmacksnerven<br>werden es dir <em>danken</em>.",
+      "ls_text": "Von Kräuterwänden bis hin zur Ernte im Haus – bauen Sie mit Licht, dem Sie vertrauen können, frischere und gesündere Produkte zu Hause an.",
+      "ls_cta": "Jetzt anpflanzen"
     },
     "header": {
       "announcement": "Ankündigung",

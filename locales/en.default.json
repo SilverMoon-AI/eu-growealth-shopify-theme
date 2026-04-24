@@ -326,7 +326,10 @@
       "feat_spec_eff": "Efficacy",
       "feat_spec_cov": "Optimal Coverage",
       "feat_spec_ppf": "PPF Output",
-      "feat_btn_details": "View Details"
+      "feat_btn_details": "View Details",
+      "ls_title": "Your taste buds<br>will <em>thank you</em>.",
+      "ls_text": "From herb walls to indoor harvests — grow fresher, healthier produce at home with light you can trust.",
+      "ls_cta": "Start Growing"
     },
     "announcements": {
       "previous_announcement": "Previous announcement",

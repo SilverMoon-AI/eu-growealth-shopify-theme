@@ -1,17 +1,11 @@
 <section class="gw-lifestyle">
   <div class="gw-lifestyle__inner">
     <div class="gw-lifestyle__content gw-fade-up">
-      <h2 class="gw-lifestyle__quote">
-        {{ section.settings.heading }}
-      </h2>
-      <p class="gw-lifestyle__subtext">
-        {{ section.settings.subtext }}
-      </p>
-      {% if section.settings.cta_text != blank %}
-        <a href="{{ section.settings.cta_link }}" class="gw-lifestyle__cta">
-          {{ section.settings.cta_text }} <span>→</span>
-        </a>
-      {% endif %}
+      <h2 class="gw-lifestyle__quote">{{ 'sections.trust_badges.ls_title' | t }}</h2>
+      <p class="gw-lifestyle__subtext">{{ 'sections.trust_badges.ls_text' | t }}</p>
+      <a href="{{ section.settings.cta_link }}" class="gw-lifestyle__cta">
+        {{ 'sections.trust_badges.ls_cta' | t }} <span>→</span>
+      </a>
     </div>
   </div>
 </section>
