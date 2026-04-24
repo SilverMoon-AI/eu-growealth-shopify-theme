@@ -306,7 +306,12 @@
       "features_eyebrow": "Technology",
       "features_heading": "Technology That Powers Creativity",
       "hero_badge": "PROFESSIONAL GROW LIGHTING",
-      "hero_btn_primary": "Shop Now"
+      "hero_btn_primary": "Shop Now",
+      "footer_policies": "Policies",
+      "footer_products": "Products",
+      "footer_company": "Our Company",
+      "footer_support": "Support",
+      "footer_newsletter_title": "Exclusive Subscribe"
     },
     "announcements": {
       "previous_announcement": "Previous announcement",

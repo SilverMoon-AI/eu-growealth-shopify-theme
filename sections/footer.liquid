@@ -76,7 +76,15 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                  <h2 class="footer-block__heading inline-richtext">
+                    {%- assign footer_key = 'sections.trust_badges.footer_' | append: block.settings.heading | downcase | replace: ' ', '' -%}
+                    {%- assign translated_heading = footer_key | t -%}
+                    {%- if translated_heading contains 'translation missing' -%}
+                      {{- block.settings.heading -}}
+                    {%- else -%}
+                      {{- translated_heading -}}
+                    {%- endif -%}
+                  </h2>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -196,7 +204,7 @@
           {%- if section.settings.newsletter_enable -%}
             <div class="footer-block__newsletter">
               {%- if section.settings.newsletter_heading != blank -%}
-                <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
+                <h2 class="footer-block__heading inline-richtext">{{ 'sections.trust_badges.footer_newsletter_title' | t }}</h2>
               {%- endif -%}
               {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                 <input type="hidden" name="contact[tags]" value="newsletter">
