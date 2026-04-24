@@ -40,9 +40,10 @@
         {% endif %}
       </div>
       <div class="gw-trust__content gw-fade-up">
-        <div class="gw-section-label">{{ section.settings.label }}</div>
-        <h2 class="gw-trust__title">{{ section.settings.heading }}</h2>
-        <p class="gw-trust__text">{{ section.settings.text }}</p>
+        {%- assign s_label_down = section.settings.label | downcase -%}
+        <div class="gw-section-label">{% if s_label_down == 'our story' %}{{ 'sections.trust_badges.footer_company' | t }}{% else %}{{ section.settings.label }}{% endif %}</div>
+        <h2 class="gw-trust__title">{{ 'sections.trust_badges.trust_heading' | t }}</h2>
+        <p class="gw-trust__text">{{ 'sections.trust_badges.trust_text' | t }}</p>
         <div class="gw-trust__stats">
           {% for block in section.blocks %}
             <div class="gw-stat-card" {{ block.shopify_attributes }}>
@@ -59,7 +60,22 @@
                 {% endcase %}
               </div>
               <div class="gw-stat-card__value">{{ block.settings.value }}</div>
-              <div class="gw-stat-card__label">{{ block.settings.label }}</div>
+              <div class="gw-stat-card__label">
+                {%- liquid
+                  assign s_label = block.settings.label
+                  if s_label == 'Product Warranty'
+                    echo 'sections.trust_badges.trust_stat_warranty' | t
+                  elsif s_label == 'Expert Support'
+                    echo 'sections.trust_badges.trust_stat_support' | t
+                  elsif s_label == 'Horticultural Experience'
+                    echo 'sections.trust_badges.trust_stat_exp' | t
+                  elsif s_label == 'Global Safety Certifications'
+                    echo 'sections.trust_badges.trust_stat_safety' | t
+                  else
+                    echo s_label
+                  endif
+                -%}
+              </div>
             </div>
           {% endfor %}
         </div>

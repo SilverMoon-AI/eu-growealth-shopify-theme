@@ -1,92 +1,75 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "general": {
     "password_page": {
       "login_form_heading": "Enter store using password:",
-      "login_password_button": "Enter using password",
       "login_form_password_label": "Password",
       "login_form_password_placeholder": "Your password",
-      "login_form_error": "Wrong password!",
       "login_form_submit": "Enter",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"link underlined-link\">Log in here</a>",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "admin_link_html": "Are you the store owner? <a href=\"{{ link }}\" class=\"link underlined-link\">Log in here</a>",
+      "powered_by_shopify_html": "This shop is powered by {{ shopify }}"
     },
     "social": {
+      "links": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "pinterest": "Pinterest",
+        "tiktok": "TikTok",
+        "tumblr": "Tumblr",
+        "twitter": "Twitter",
+        "vimeo": "Vimeo",
+        "youtube": "YouTube"
+      },
+      "share_on_facebook": "Share",
+      "share_on_twitter": "Tweet",
+      "share_on_pinterest": "Pin",
       "alt_text": {
         "share_on_facebook": "Share on Facebook",
-        "share_on_twitter": "Share on X",
+        "share_on_twitter": "Tweet on Twitter",
         "share_on_pinterest": "Pin on Pinterest"
-      },
-      "links": {
-        "twitter": "X (Twitter)",
-        "facebook": "Facebook",
-        "pinterest": "Pinterest",
-        "instagram": "Instagram",
-        "tumblr": "Tumblr",
-        "snapchat": "Snapchat",
-        "youtube": "YouTube",
-        "vimeo": "Vimeo",
-        "tiktok": "TikTok"
       }
     },
     "continue_shopping": "Continue shopping",
     "pagination": {
       "label": "Pagination",
       "page": "Page {{ number }}",
-      "next": "Next page",
-      "previous": "Previous page"
+      "next": "Next",
+      "previous": "Previous"
     },
     "search": {
       "search": "Search",
-      "reset": "Clear search term"
+      "close": "Close search"
     },
     "cart": {
       "view": "View cart ({{ count }})",
-      "view_empty_cart": "View cart",
       "item_added": "Item added to your cart"
     },
     "share": {
-      "close": "Close share",
       "copy_to_clipboard": "Copy link",
+      "share": "Share",
       "share_url": "Link",
-      "success_message": "Link copied to clipboard"
+      "success_message": "Link copied to clipboard",
+      "close": "Close share"
     },
     "slider": {
       "of": "of",
-      "next_slide": "Slide right",
-      "previous_slide": "Slide left",
-      "name": "Slider"
+      "next_slide": "Next slide",
+      "previous_slide": "Previous slide"
     }
-  },
-  "newsletter": {
-    "label": "Email",
-    "success": "Thanks for subscribing",
-    "button_label": "Subscribe"
   },
   "accessibility": {
     "skip_to_text": "Skip to content",
-    "skip_to_product_info": "Skip to product information",
     "close": "Close",
     "unit_price_separator": "per",
     "vendor": "Vendor:",
     "error": "Error",
-    "refresh_page": "Choosing a selection results in a full page refresh.",
+    "refresh_page": "Refresh page",
     "link_messages": {
-      "new_window": "Opens in a new window.",
-      "external": "Opens external website."
+      "new_window": "Opens in a new window",
+      "external": "Opens external website"
     },
     "loading": "Loading...",
-    "total_reviews": "total reviews",
     "star_reviews_info": "{{ rating_value }} out of {{ rating_max }} stars",
-    "collapsible_content_title": "Collapsible content",
+    "total_reviews": "{{ count }} total reviews",
     "complementary_products": "Complementary products"
   },
   "blogs": {
@@ -127,6 +110,7 @@
       "inventory_out_of_stock_continue_selling": "In stock",
       "sku": "SKU",
       "on_sale": "Sale",
+      "off": "OFF",
       "product_variants": "Product variants",
       "media": {
         "gallery_viewer": "Gallery Viewer",
@@ -176,6 +160,7 @@
         "unit_price": "Unit price"
       },
       "share": "Share this product",
+      "also_look_for": "You may also like",
       "sold_out": "Sold out",
       "unavailable": "Unavailable",
       "vendor": "Vendor",
@@ -197,8 +182,7 @@
         "warranty_desc": "We stand behind the quality of our products.",
         "returns_title": "30-Day Returns",
         "returns_desc": "Hassle-free returns if you're not satisfied."
-      },
-
+      }
     },
     "modal": {
       "label": "Media gallery"
@@ -309,7 +293,7 @@
       "hero_btn_primary": "Shop Now",
       "footer_policies": "Policies",
       "footer_products": "Products",
-      "footer_company": "Our Company",
+      "footer_ourcompany": "Our Company",
       "footer_support": "Support",
       "footer_newsletter_title": "Exclusive Subscribe",
       "val_eff_title": "Energy Efficient",
@@ -318,25 +302,37 @@
       "val_cnt_text": "Stepless dimming from 0–100%. Precisely dial in the intensity your plants need at every stage.",
       "val_lst_title": "Built to Last",
       "val_lst_text": "5-year warranty backed by 40+ years of horticultural engineering expertise.",
-      "feat_rg150_title": "RG150W: The Compact Power Expert<br>Versatile for 2×2 ft Tents",
+      "feat_rg150_title_html": "RG150W: The Compact Power Expert<br>Versatile for 2×2 ft Tents",
       "feat_rg150_text": "Perfect for 2×2 ft tents and multi-tier shelves. Full spectrum, UV & far-red in one light; 150W at 2.5 μmol/J efficiency. Fanless, IP65, 0–10V dimming with soft start. Ideal for clones, seedlings, and supplemental lighting.",
-      "feat_rg300_title": "RG300W: The Core of Your Tent<br>Upgrade for 3×3 ft",
+      "feat_rg300_title_html": "RG300W: The Core of Your Tent<br>Upgrade for 3×3 ft",
       "feat_rg300_text": "Industry-standard for 3×3 ft tents with 800 μmol/s PPF and 2.5 μmol/J efficacy. Full spectrum, UV & far-red in one channel; 100% silent passive cooling, IP65. Built for high-yield flowering.",
       "feat_spec_power": "Power Draw",
       "feat_spec_eff": "Efficacy",
       "feat_spec_cov": "Optimal Coverage",
       "feat_spec_ppf": "PPF Output",
       "feat_btn_details": "View Details",
-      "ls_title": "Your taste buds<br>will <em>thank you</em>.",
+      "ls_title_new_html": "Your taste buds<br>will <em>thank you</em>.",
       "ls_text": "From herb walls to indoor harvests — grow fresher, healthier produce at home with light you can trust.",
-      "ls_cta": "Start Growing"
+      "ls_cta": "Start Growing",
+      "trust_heading": "The Growealth Story",
+      "trust_text": "Growealth exists to bring professional-grade LED grow lights to home and small-scale growers. We work with partners who have deep experience in horticultural lighting, so every product we offer meets the same standards we'd use ourselves. No hype—just clear specs, real warranty, and support when you need it.",
+      "trust_stat_warranty": "Product Warranty",
+      "trust_stat_support": "Expert Support",
+      "trust_stat_tested": "Tested & Verified",
+      "trust_stat_safety": "Global Safety Certifications",
+      "trust_stat_exp": "Horticultural Experience",
+      "test_heading": "What Our Customers Say",
+      "test_verified": "Verified Customer",
+      "blog_heading": "From the Grow Lab",
+      "blog_view_all": "View All Posts"
     },
     "announcements": {
       "previous_announcement": "Previous announcement",
       "next_announcement": "Next announcement",
       "carousel": "Carousel",
       "announcement": "Announcement",
-      "announcement_bar": "Announcement bar"
+      "announcement_bar": "Announcement bar",
+      "clearance": "🚨 EU Warehouse Clearance: 100% Duty-Free | 3-5 Days Delivery from Spain"
     },
     "header": {
       "announcement": "Announcement",
@@ -383,6 +379,7 @@
       "payment_policy_link": "Payment Policy"
     },
     "featured_blog": {
+      "heading": "From the Grow Lab",
       "view_all": "View all",
       "onboarding_title": "Blog post",
       "onboarding_content": "Give your customers a summary of your blog post"
@@ -594,5 +591,18 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+  "navigation": {
+    "home": "Home",
+    "shop": "Shop",
+    "products": "Products",
+    "about_us": "About Us",
+    "contact": "Contact",
+    "policies": "Policies",
+    "shipping_policy": "Shipping Policy",
+    "refund_policy": "Refund Policy",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service",
+    "legal_notice": "Legal Notice"
   }
 }

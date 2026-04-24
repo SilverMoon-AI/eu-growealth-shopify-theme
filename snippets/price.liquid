@@ -115,7 +115,7 @@
           </span>
         {%- endunless -%}
         {%- if percent_off > 0 -%}
-          <span class="price__badge-percent">{{ percent_off }}% OFF</span>
+          <span class="price__badge-percent">{{ percent_off }}% {{ 'products.product.off' | t }}</span>
         {%- endif -%}
       </div>
       {%- if product.selected_or_first_available_variant.unit_price_measurement -%}

@@ -35,7 +35,11 @@
             data-cascade
           {% endif %}
         >
-          {{ section.settings.heading }}
+          {%- if section.settings.heading == 'From the Grow Lab' -%}
+            {{ 'sections.featured_blog.heading' | t }}
+          {%- else -%}
+            {{ section.settings.heading }}
+          {%- endif -%}
         </h2>
 
         {%- if section.settings.blog != blank

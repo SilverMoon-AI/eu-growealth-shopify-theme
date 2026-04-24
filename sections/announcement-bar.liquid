@@ -43,11 +43,7 @@
         >
           <p class="announcement-bar__message h5">
             <span>
-              {%- if request.locale.iso_code == 'de' -%}
-                🚨 EU-Lagerräumung: 100% Zollfrei | 3-5 Tage Lieferung aus Spanien
-              {%- else -%}
-                🚨 EU Warehouse Clearance: 100% Duty-Free | 3-5 Days Delivery from Spain
-              {%- endif -%}
+               {{ 'sections.announcements.clearance' | t }}
             </span>
             {{- 'icon-arrow.svg' | inline_asset_content -}}
           </p>
@@ -101,11 +97,7 @@
                   >
                     <p class="announcement-bar__message h5">
                       <span>
-                        {%- if request.locale.iso_code == 'de' -%}
-                          🚨 EU-Lagerräumung: 100% Zollfrei | 3-5 Tage Lieferung aus Spanien
-                        {%- else -%}
-                          🚨 EU Warehouse Clearance: 100% Duty-Free | 3-5 Days Delivery from Spain
-                        {%- endif -%}
+                        {{ 'sections.announcements.clearance' | t }}
                       </span>
                       {{- 'icon-arrow.svg' | inline_asset_content -}}
                     </p>

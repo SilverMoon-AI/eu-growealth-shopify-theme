@@ -1,0 +1,33 @@
+{%- liquid
+  assign text = text | escape
+  case text
+    when 'Home'
+      echo 'navigation.home' | t
+    when 'Shop'
+      echo 'navigation.shop' | t
+    when 'Products'
+      echo 'navigation.products' | t
+    when 'About Us'
+      echo 'navigation.about_us' | t
+    when 'Contact'
+      echo 'navigation.contact' | t
+    when 'Contact Us'
+      echo 'navigation.contact' | t
+    when 'Policies'
+      echo 'navigation.policies' | t
+    when 'Shipping Policy'
+      echo 'navigation.shipping_policy' | t
+    when 'Refund Policy'
+      echo 'navigation.refund_policy' | t
+    when 'Privacy Policy'
+      echo 'navigation.privacy_policy' | t
+    when 'Terms of Service'
+      echo 'navigation.terms_of_service' | t
+    when 'Legal Notice', 'Impressum'
+      echo 'navigation.legal_notice' | t
+    when 'Support'
+      echo 'navigation.contact' | t
+    else
+      echo text
+  endcase
+-%}

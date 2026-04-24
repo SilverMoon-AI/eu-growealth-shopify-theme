@@ -99,7 +99,7 @@
 <div class="section-{{ section.id }}-padding">
 {%- if product.metafields.custom.overview_content != blank -%}
   <div class="page-width">
-    <h2 style="padding-top: 40px;padding-bottom: 15px;font-weight: 600;">Description</h2>
+    <h2 style="padding-top: 40px;padding-bottom: 15px;font-weight: 600;">{{ 'products.product.description' | t }}</h2>
     <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
        {{ product.metafields.custom.overview_content }}
        </div>

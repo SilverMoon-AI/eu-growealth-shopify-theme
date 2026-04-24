@@ -45,11 +45,11 @@
             assign f_cta = block.settings.cta_text
 
             if f_title contains 'RG150W'
-              assign f_title = 'sections.trust_badges.feat_rg150_title' | t
+              assign f_title = 'sections.trust_badges.feat_rg150_title_html' | t
               assign f_text = 'sections.trust_badges.feat_rg150_text' | t
               assign f_cta = 'sections.trust_badges.feat_btn_details' | t
             elsif f_title contains 'RG300W'
-              assign f_title = 'sections.trust_badges.feat_rg300_title' | t
+              assign f_title = 'sections.trust_badges.feat_rg300_title_html' | t
               assign f_text = 'sections.trust_badges.feat_rg300_text' | t
               assign f_cta = 'sections.trust_badges.feat_btn_details' | t
             endif

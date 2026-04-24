@@ -1,8 +1,8 @@
 <section class="gw-testimonials" id="gw-testimonials-{{ section.id }}">
   <div class="gw-container">
     <div class="gw-testimonials__header gw-fade-up">
-      <div class="gw-section-label">{{ section.settings.label }}</div>
-      <h2 class="gw-section-title">{{ section.settings.heading }}</h2>
+      <div class="gw-section-label">{% if section.settings.label == 'Reviews' %}Rezensionen{% else %}{{ section.settings.label }}{% endif %}</div>
+      <h2 class="gw-section-title">{{ 'sections.trust_badges.test_heading' | t }}</h2>
     </div>
 
     <div class="gw-testimonials__slider-wrap">
@@ -49,7 +49,13 @@
             </div>
             <div>
               <div class="gw-testimonial-card__name">{{ block.settings.name }}</div>
-              <div class="gw-testimonial-card__role">{{ block.settings.role }}</div>
+              <div class="gw-testimonial-card__role">
+                {%- if block.settings.role == 'Verified Customer' -%}
+                  {{ 'sections.trust_badges.test_verified' | t }}
+                {%- else -%}
+                  {{ block.settings.role }}
+                {%- endif -%}
+              </div>
             </div>
           </div>
         </div>

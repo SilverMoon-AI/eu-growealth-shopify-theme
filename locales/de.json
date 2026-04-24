@@ -1,112 +1,95 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin language editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "general": {
     "password_page": {
-      "login_form_heading": "Shop mit Passwort betreten:",
-      "login_password_button": "Mit Passwort betreten",
+      "login_form_heading": "Onlineshop mit Passwort betreten:",
       "login_form_password_label": "Passwort",
-      "login_form_password_placeholder": "Dein Passwort",
-      "login_form_error": "Falsches Passwort!",
-      "login_form_submit": "Eingeben",
-      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"/admin\" class=\"link underlined-link\">Hier einloggen</a>",
-      "powered_by_shopify_html": "Dieser Shop wird unterstützt von {{ shopify }}"
+      "login_form_password_placeholder": "Passwort",
+      "login_form_submit": "Senden",
+      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"{{ link }}\" class=\"link underlined-link\">Hier einloggen</a>",
+      "powered_by_shopify_html": "Dieser Shop wird mit {{ shopify }} betrieben"
     },
     "social": {
+      "links": {
+        "facebook": "Facebook",
+        "instagram": "Instagram",
+        "pinterest": "Pinterest",
+        "tiktok": "TikTok",
+        "tumblr": "Tumblr",
+        "twitter": "Twitter",
+        "vimeo": "Vimeo",
+        "youtube": "YouTube"
+      },
+      "share_on_facebook": "Teilen",
+      "share_on_twitter": "Twittern",
+      "share_on_pinterest": "Pinnen",
       "alt_text": {
         "share_on_facebook": "Auf Facebook teilen",
-        "share_on_twitter": "Auf X teilen",
-        "share_on_pinterest": "Auf Pinterest pinnen"
-      },
-      "links": {
-        "twitter": "X (Twitter)",
-        "facebook": "Facebook",
-        "pinterest": "Pinterest",
-        "instagram": "Instagram",
-        "tumblr": "Tumblr",
-        "snapchat": "Snapchat",
-        "youtube": "YouTube",
-        "vimeo": "Vimeo",
-        "tiktok": "TikTok"
+        "share_on_twitter": "Auf Twitter teilen",
+        "share_on_pinterest": "Auf Pinterest teilen"
       }
     },
-    "continue_shopping": "Weiter shoppen",
+    "continue_shopping": "Weiter Einkaufen",
     "pagination": {
-      "label": "Seitennummerierung",
+      "label": "Seitenzahlen",
       "page": "Seite {{ number }}",
-      "next": "Nächste Seite",
-      "previous": "Vorherige Seite"
+      "next": "Nächste",
+      "previous": "Vorherige"
     },
     "search": {
       "search": "Suchen",
-      "reset": "Suchbegriff zurücksetzen"
+      "close": "Suchen schließen"
     },
     "cart": {
-      "view": "Warenkorb ansehen ({{ count }})",
-      "item_added": "Artikel wurde in den Warenkorb gelegt",
-      "view_empty_cart": "Warenkorb ansehen"
+      "view": "Warenkorb anzeigen ({{ count }})",
+      "item_added": "Artikel zum Warenkorb hinzugefügt"
     },
     "share": {
       "copy_to_clipboard": "Link kopieren",
+      "share": "Teilen",
       "share_url": "Link",
-      "success_message": "Link in die Zwischenablage kopiert",
+      "success_message": "Link erfolgreich in die Zwischenablage kopiert",
       "close": "Teilen schließen"
     },
     "slider": {
       "of": "von",
-      "next_slide": "Nach rechts schieben",
-      "previous_slide": "Nach links schieben",
-      "name": "Slider"
+      "next_slide": "Nächste Folie",
+      "previous_slide": "Vorherige Folie"
     }
   },
-  "newsletter": {
-    "label": "E-Mail",
-    "success": "Danke für deine Anmeldung",
-    "button_label": "Abonnieren"
-  },
   "accessibility": {
-    "skip_to_text": "Direkt zum Inhalt",
+    "skip_to_text": "Zum Inhalt springen",
     "close": "Schließen",
     "unit_price_separator": "pro",
     "vendor": "Anbieter:",
     "error": "Fehler",
-    "refresh_page": "Wenn du dich für eine Auswahl entscheidest, wird die Seite komplett aktualisiert.",
+    "refresh_page": "Seite neu laden",
     "link_messages": {
-      "new_window": "Wird in einem neuen Fenster geöffnet.",
-      "external": "Öffnet externe Webseite."
+      "new_window": "Öffnet in neuem Fenster",
+      "external": "Öffnet externe Website"
     },
-    "loading": "Wird geladen ...",
-    "skip_to_product_info": "Zu Produktinformationen springen",
-    "total_reviews": "Bewertungen insgesamt",
+    "loading": "Laden...",
     "star_reviews_info": "{{ rating_value }} von {{ rating_max }} Sternen",
-    "collapsible_content_title": "Einklappbarer Inhalt",
+    "total_reviews": "{{ count }} Rezensionen insgesamt",
     "complementary_products": "Ergänzende Produkte"
   },
   "blogs": {
     "article": {
       "blog": "Blog",
-      "read_more_title": "Weiterlesen: {{ title }}",
+      "read_more_title": "Den Blogbeitrag „{{ title }}“ lesen",
       "comments": {
         "one": "{{ count }} Kommentar",
         "other": "{{ count }} Kommentare"
       },
-      "moderated": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen.",
+      "moderated": "Bitte beachte, dass Kommentare erst freigeschaltet werden müssen, bevor sie veröffentlicht werden.",
       "comment_form_title": "Hinterlasse einen Kommentar",
       "name": "Name",
       "email": "E-Mail",
       "message": "Kommentar",
-      "post": "Kommentar posten",
+      "post": "Kommentar abschicken",
       "back_to_blog": "Zurück zum Blog",
       "share": "Diesen Artikel teilen",
-      "success": "Dein Kommentar wurde erfolgreich gepostet! Vielen Dank!",
-      "success_moderated": "Dein Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen."
+      "success": "Dein Kommentar wurde erfolgreich abgeschickt! Vielen Dank!",
+      "success_moderated": "Dein Kommentar wurde erfolgreich abgeschickt. Wir werden ihn in Kürze veröffentlichen, da unser Blog moderiert wird."
     }
   },
   "onboarding": {
@@ -117,7 +100,8 @@
     "product": {
       "add_to_cart": "In den Warenkorb legen",
       "description": "Beschreibung",
-      "on_sale": "Sale",
+      "on_sale": "Angebot",
+      "off": "RABATT",
       "quantity": {
         "label": "Anzahl",
         "input_label": "Anzahl von {{ product }}",
@@ -139,6 +123,7 @@
         "unit_price": "Grundpreis"
       },
       "share": "Dieses Produkt teilen",
+      "also_look_for": "Das könnte dir auch gefallen",
       "sold_out": "Ausverkauft",
       "unavailable": "Nicht verfügbar",
       "vendor": "Anbieter",
@@ -148,73 +133,60 @@
       "pickup_availability": {
         "view_store_info": "Shop-Informationen anzeigen",
         "check_other_stores": "Verfügbarkeit in anderen Shops überprüfen",
-        "pick_up_available": "Abholung verfügbar",
-        "pick_up_available_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}</span> verfügbar",
-        "pick_up_unavailable_at_html": "Abholung bei <span class=\"color-foreground\">{{ location_name }}</span> derzeit nicht verfügbar",
-        "unavailable": "Verfügbarkeit für Abholungen konnte nicht geladen werden",
+        "pick_up_available": "Abholung möglich",
+        "pick_up_available_at_html": "Abholung möglich bei <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Abholung derzeit nicht möglich bei <span class=\"color-foreground\">{{ location_name }}</span>",
+        "unavailable": "Abholverfügbarkeit konnte nicht geladen werden",
         "refresh": "Aktualisieren"
       },
-      "media": {
-        "open_media": "Medien {{ index }} in Modal öffnen",
-        "play_model": "3D-Viewer abspielen",
-        "play_video": "Video abspielen",
-        "gallery_viewer": "Galerie-Viewer",
-        "load_image": "Bild {{ index }} in Galerieansicht laden",
-        "load_model": "3D-Modell {{ index }} in Galerieansicht laden",
-        "load_video": "Video {{ index }} in Galerieansicht abspielen",
-        "image_available": "Bild {{ index }} ist nun in der Galerieansicht verfügbar"
-      },
-      "nested_label": "{{ title }} für {{ parent_title }}",
+      "sold_out_html": "<strong>Ausverkauft!</strong>",
       "view_full_details": "Vollständige Details anzeigen",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Versand</a> wird beim Checkout berechnet",
-      "buy_now": "Jetzt kaufen",
-      "choose_options": "Optionen wählen",
-      "choose_product_options": "Optionen für {{ product_name }} auswählen",
-      "value_unavailable": "{{ option_value }} – nicht verfügbar",
-      "variant_sold_out_or_unavailable": "Variante ausverkauft oder nicht verfügbar",
+      "taxes_included": "Inkl. MwSt.",
+      "duties_included": "Inkl. Zollgebühren.",
+      "duties_and_taxes_included": "Inkl. MwSt. und Zollgebühren.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Versand</a> wird beim Checkout berechnet.",
       "inventory_in_stock": "Auf Lager",
       "inventory_in_stock_show_count": "{{ quantity }} auf Lager",
-      "inventory_low_stock": "Niedriger Lagerbestand",
-      "inventory_low_stock_show_count": "Niedriger Lagerbestand: {{ quantity }} verbleibend",
-      "inventory_out_of_stock": "Nicht vorrätig",
+      "inventory_low_stock": "Geringer Lagerbestand",
+      "inventory_low_stock_show_count": "Geringer Lagerbestand: {{ quantity }} übrig",
+      "inventory_out_of_stock": "Ausverkauft",
       "inventory_out_of_stock_continue_selling": "Auf Lager",
       "sku": "SKU",
-      "volume_pricing": {
-        "title": "Volumenabhängige Preisgestaltung",
-        "note": "Volumenabhängige Preisgestaltung verfügbar",
-        "minimum": "{{ quantity }}+",
-        "price_range": "{{ minimum }}–{{ maximum }}",
-        "price_at_each_html": "bei {{ price }}/Stück"
-      },
       "product_variants": "Produktvarianten",
-      "taxes_included": "Inkl. Steuern.",
-      "duties_included": "Inkl. Zollgebühren.",
-      "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern.",
-      "highlights_title": "Produkt-Highlights",
+      "volume_pricing": {
+        "title": "Staffelpreise",
+        "note": "Staffelpreise verfügbar",
+        "price_at_each_html": "für {{ price }}/Stück",
+        "price_range": "{{ minimum }} - {{ maximum }}"
+      },
       "policies": {
-        "shipping_title": "Kostenloser Versand ab {{ amount }}",
-        "shipping_desc": "Schnelle und zuverlässige Lieferung direkt zu dir nach Hause.",
+        "shipping_title": "Kostenloser Versand über {{ amount }}",
+        "shipping_desc": "Schnelle und zuverlässige Lieferung direkt zu Ihnen nach Hause.",
         "warranty_title": "2 Jahre Garantie",
         "warranty_desc": "Wir stehen hinter der Qualität unserer Produkte.",
         "returns_title": "30 Tage Rückgaberecht",
-        "returns_desc": "Problemlose Rückgabe, wenn du nicht zufrieden bist."
+        "returns_desc": "Unkomplizierte Rückgabe, wenn Sie nicht zufrieden sind."
       }
     },
     "modal": {
       "label": "Medien-Galerie"
     },
     "facets": {
+      "filter_and_operator_subtitle": "Alle übereinstimmen",
       "apply": "Anwenden",
       "clear": "Löschen",
-      "clear_all": "Alle entfernen",
+      "clear_all": "Alles löschen",
       "from": "Von",
       "filter_and_sort": "Filtern und sortieren",
-      "filter_by_label": "Filter:",
+      "filter_by_label": "Filtern:",
       "filter_button": "Filter",
       "filters_selected": {
         "one": "{{ count }} ausgewählt",
         "other": "{{ count }} ausgewählt"
       },
+      "filter_selected_accessibility": "{{ type }} ({{ count }} Filter ausgewählt)",
+      "show_more": "Mehr anzeigen",
+      "show_less": "Weniger anzeigen",
       "max_price": "Der höchste Preis ist {{ price }}",
       "product_count": {
         "one": "{{ product_count }} von {{ count }} Produkt",
@@ -228,28 +200,14 @@
       "sort_button": "Sortieren",
       "sort_by_label": "Sortieren nach:",
       "to": "Bis",
-      "clear_filter": "Filter entfernen",
-      "filter_selected_accessibility": "{{ type }} ({{ count }} Filter ausgewählt)",
-      "show_more": "Mehr anzeigen",
-      "show_less": "Weniger anzeigen",
-      "filter_and_operator_subtitle": "Allen entsprechen"
+      "clear_filter": "Filter entfernen"
     }
   },
   "templates": {
     "search": {
-      "no_results": "Keine Ergebnisse gefunden für \"{{ terms }}\". Überprüfe die Schreibweise oder versuche es mit einer anderen Suchanfrage.",
-      "results_with_count": {
-        "one": "{{ count }} Ergebnis",
-        "other": "{{ count }} Ergebnisse"
-      },
-      "title": "Suchergebnisse",
+      "no_results": "Keine Ergebnisse für „{{ terms }}“ gefunden. Überprüfe die Schreibweise oder verwende ein anderes Wort oder einen anderen Ausdruck.",
       "page": "Seite",
       "products": "Produkte",
-      "search_for": "Nach \"{{ terms }}\" suchen",
-      "results_with_count_and_term": {
-        "one": "{{ count }} Ergebnis für \"{{ terms }}\" gefunden",
-        "other": "{{ count }} Ergebnisse für \"{{ terms }}\" gefunden"
-      },
       "results_pages_with_count": {
         "one": "{{ count }} Seite",
         "other": "{{ count }} Seiten"
@@ -262,6 +220,16 @@
         "one": "{{ count }} Produkt",
         "other": "{{ count }} Produkte"
       },
+      "results_with_count": {
+        "one": "{{ count }} Ergebnis",
+        "other": "{{ count }} Ergebnisse"
+      },
+      "results_with_count_and_term": {
+        "one": "{{ count }} Ergebnis für „{{ terms }}“ gefunden",
+        "other": "{{ count }} Ergebnisse für „{{ terms }}“ gefunden"
+      },
+      "title": "Suchergebnisse",
+      "search_for": "Nach „{{ terms }}“ suchen",
       "suggestions": "Vorschläge",
       "pages": "Seiten"
     },
@@ -270,14 +238,14 @@
     },
     "contact": {
       "form": {
+        "title": "Kontaktformular",
         "name": "Name",
         "email": "E-Mail",
         "phone": "Telefonnummer",
         "comment": "Kommentar",
         "send": "Senden",
-        "post_success": "Danke, dass du uns kontaktiert hast. Wir werden uns so schnell wie möglich bei dir melden.",
-        "error_heading": "Bitte passe Folgendes an:",
-        "title": "Kontaktformular"
+        "post_success": "Danke, dass du uns kontaktiert hast. Wir werden dir so schnell wie möglich antworten.",
+        "error_heading": "Bitte passe Folgendes an:"
       }
     },
     "404": {
@@ -289,47 +257,68 @@
     "trust_badges": {
       "heading": "Warum Grower uns vertrauen",
       "description": "Premium-Qualität und erstklassiger Support für deinen Erfolg.",
-      "badge_warehouse": "EU-Lager & schneller Versand",
-      "badge_warranty": "2 Jahre Premium-Garantie",
-      "badge_return": "30 Tage Rückgaberecht",
-      "badge_payment": "Sichere Bezahlung",
+      "badge_warehouse": "EU-Lager & Schneller Versand",
+      "badge_warranty": "Garantie",
+      "badge_warranty_sub": "Mindestens 2–5 Jahre Garantie",
+      "badge_return": "30 Tage Geld-zurück-Garantie",
+      "badge_return_sub": "30 Tage Rückgabegarantie",
+      "badge_payment": "Sichere Zahlung",
       "badge_shipping_title": "Kostenloser Versand",
-      "badge_shipping_sub": "Kostenloser Expressversand",
+      "badge_shipping_sub": "Kostenlose Express-Lieferung",
       "badge_support_title": "24/7 Kundenservice",
       "badge_support_sub": "Schnelle Hilfe bei Fragen",
       "badge_warranty_title": "Garantie",
       "badge_warranty_sub": "Mindestens 2–5 Jahre Garantie",
       "badge_guarantee_title": "30 Tage Geld-zurück-Garantie",
       "badge_guarantee_sub": "30 Tage Geld-zurück-Garantie",
-      "hero_title": "Professionelle LED-Pflanzenlampen for gesundes Wachstum",
-      "hero_subtitle": "Präzisionsgefertigte LED-Wachstumsleuchten for Zelte, Räume und kleine Kulturen. Leistungsstark und langlebig.",
+      "hero_title": "Beleuchtung gestaltet für echtes Wachstum",
+      "hero_subtitle": "Präzisionsgefertigte LED-Pflanzenlampen für Zelte, Räume und kleinen Anbau. Leistungsstark und langlebig.",
       "features_eyebrow": "Technologie",
-      "features_heading": "LED-Technologie für effizientes Pflanzenwachstum",
+      "features_heading": "Technologie für kreatives Wachstum",
       "hero_badge": "PROFI-PFLANZENBELEUCHTUNG",
       "hero_btn_primary": "Jetzt ansehen",
       "footer_policies": "Richtlinien",
       "footer_products": "Produkte",
-      "footer_company": "Unser Unternehmen",
+      "footer_ourcompany": "Unser Unternehmen",
       "footer_support": "Kundenservice",
       "footer_newsletter_title": "Exklusive Angebote abonnieren",
       "val_eff_title": "Energieeffizient",
       "val_eff_text": "Bis zu 2,9 μmol/J Effizienz – maximale Leistung bei minimalem Stromverbrauch.",
-      "val_cnt_title": "Vollständige Kontrolle",
-      "val_cnt_text": "Stufenlose Dimmung von 0–100 %. Passen Sie die Intensität genau an die Bedürfnisse Ihrer Pflanzen an.",
-      "val_lst_title": "Langlebig",
-      "val_lst_text": "5 Jahre Garantie, unterstützt durch über 40 Jahre Erfahrung in der Gartenbautechnik.",
-      "feat_rg150_title": "RG150W: Der kompakte Power-Experte<br>Vielseitig für 2×2 ft Zelte",
-      "feat_rg150_text": "Perfekt für 2×2 ft Zelte und mehrstufige Regale. Vollspektrum, UV & Far-Red in einer Leuchte; 150W bei 2,5 μmol/J Effizienz. Geräuschlos, IP65, 0–10V Dimmung mit Sanftanlauf.",
-      "feat_rg300_title": "RG300W: Das Herzstück Ihres Zelts<br>Upgrade für 3×3 ft",
-      "feat_rg300_text": "Industriestandard für 3×3 ft Zelte mit 800 μmol/s PPF und 2,5 μmol/J Effizienz. Vollspektrum, UV & Far-Red in einem Kanal; 100% geräuschlose passive Kühlung, IP65.",
+      "val_cnt_title": "Volle Kontrolle",
+      "val_cnt_text": "Stufenloses Dimmen von 0–100 %. Stellen Sie genau die Intensität ein, die Ihre Pflanzen in jeder Phase benötigen.",
+      "val_lst_title": "Langlebig gebaut",
+      "val_lst_text": "5 Jahre Garantie, unterstützt durch über 40 Jahre Erfahrung im Gartenbau-Engineering.",
+      "feat_rg150_title_html": "RG150W: Der kompakte Power-Experte<br>Vielseitig für 2×2 ft Zelte",
+      "feat_rg150_text": "Perfekt für 2×2 ft Zelte und mehrstufige Regale. Vollspektrum, UV & Far-Red in einer Leuchte; 150W bei 2,5 μmol/J Effizienz. Lüfterlos, IP65, 0-10V Dimmung mit Softstart. Ideal für Klone, Sämlinge und Zusatzbeleuchtung.",
+      "feat_rg300_title_html": "RG300W: Das Herzstück deines Zelts<br>Upgrade für 3×3 ft",
+      "feat_rg300_text": "Branchenstandard für 3×3 ft Zelte mit 800 μmol/s PPF und 2,5 μmol/J Effizienz. Vollspektrum, UV & Far-Red in einem Kanal; 100% geräuschlose passive Kühlung, IP65. Gebaut für blütenreiche Ernten.",
       "feat_spec_power": "Leistungsaufnahme",
       "feat_spec_eff": "Effizienz",
       "feat_spec_cov": "Optimale Abdeckung",
-      "feat_spec_ppf": "PPF Leistung",
+      "feat_spec_ppf": "PPF-Leistung",
       "feat_btn_details": "Details anzeigen",
-      "ls_title": "Deine Geschmacksnerven<br>werden es dir <em>danken</em>.",
-      "ls_text": "Von Kräuterwänden bis hin zur Ernte im Haus – bauen Sie mit Licht, dem Sie vertrauen können, frischere und gesündere Produkte zu Hause an.",
-      "ls_cta": "Jetzt anpflanzen"
+      "ls_title_new_html": "Deine Geschmacksknospen<br>werden es dir <em>danken</em>.",
+      "ls_text": "Von Kräuterwänden bis zur Ernte im Haus – bauen Sie frische, gesunde Lebensmittel zu Hause an, mit Licht, dem Sie vertrauen können.",
+      "ls_cta": "Jetzt anpflanzen",
+      "trust_heading": "Die Growealth-Story",
+      "trust_text": "Growealth wurde gegründet, um professionelle LED-Pflanzenlampen für Heim- und Kleinanbauer zugänglich zu machen. Wir arbeiten mit Partnern zusammen, die über langjährige Erfahrung in der Gartenbaubeleuchtung verfügen, so dass jedes Produkt, das wir anbieten, den Standards entspricht, die wir auch selbst verwenden würden. Kein Hype – nur klare Fakten, echte Garantie und Unterstützung, wenn Sie sie brauchen.",
+      "trust_stat_warranty": "Produktgarantie",
+      "trust_stat_support": "Experten-Support",
+      "trust_stat_tested": "Geprüft & Verifiziert",
+      "trust_stat_safety": "Globale Sicherheitszertifikate",
+      "trust_stat_exp": "Gartenbauerfahrung",
+      "test_heading": "Was unsere Kunden sagen",
+      "test_verified": "Verifizierter Kunde",
+      "blog_heading": "Aus dem Grow-Labor",
+      "blog_view_all": "Alle Beiträge anzeigen",
+      "blog_view_posts": "Alle anzeigen"
+    },
+    "announcements": {
+      "previous_announcement": "Vorherige Ankündigung",
+      "next_announcement": "Nächste Ankündigung",
+      "carousel": "Karussell",
+      "announcement": "Ankündigung",
+      "announcement_bar": "Ankündigungsleiste"
     },
     "header": {
       "announcement": "Ankündigung",
@@ -357,15 +346,13 @@
       },
       "update": "Aktualisieren",
       "login": {
-        "title": "Hast du ein Konto?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Logge dich ein</a>, damit es beim Checkout schneller geht."
+        "title": "Hast du bereits ein Konto?",
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Logge dich ein</a>, um schneller auszuchecken."
       },
-      "estimated_total": "Geschätzte Gesamtkosten",
-      "new_estimated_total": "Neuer geschätzter Gesamtbetrag",
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Inkl. Zollgebühren und Steuern. Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
       "duties_and_taxes_included_shipping_at_checkout_without_policy": "Inkl. Zollgebühren und Steuern. Rabatte und Versand werden beim Checkout berechnet.",
-      "taxes_included_shipping_at_checkout_with_policy_html": "Inkl. Steuern. Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
-      "taxes_included_shipping_at_checkout_without_policy": "Inkl. Steuern. Rabatte und Versand werden beim Checkout berechnet.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Inkl. MwSt. Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
+      "taxes_included_shipping_at_checkout_without_policy": "Inkl. MwSt. Rabatte und Versand werden beim Checkout berechnet.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Inkl. Zollgebühren. Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Inkl. Zollgebühren. Steuern, Rabatte und Versand werden beim Checkout berechnet.",
       "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
@@ -376,6 +363,7 @@
       "payment_policy_link": "Zahlungsbedingungen"
     },
     "featured_blog": {
+      "heading": "Aus dem Grow-Labor",
       "view_all": "Alle anzeigen",
       "onboarding_title": "Blog-Beitrag",
       "onboarding_content": "Verschaffe deinen Kunden eine Übersicht über deinen Blog-Beitrag"
@@ -434,7 +422,7 @@
       "remove_all_items_confirmation": "Alle {{ quantity }} Artikel aus deinem Warenkorb entfernen?",
       "remove_all": "Alle entfernen",
       "cancel": "Abbrechen",
-      "remove_all_single_item_confirmation": "1 Artikel aus dem Warenkorb entfernen?",
+      "remove_all_single_item_confirmation": "1 Artikel aus dem Warenkorb entfernen?",
       "min_error": "Dieser Artikel hat ein Minimum von {{ min }}",
       "max_error": "Dieser Artikel hat ein Maximum von {{ max }}",
       "step_error": "Du kannst diesen Artikel nur in Abstufungen von {{ step }} hinzufügen."
@@ -591,5 +579,18 @@
       "expanded": "Formular für den Empfänger des Gutscheins erweitert",
       "collapsed": "Formular für den Empfänger des Gutscheins minimiert"
     }
+  },
+  "navigation": {
+    "home": "Startseite",
+    "shop": "Shop",
+    "products": "Produkte",
+    "about_us": "Über uns",
+    "contact": "Kontakt",
+    "policies": "Richtlinien",
+    "shipping_policy": "Versandbedingungen",
+    "refund_policy": "Widerrufsbelehrung",
+    "privacy_policy": "Datenschutzerklärung",
+    "terms_of_service": "AGB",
+    "legal_notice": "Impressum"
   }
 }

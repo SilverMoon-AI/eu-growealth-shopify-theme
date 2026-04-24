@@ -16,8 +16,36 @@
             {% endcase %}
           </div>
           <div>
-            <div class="gw-guarantee__text-title">{{ block.settings.title }}</div>
-            <div class="gw-guarantee__text-sub">{{ block.settings.subtitle }}</div>
+            <div class="gw-guarantee__text-title">
+              {%- liquid
+                if block.settings.title == 'Free Shipping'
+                  echo 'sections.trust_badges.badge_shipping_title' | t
+                elsif block.settings.title == '24/7 Support'
+                  echo 'sections.trust_badges.badge_support_title' | t
+                elsif block.settings.title == '5-Year Warranty'
+                  echo 'sections.trust_badges.badge_warranty' | t
+                elsif block.settings.title == 'Money-Back Guarantee'
+                  echo 'sections.trust_badges.badge_return' | t
+                else
+                  echo block.settings.title
+                endif
+              -%}
+            </div>
+            <div class="gw-guarantee__text-sub">
+              {%- liquid
+                if block.settings.subtitle == 'On orders over $299'
+                  echo 'sections.trust_badges.badge_shipping_sub' | t
+                elsif block.settings.subtitle == 'Expert assistance anytime'
+                  echo 'sections.trust_badges.badge_support_sub' | t
+                elsif block.settings.subtitle == 'Comprehensive coverage'
+                  echo 'sections.trust_badges.badge_warranty_sub' | t | default: 'Mindestens 2–5 Jahre Garantie'
+                elsif block.settings.subtitle == '30-day hassle-free returns'
+                  echo 'sections.trust_badges.badge_return_sub' | t | default: '30 Tage Geld-zurück-Garantie'
+                else
+                  echo block.settings.subtitle
+                endif
+              -%}
+            </div>
           </div>
         </div>
       {% endfor %}
