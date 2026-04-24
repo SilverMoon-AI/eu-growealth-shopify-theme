@@ -3,7 +3,7 @@
 <section class="gw-hero">
   <div class="gw-hero__inner">
     <div class="gw-hero__content">
-      <div class="gw-hero__badge">{{ section.settings.badge_text }}</div>
+      <div class="gw-hero__badge">{{ 'sections.trust_badges.hero_badge' | t }}</div>
        <h1 class="gw-hero__title">
          {{ 'sections.trust_badges.hero_title' | t }}
        </h1>
@@ -13,7 +13,7 @@
       <div class="gw-hero__actions">
         {% if section.settings.primary_btn_text != blank %}
           <a href="{{ section.settings.primary_btn_link }}" class="gw-btn gw-btn--primary">
-            {{ section.settings.primary_btn_text }}
+            {{ 'sections.trust_badges.hero_btn_primary' | t }}
             <span class="gw-btn__arrow">→</span>
           </a>
         {% endif %}
