@@ -311,7 +311,22 @@
       "footer_products": "Products",
       "footer_company": "Our Company",
       "footer_support": "Support",
-      "footer_newsletter_title": "Exclusive Subscribe"
+      "footer_newsletter_title": "Exclusive Subscribe",
+      "val_eff_title": "Energy Efficient",
+      "val_eff_text": "Up to 2.9 μmol/J efficacy — maximum output with minimal power consumption.",
+      "val_cnt_title": "Full Controllability",
+      "val_cnt_text": "Stepless dimming from 0–100%. Precisely dial in the intensity your plants need at every stage.",
+      "val_lst_title": "Built to Last",
+      "val_lst_text": "5-year warranty backed by 40+ years of horticultural engineering expertise.",
+      "feat_rg150_title": "RG150W: The Compact Power Expert<br>Versatile for 2×2 ft Tents",
+      "feat_rg150_text": "Perfect for 2×2 ft tents and multi-tier shelves. Full spectrum, UV & far-red in one light; 150W at 2.5 μmol/J efficiency. Fanless, IP65, 0–10V dimming with soft start. Ideal for clones, seedlings, and supplemental lighting.",
+      "feat_rg300_title": "RG300W: The Core of Your Tent<br>Upgrade for 3×3 ft",
+      "feat_rg300_text": "Industry-standard for 3×3 ft tents with 800 μmol/s PPF and 2.5 μmol/J efficacy. Full spectrum, UV & far-red in one channel; 100% silent passive cooling, IP65. Built for high-yield flowering.",
+      "feat_spec_power": "Power Draw",
+      "feat_spec_eff": "Efficacy",
+      "feat_spec_cov": "Optimal Coverage",
+      "feat_spec_ppf": "PPF Output",
+      "feat_btn_details": "View Details"
     },
     "announcements": {
       "previous_announcement": "Previous announcement",

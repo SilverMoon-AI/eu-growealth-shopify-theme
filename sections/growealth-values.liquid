@@ -17,8 +17,23 @@
                 <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             {% endcase %}
           </div>
-          <h3 class="gw-value-card__title">{{ block.settings.title }}</h3>
-          <p class="gw-value-card__text">{{ block.settings.text }}</p>
+          {%- liquid
+            assign card_title = block.settings.title
+            assign card_text = block.settings.text
+            
+            if card_title == 'Energy Efficient'
+              assign card_title = 'sections.trust_badges.val_eff_title' | t
+              assign card_text = 'sections.trust_badges.val_eff_text' | t
+            elsif card_title == 'Full Controllability'
+              assign card_title = 'sections.trust_badges.val_cnt_title' | t
+              assign card_text = 'sections.trust_badges.val_cnt_text' | t
+            elsif card_title == 'Built to Last'
+              assign card_title = 'sections.trust_badges.val_lst_title' | t
+              assign card_text = 'sections.trust_badges.val_lst_text' | t
+            endif
+          -%}
+          <h3 class="gw-value-card__title">{{ card_title }}</h3>
+          <p class="gw-value-card__text">{{ card_text }}</p>
         </div>
       {% endfor %}
     </div>

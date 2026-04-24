@@ -39,24 +39,74 @@
         </div>
         <div class="gw-feature-row__content">
           <div class="gw-feature-row__eyebrow">{{ block.settings.eyebrow }}</div>
-          <h3 class="gw-feature-row__title">{{ block.settings.title }}</h3>
-          <p class="gw-feature-row__text">{{ block.settings.text }}</p>
+          {%- liquid
+            assign f_title = block.settings.title
+            assign f_text = block.settings.text
+            assign f_cta = block.settings.cta_text
+
+            if f_title contains 'RG150W'
+              assign f_title = 'sections.trust_badges.feat_rg150_title' | t
+              assign f_text = 'sections.trust_badges.feat_rg150_text' | t
+              assign f_cta = 'sections.trust_badges.feat_btn_details' | t
+            elsif f_title contains 'RG300W'
+              assign f_title = 'sections.trust_badges.feat_rg300_title' | t
+              assign f_text = 'sections.trust_badges.feat_rg300_text' | t
+              assign f_cta = 'sections.trust_badges.feat_btn_details' | t
+            endif
+          -%}
+          <h3 class="gw-feature-row__title">{{ f_title }}</h3>
+          <p class="gw-feature-row__text">{{ f_text }}</p>
           {% if block.settings.spec1_value != blank %}
             <div class="gw-feature-row__specs">
               <div class="gw-spec">
                 <span class="gw-spec__value">{{ block.settings.spec1_value }}</span>
-                <span class="gw-spec__label">{{ block.settings.spec1_label }}</span>
+                <span class="gw-spec__label">
+                  {%- liquid
+                    assign s1_label = block.settings.spec1_label
+                    if s1_label == 'Power Draw' or s1_label == 'PPF Output'
+                      echo 'sections.trust_badges.feat_spec_power' | t
+                    elsif s1_label == 'Efficacy'
+                      echo 'sections.trust_badges.feat_spec_eff' | t
+                    elsif s1_label == 'Optimal Coverage'
+                      echo 'sections.trust_badges.feat_spec_cov' | t
+                    else
+                      echo s1_label
+                    endif
+                  -%}
+                </span>
               </div>
               {% if block.settings.spec2_value != blank %}
                 <div class="gw-spec">
                   <span class="gw-spec__value">{{ block.settings.spec2_value }}</span>
-                  <span class="gw-spec__label">{{ block.settings.spec2_label }}</span>
+                  <span class="gw-spec__label">
+                    {%- liquid
+                      assign s2_label = block.settings.spec2_label
+                      if s2_label == 'Efficacy'
+                        echo 'sections.trust_badges.feat_spec_eff' | t
+                      elsif s2_label == 'Physical Switches'
+                        echo s2_label
+                      else
+                        echo s2_label
+                      endif
+                    -%}
+                  </span>
                 </div>
               {% endif %}
               {% if block.settings.spec3_value != blank %}
                 <div class="gw-spec">
                   <span class="gw-spec__value">{{ block.settings.spec3_value }}</span>
-                  <span class="gw-spec__label">{{ block.settings.spec3_label }}</span>
+                   <span class="gw-spec__label">
+                    {%- liquid
+                      assign s3_label = block.settings.spec3_label
+                      if s3_label == 'Optimal Coverage'
+                        echo 'sections.trust_badges.feat_spec_cov' | t
+                      elsif s3_label == 'Efficacy'
+                        echo 'sections.trust_badges.feat_spec_eff' | t
+                      else
+                        echo s3_label
+                      endif
+                    -%}
+                  </span>
                 </div>
               {% endif %}
             </div>
@@ -70,7 +120,7 @@
                 endif
               -%}
               <a href="{{ cta_url }}" class="gw-btn gw-btn--primary">
-                {{ block.settings.cta_text }}
+                {{ f_cta }}
                 <span class="gw-btn__arrow">→</span>
               </a>
             </div>

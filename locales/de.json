@@ -311,7 +311,22 @@
       "footer_products": "Produkte",
       "footer_company": "Unser Unternehmen",
       "footer_support": "Kundenservice",
-      "footer_newsletter_title": "Exklusive Angebote abonnieren"
+      "footer_newsletter_title": "Exklusive Angebote abonnieren",
+      "val_eff_title": "Energieeffizient",
+      "val_eff_text": "Bis zu 2,9 μmol/J Effizienz – maximale Leistung bei minimalem Stromverbrauch.",
+      "val_cnt_title": "Vollständige Kontrolle",
+      "val_cnt_text": "Stufenlose Dimmung von 0–100 %. Passen Sie die Intensität genau an die Bedürfnisse Ihrer Pflanzen an.",
+      "val_lst_title": "Langlebig",
+      "val_lst_text": "5 Jahre Garantie, unterstützt durch über 40 Jahre Erfahrung in der Gartenbautechnik.",
+      "feat_rg150_title": "RG150W: Der kompakte Power-Experte<br>Vielseitig für 2×2 ft Zelte",
+      "feat_rg150_text": "Perfekt für 2×2 ft Zelte und mehrstufige Regale. Vollspektrum, UV & Far-Red in einer Leuchte; 150W bei 2,5 μmol/J Effizienz. Geräuschlos, IP65, 0–10V Dimmung mit Sanftanlauf.",
+      "feat_rg300_title": "RG300W: Das Herzstück Ihres Zelts<br>Upgrade für 3×3 ft",
+      "feat_rg300_text": "Industriestandard für 3×3 ft Zelte mit 800 μmol/s PPF und 2,5 μmol/J Effizienz. Vollspektrum, UV & Far-Red in einem Kanal; 100% geräuschlose passive Kühlung, IP65.",
+      "feat_spec_power": "Leistungsaufnahme",
+      "feat_spec_eff": "Effizienz",
+      "feat_spec_cov": "Optimale Abdeckung",
+      "feat_spec_ppf": "PPF Leistung",
+      "feat_btn_details": "Details anzeigen"
     },
     "header": {
       "announcement": "Ankündigung",
