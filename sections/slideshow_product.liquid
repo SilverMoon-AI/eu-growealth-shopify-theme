@@ -597,58 +597,86 @@
   </div>
 {%- endif -%}
 
+{%- liquid
+  assign product_trust_heading = 'products.product.trust_badges.heading' | t
+  assign product_trust_description = 'products.product.trust_badges.description' | t
+  assign product_trust_warehouse = 'products.product.trust_badges.badge_warehouse' | t
+  assign product_trust_warranty = 'products.product.trust_badges.badge_warranty' | t
+  assign product_trust_return = 'products.product.trust_badges.badge_return' | t
+  assign product_trust_payment = 'products.product.trust_badges.badge_payment' | t
+
+  if product_trust_heading contains 'Translation missing'
+    assign product_trust_heading = 'Sicher einkaufen bei Growealth'
+  endif
+  if product_trust_description contains 'Translation missing'
+    assign product_trust_description = 'Zuverlässige Lieferung, Garantie und sichere Zahlung für jede Bestellung.'
+  endif
+  if product_trust_warehouse contains 'Translation missing'
+    assign product_trust_warehouse = 'EU-Lager & schneller Versand'
+  endif
+  if product_trust_warranty contains 'Translation missing'
+    assign product_trust_warranty = '2 Jahre Premium-Garantie'
+  endif
+  if product_trust_return contains 'Translation missing'
+    assign product_trust_return = '30 Tage Geld-zurück-Garantie'
+  endif
+  if product_trust_payment contains 'Translation missing'
+    assign product_trust_payment = 'Sichere Zahlung'
+  endif
+-%}
+
 <div class="product-trust-badges">
   <div class="product-trust-badges__inner page-width">
-    <h2 class="product-trust-badges__heading">{{ 'products.product.trust_badges.heading' | t }}</h2>
-    <p class="product-trust-badges__desc">{{ 'products.product.trust_badges.description' | t }}</p>
+    <h2 class="product-trust-badges__heading">{{ product_trust_heading }}</h2>
+    <p class="product-trust-badges__desc">{{ product_trust_description }}</p>
     <div class="trust-badges-grid">
       <div class="trust-badge">
         <div class="trust-badge-icon">
           <img
             src="{{ 'trust-icon-warehouse.png' | asset_url }}"
-            alt="{{ 'products.product.trust_badges.badge_warehouse' | t }}"
+            alt="{{ product_trust_warehouse }}"
             width="56"
             height="56"
             loading="lazy"
           >
         </div>
-        <div class="trust-badge-text">{{ 'products.product.trust_badges.badge_warehouse' | t }}</div>
+        <div class="trust-badge-text">{{ product_trust_warehouse }}</div>
       </div>
       <div class="trust-badge">
         <div class="trust-badge-icon">
           <img
             src="{{ 'trust-icon-warranty.png' | asset_url }}"
-            alt="{{ 'products.product.trust_badges.badge_warranty' | t }}"
+            alt="{{ product_trust_warranty }}"
             width="56"
             height="56"
             loading="lazy"
           >
         </div>
-        <div class="trust-badge-text">{{ 'products.product.trust_badges.badge_warranty' | t }}</div>
+        <div class="trust-badge-text">{{ product_trust_warranty }}</div>
       </div>
       <div class="trust-badge">
         <div class="trust-badge-icon">
           <img
             src="{{ 'trust-icon-30day.png' | asset_url }}"
-            alt="{{ 'products.product.trust_badges.badge_return' | t }}"
+            alt="{{ product_trust_return }}"
             width="56"
             height="56"
             loading="lazy"
           >
         </div>
-        <div class="trust-badge-text">{{ 'products.product.trust_badges.badge_return' | t }}</div>
+        <div class="trust-badge-text">{{ product_trust_return }}</div>
       </div>
       <div class="trust-badge">
         <div class="trust-badge-icon">
           <img
             src="{{ 'trust-icon-payment.png' | asset_url }}"
-            alt="{{ 'products.product.trust_badges.badge_payment' | t }}"
+            alt="{{ product_trust_payment }}"
             width="56"
             height="56"
             loading="lazy"
           >
         </div>
-        <div class="trust-badge-text">{{ 'products.product.trust_badges.badge_payment' | t }}</div>
+        <div class="trust-badge-text">{{ product_trust_payment }}</div>
       </div>
     </div>
   </div>
