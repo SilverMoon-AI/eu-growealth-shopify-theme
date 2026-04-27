@@ -6,10 +6,10 @@
     </div>
 
     <div class="gw-testimonials__slider-wrap">
-      <button type="button" class="gw-testimonials__nav gw-testimonials__nav--prev" aria-label="Previous reviews">
+      <button type="button" class="gw-testimonials__nav gw-testimonials__nav--prev" aria-label="Vorherige Rezensionen">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
       </button>
-      <button type="button" class="gw-testimonials__nav gw-testimonials__nav--next" aria-label="Next reviews">
+      <button type="button" class="gw-testimonials__nav gw-testimonials__nav--next" aria-label="Nächste Rezensionen">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
       </button>
       <div class="gw-testimonials__track" data-gw-testimonials-track>
@@ -50,7 +50,7 @@
             <div>
               <div class="gw-testimonial-card__name">{{ block.settings.name }}</div>
               <div class="gw-testimonial-card__role">
-                {%- if block.settings.role == 'Verified Customer' -%}
+                {%- if block.settings.role == 'Verified Customer' or block.settings.role == 'Verifizierter Kunde' -%}
                   {{ 'sections.trust_badges.test_verified' | t }}
                 {%- else -%}
                   {{ block.settings.role }}

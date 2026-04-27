@@ -19,7 +19,7 @@
         "subtitle": "Precision-engineered LED grow lights for tents, rooms, and small-scale cultivation. Built to perform, designed to last.",
         "primary_btn_text": "Shop Now",
         "primary_btn_link": "/products/rg150",
-        "secondary_btn_text": "Explore Solutions",
+        "secondary_btn_text": "Lösungen erkunden",
         "secondary_btn_link": "#features",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/ccce66980b114dc79693405b86ce4850.mp4"
       }
@@ -105,15 +105,15 @@
           "settings": {
             "youtube_id": "Nu1vWJNiKsU",
             "eyebrow": "Growealth G3000",
-            "title": "G3000: The Smart Spectrum Master<br>Samsung LM301B & UV/IR Control",
-            "text": "Full-cycle veg & bloom with 800 μmol/s PPF. Independent physical UV and IR switches for oil and potency; 2.65 μmol/J efficiency, 95% reflective hood, fanless, IP65. App-ready for scheduling and remote dimming.",
+            "title": "G3000: Der Smart-Spectrum-Spezialist<br>Samsung LM301B & UV/IR-Steuerung",
+            "text": "Vollzyklus-Beleuchtung für Wachstum und Blüte mit 800 μmol/s PPF. Unabhängige physische UV- und IR-Schalter für gezielte Spektrumssteuerung; 2,65 μmol/J Effizienz, 95 % reflektierender Reflektor, lüfterlos, IP65. App-fähig für Zeitplanung und Fern-Dimmung.",
             "spec1_value": "800 μmol/s",
             "spec1_label": "PPF Output",
             "spec2_value": "UV + IR",
-            "spec2_label": "Physical Switches",
+            "spec2_label": "Physische Schalter",
             "spec3_value": "2.65 μmol/J",
             "spec3_label": "Efficacy",
-            "cta_text": "View G3000 Details",
+            "cta_text": "Details anzeigen",
             "cta_link": "/products/growealth-g3000-300w-full-spectrum-led-grow-light-for-grow-tents",
             "reverse": false
           }
@@ -138,7 +138,7 @@
       "settings": {
         "collection": "led",
         "products_to_show": 3,
-        "title": "LED Grow Lights",
+        "title": "LED-Pflanzenlampen",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -227,9 +227,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "text": "Great value for the price. Easy to install and the light output is very impressive. My plants responded within the first week. Would definitely buy again.",
+        "text": "Sehr gutes Preis-Leistungs-Verhältnis. Die Installation war einfach und die Lichtleistung ist wirklich überzeugend. Meine Pflanzen haben schon in der ersten Woche sichtbar reagiert. Würde ich wieder kaufen.",
             "name": "Sarah Johnson",
-            "role": "Verified Customer",
+            "role": "Verifizierter Kunde",
             "initials": "SJ",
             "image_asset": "1-avatar.avif"
           }
@@ -238,9 +238,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "text": "I've tried several grow lights before, and this one stands out. Even coverage, low heat, and very stable operation. Highly recommended for indoor growing.",
+            "text": "Ich habe schon mehrere Pflanzenlampen ausprobiert, und diese sticht klar hervor. Gleichmäßige Abdeckung, geringe Wärmeentwicklung und sehr stabiler Betrieb. Sehr empfehlenswert für den Indoor-Anbau.",
             "name": "Emily Rodriguez",
-            "role": "Verified Customer",
+            "role": "Verifizierter Kunde",
             "initials": "ER",
             "image_asset": "2-avatar.avif"
           }
@@ -249,9 +249,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "text": "Works exactly as described. Easy setup, clear instructions, and noticeable improvement in plant growth. Great option for both beginners and experienced growers.",
+            "text": "Funktioniert genau wie beschrieben. Einfacher Aufbau, klare Anleitung und eine spürbare Verbesserung des Pflanzenwachstums. Eine gute Wahl für Einsteiger und erfahrene Grower.",
             "name": "David Thompson",
-            "role": "Verified Customer",
+            "role": "Verifizierter Kunde",
             "initials": "DT",
             "image_asset": "3-avatar.webp"
           }
@@ -260,9 +260,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "text": "Replaced my old blurple with this. The full spectrum makes a real difference—my basil and tomatoes are much healthier. Quiet and runs cool.",
+            "text": "Ich habe meine alte Blurple-Lampe dadurch ersetzt. Das Vollspektrum macht einen echten Unterschied, Basilikum und Tomaten sehen deutlich gesünder aus. Leise und kühl im Betrieb.",
             "name": "Marcus Chen",
-            "role": "Verified Customer",
+            "role": "Verifizierter Kunde",
             "initials": "MC",
             "image_asset": "4-avatar.webp"
           }
@@ -271,9 +271,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "text": "Shipping was fast and the light arrived well packed. Using it in a 2x2 tent and the plants love it. Would recommend to anyone starting out.",
+            "text": "Der Versand war schnell und die Lampe kam gut verpackt an. Ich nutze sie in einem 60x60-cm-Zelt und die Pflanzen mögen sie sichtbar. Klare Empfehlung für den Einstieg.",
             "name": "Jessica Park",
-            "role": "Verified Customer",
+            "role": "Verifizierter Kunde",
             "initials": "JP",
             "image_asset": "5-avatar.webp"
           }
@@ -282,9 +282,9 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "text": "Solid build quality and the dimmer is really useful. Customer support answered my questions quickly. Happy with the purchase.",
+            "text": "Solide Verarbeitung und der Dimmer ist wirklich praktisch. Der Kundenservice hat meine Fragen schnell beantwortet. Ich bin mit dem Kauf zufrieden.",
             "name": "James Wilson",
-            "role": "Verified Customer",
+            "role": "Verifizierter Kunde",
             "initials": "JW",
             "image_asset": "6-avatar.avif"
           }
@@ -299,8 +299,8 @@
         "review_6"
       ],
       "settings": {
-        "label": "Reviews",
-        "heading": "What Our Customers Say"
+        "label": "Rezensionen",
+        "heading": "Was unsere Kunden sagen"
       }
     },
     "gw_blog": {
@@ -311,7 +311,7 @@
       "settings": {
         "blog": "news",
         "post_limit": 3,
-        "heading": "From the Grow Lab",
+        "heading": "Aus dem Grow-Labor",
         "heading_size": "h2",
         "columns_desktop": 3,
         "show_view_all": true,

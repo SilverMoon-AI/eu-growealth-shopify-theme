@@ -52,6 +52,10 @@
               assign f_title = 'sections.trust_badges.feat_rg300_title_html' | t
               assign f_text = 'sections.trust_badges.feat_rg300_text' | t
               assign f_cta = 'sections.trust_badges.feat_btn_details' | t
+            elsif f_title contains 'G3000'
+              assign f_title = 'sections.trust_badges.feat_g3000_title_html' | t
+              assign f_text = 'sections.trust_badges.feat_g3000_text' | t
+              assign f_cta = 'sections.trust_badges.feat_btn_details' | t
             endif
           -%}
           <h3 class="gw-feature-row__title">{{ f_title }}</h3>
@@ -63,8 +67,10 @@
                 <span class="gw-spec__label">
                   {%- liquid
                     assign s1_label = block.settings.spec1_label
-                    if s1_label == 'Power Draw' or s1_label == 'PPF Output'
+                    if s1_label == 'Power Draw'
                       echo 'sections.trust_badges.feat_spec_power' | t
+                    elsif s1_label == 'PPF Output'
+                      echo 'sections.trust_badges.feat_spec_ppf' | t
                     elsif s1_label == 'Efficacy'
                       echo 'sections.trust_badges.feat_spec_eff' | t
                     elsif s1_label == 'Optimal Coverage'
@@ -84,7 +90,7 @@
                       if s2_label == 'Efficacy'
                         echo 'sections.trust_badges.feat_spec_eff' | t
                       elsif s2_label == 'Physical Switches'
-                        echo s2_label
+                        echo 'sections.trust_badges.feat_spec_switches' | t
                       else
                         echo s2_label
                       endif
