@@ -175,6 +175,7 @@
       "duties_included": "Inkl. Zollgebühren.",
       "duties_and_taxes_included": "Inkl. MwSt. und Zollgebühren.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Versand</a> wird beim Checkout berechnet.",
+      "clearance_note": "EU-Lagerabverkauf · Nur solange der Vorrat reicht",
       "inventory_in_stock": "Auf Lager",
       "inventory_in_stock_show_count": "{{ quantity }} auf Lager",
       "inventory_low_stock": "Geringer Lagerbestand",

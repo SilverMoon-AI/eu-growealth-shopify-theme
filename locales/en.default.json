@@ -175,6 +175,7 @@
       "duties_and_taxes_included": "Duties and taxes included.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
       "highlights_title": "Product Highlights",
+      "clearance_note": "EU clearance sale · While stocks last",
       "trust_badges": {
         "heading": "Shop with confidence at Growealth",
         "description": "Reliable delivery, warranty, and secure payment for every order.",

@@ -116,6 +116,9 @@
                     price_class: 'price--large'
                   -%}
                 </div>
+                <p class="product__clearance-note">
+                  {{ 'products.product.clearance_note' | t }}
+                </p>
                 {%- if product.quantity_price_breaks_configured? -%}
                   <div class="volume-pricing-note" id="Volume-Note-{{ section.id }}">
                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>

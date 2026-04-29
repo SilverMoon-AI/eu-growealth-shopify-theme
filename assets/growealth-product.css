@@ -114,6 +114,20 @@ body.template-product { overflow-x: hidden; }
   margin-bottom: 0.25rem;
 }
 
+.template-product .product__clearance-note {
+  margin: 0.45rem 0 0;
+  font-size: 1.28rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: rgba(var(--color-foreground), 0.72);
+}
+
+@media screen and (min-width: 750px) {
+  .template-product .product__clearance-note {
+    font-size: 1.32rem;
+  }
+}
+
 .template-product .product-form .product-form__input,
 .template-product .product-form .product-form__quantity {
   margin-top: 1.75rem;
@@ -332,9 +346,13 @@ body.template-product { overflow-x: hidden; }
     order: 30;
   }
 
+  .template-product .product__clearance-note {
+    order: 31;
+  }
+
   .template-product .product__tax,
   .template-product .installment {
-    order: 31;
+    order: 32;
   }
 
   .template-product .product-form__input:not(.product-form__quantity) {
