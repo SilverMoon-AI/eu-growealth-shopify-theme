@@ -22,7 +22,7 @@
                   echo 'sections.trust_badges.badge_shipping_title' | t
                 elsif block.settings.title == '24/7 Support'
                   echo 'sections.trust_badges.badge_support_title' | t
-                elsif block.settings.title == '5-Year Warranty'
+                elsif block.settings.title == '5-Year Warranty' or block.settings.title == '3-Year Warranty'
                   echo 'sections.trust_badges.badge_warranty' | t
                 elsif block.settings.title == 'Money-Back Guarantee'
                   echo 'sections.trust_badges.badge_return' | t
@@ -38,7 +38,7 @@
                 elsif block.settings.subtitle == 'Expert assistance anytime'
                   echo 'sections.trust_badges.badge_support_sub' | t
                 elsif block.settings.subtitle == 'Comprehensive coverage'
-                  echo 'sections.trust_badges.badge_warranty_sub' | t | default: 'Mindestens 2–5 Jahre Garantie'
+                  echo 'sections.trust_badges.badge_warranty_sub' | t | default: '3 Jahre Garantie'
                 elsif block.settings.subtitle == '30-day hassle-free returns'
                   echo 'sections.trust_badges.badge_return_sub' | t | default: '30 Tage Geld-zurück-Garantie'
                 else
@@ -103,7 +103,7 @@
         },
         {
           "type": "guarantee",
-          "settings": { "icon": "warranty", "title": "5-Year Warranty", "subtitle": "Comprehensive coverage" }
+          "settings": { "icon": "warranty", "title": "3-Year Warranty", "subtitle": "Comprehensive coverage" }
         },
         {
           "type": "guarantee",

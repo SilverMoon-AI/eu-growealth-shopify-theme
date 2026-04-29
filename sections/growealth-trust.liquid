@@ -59,12 +59,20 @@
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 {% endcase %}
               </div>
-              <div class="gw-stat-card__value">{{ block.settings.value }}</div>
+              <div class="gw-stat-card__value">
+                {%- liquid
+                  if block.settings.label == 'Product Warranty' or block.settings.value == '5 Years' or block.settings.value == '3-Year Warranty'
+                    echo 'sections.trust_badges.trust_stat_warranty' | t
+                  else
+                    echo block.settings.value
+                  endif
+                -%}
+              </div>
               <div class="gw-stat-card__label">
                 {%- liquid
                   assign s_label = block.settings.label
                   if s_label == 'Product Warranty'
-                    echo 'sections.trust_badges.trust_stat_warranty' | t
+                    echo 'sections.trust_badges.trust_stat_warranty_label' | t
                   elsif s_label == 'Expert Support'
                     echo 'sections.trust_badges.trust_stat_support' | t
                   elsif s_label == 'Horticultural Experience'
@@ -147,7 +155,7 @@
           "type": "text",
           "id": "value",
           "label": "Value",
-          "default": "5 Years"
+          "default": "3-Year Warranty"
         },
         {
           "type": "text",
@@ -164,7 +172,7 @@
       "blocks": [
         {
           "type": "stat",
-          "settings": { "icon": "shield", "value": "5 Years", "label": "Product Warranty" }
+          "settings": { "icon": "shield", "value": "3-Year Warranty", "label": "Product Warranty" }
         },
         {
           "type": "stat",

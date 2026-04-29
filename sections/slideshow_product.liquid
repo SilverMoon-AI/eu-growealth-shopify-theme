@@ -598,6 +598,18 @@
 {%- endif -%}
 
 {%- liquid
+  assign is_german_locale = false
+  assign is_english_locale = false
+  if request.locale.iso_code contains 'en' or localization.language.iso_code contains 'en' or request.path contains '/en'
+    assign is_english_locale = true
+  endif
+  if request.locale.iso_code contains 'de' or localization.language.iso_code contains 'de'
+    assign is_german_locale = true
+  endif
+  if is_english_locale
+    assign is_german_locale = false
+  endif
+
   assign product_trust_heading = 'products.product.trust_badges.heading' | t
   assign product_trust_description = 'products.product.trust_badges.description' | t
   assign product_trust_warehouse = 'products.product.trust_badges.badge_warehouse' | t
@@ -605,23 +617,56 @@
   assign product_trust_return = 'products.product.trust_badges.badge_return' | t
   assign product_trust_payment = 'products.product.trust_badges.badge_payment' | t
 
+  if is_english_locale
+    assign product_trust_heading = 'Shop with confidence at Growealth'
+    assign product_trust_description = 'Reliable delivery, warranty, and secure payment for every order.'
+    assign product_trust_warehouse = 'EU Warehouse & Fast Shipping'
+    assign product_trust_warranty = '3-Year Warranty'
+    assign product_trust_return = '30-Day Money-Back Guarantee'
+    assign product_trust_payment = 'Secure Payment'
+  endif
+
   if product_trust_heading contains 'Translation missing'
-    assign product_trust_heading = 'Sicher einkaufen bei Growealth'
+    if is_german_locale
+      assign product_trust_heading = 'Sicher einkaufen bei Growealth'
+    else
+      assign product_trust_heading = 'Shop with confidence at Growealth'
+    endif
   endif
   if product_trust_description contains 'Translation missing'
-    assign product_trust_description = 'Zuverlässige Lieferung, Garantie und sichere Zahlung für jede Bestellung.'
+    if is_german_locale
+      assign product_trust_description = 'Zuverlässige Lieferung, Garantie und sichere Zahlung für jede Bestellung.'
+    else
+      assign product_trust_description = 'Reliable delivery, warranty, and secure payment for every order.'
+    endif
   endif
   if product_trust_warehouse contains 'Translation missing'
-    assign product_trust_warehouse = 'EU-Lager & schneller Versand'
+    if is_german_locale
+      assign product_trust_warehouse = 'EU-Lager & schneller Versand'
+    else
+      assign product_trust_warehouse = 'EU Warehouse & Fast Shipping'
+    endif
   endif
   if product_trust_warranty contains 'Translation missing'
-    assign product_trust_warranty = '2 Jahre Premium-Garantie'
+    if is_german_locale
+      assign product_trust_warranty = '3 Jahre Garantie'
+    else
+      assign product_trust_warranty = '3-Year Warranty'
+    endif
   endif
   if product_trust_return contains 'Translation missing'
-    assign product_trust_return = '30 Tage Geld-zurück-Garantie'
+    if is_german_locale
+      assign product_trust_return = '30 Tage Geld-zurück-Garantie'
+    else
+      assign product_trust_return = '30-Day Money-Back Guarantee'
+    endif
   endif
   if product_trust_payment contains 'Translation missing'
-    assign product_trust_payment = 'Sichere Zahlung'
+    if is_german_locale
+      assign product_trust_payment = 'Sichere Zahlung'
+    else
+      assign product_trust_payment = 'Secure Payment'
+    endif
   endif
 -%}
 

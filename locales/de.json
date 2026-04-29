@@ -194,17 +194,22 @@
         "heading": "Sicher einkaufen bei Growealth",
         "description": "Zuverlässige Lieferung, Garantie und sichere Zahlung für jede Bestellung.",
         "badge_warehouse": "EU-Lager & schneller Versand",
-        "badge_warranty": "2 Jahre Premium-Garantie",
+        "badge_warranty": "3 Jahre Garantie",
         "badge_return": "30 Tage Geld-zurück-Garantie",
         "badge_payment": "Sichere Zahlung"
       },
       "policies": {
         "shipping_title": "Kostenloser Versand ab {{ amount }}",
         "shipping_desc": "Schnelle und zuverlässige Lieferung direkt zu dir nach Hause.",
-        "warranty_title": "2 Jahre Garantie",
+        "warranty_title": "3 Jahre Garantie",
         "warranty_desc": "Wir stehen hinter der Qualität unserer Produkte.",
         "returns_title": "30 Tage Rückgaberecht",
         "returns_desc": "Unkomplizierte Rückgabe, wenn du nicht zufrieden bist."
+      },
+      "trust_note": {
+        "label": "Vertrauenshinweise",
+        "line_1": "EU-Lagerabverkauf · Versand aus Spanien · 3–5 Tage · 100% zollfrei",
+        "line_2": "PayPal · Klarna · Kreditkarte · 3 Jahre Garantie"
       }
     },
     "modal": {
@@ -297,8 +302,8 @@
       "heading": "Warum Grower uns vertrauen",
       "description": "Premium-Qualität und erstklassiger Support für deinen Erfolg.",
       "badge_warehouse": "EU-Lager & Schneller Versand",
-      "badge_warranty": "Garantie",
-      "badge_warranty_sub": "Mindestens 2–5 Jahre Garantie",
+      "badge_warranty": "3 Jahre Garantie",
+      "badge_warranty_sub": "3 Jahre Garantie",
       "badge_return": "30 Tage Geld-zurück-Garantie",
       "badge_return_sub": "30 Tage Rückgabegarantie",
       "badge_payment": "Sichere Zahlung",
@@ -306,7 +311,7 @@
       "badge_shipping_sub": "Kostenlose Express-Lieferung",
       "badge_support_title": "24/7 Kundenservice",
       "badge_support_sub": "Schnelle Hilfe bei Fragen",
-      "badge_warranty_title": "Garantie",
+      "badge_warranty_title": "3 Jahre Garantie",
       "badge_guarantee_title": "30 Tage Geld-zurück-Garantie",
       "badge_guarantee_sub": "30 Tage Geld-zurück-Garantie",
       "hero_title": "Beleuchtung gestaltet für echtes Wachstum",
@@ -331,7 +336,7 @@
       "val_cnt_title": "Volle Kontrolle",
       "val_cnt_text": "Stufenloses Dimmen von 0–100 %. Stelle genau die Intensität ein, die deine Pflanzen in jeder Phase benötigen.",
       "val_lst_title": "Langlebig gebaut",
-      "val_lst_text": "5 Jahre Garantie, unterstützt durch über 40 Jahre Erfahrung im Gartenbau-Engineering.",
+      "val_lst_text": "3 Jahre Garantie, unterstützt durch über 40 Jahre Erfahrung im Gartenbau-Engineering.",
       "feat_rg150_title_html": "RG150W: Der kompakte Power-Experte<br>Vielseitig für 2×2 ft Zelte",
       "feat_rg150_text": "Perfekt für 2×2 ft Zelte und mehrstufige Regale. Vollspektrum, UV & Far-Red in einer Leuchte; 150W bei 2,5 μmol/J Effizienz. Lüfterlos, IP65, 0-10V Dimmung mit Softstart. Ideal für Klone, Sämlinge und Zusatzbeleuchtung.",
       "feat_rg300_title_html": "RG300W: Das Herzstück deines Zelts<br>Upgrade für 3×3 ft",
@@ -349,7 +354,8 @@
       "ls_cta": "Jetzt anpflanzen",
       "trust_heading": "Die Growealth-Story",
       "trust_text": "Growealth wurde gegründet, um professionelle LED-Pflanzenlampen für Heim- und Kleinanbauer zugänglich zu machen. Wir arbeiten mit Partnern zusammen, die über langjährige Erfahrung in der Gartenbaubeleuchtung verfügen, sodass jedes Produkt unseren eigenen Standards entspricht. Kein Hype, nur klare Fakten, echte Garantie und Unterstützung, wenn du sie brauchst.",
-      "trust_stat_warranty": "Produktgarantie",
+      "trust_stat_warranty": "3 Jahre Garantie",
+      "trust_stat_warranty_label": "Produktgarantie",
       "trust_stat_support": "Experten-Support",
       "trust_stat_tested": "Geprüft & Verifiziert",
       "trust_stat_safety": "Globale Sicherheitszertifikate",
