@@ -79,7 +79,8 @@
                   <h2 class="footer-block__heading inline-richtext">
                     {%- assign footer_key = 'sections.trust_badges.footer_' | append: block.settings.heading | downcase | replace: ' ', '' -%}
                     {%- assign translated_heading = footer_key | t -%}
-                    {%- if translated_heading contains 'translation missing' -%}
+                    {%- assign translated_heading_check = translated_heading | downcase -%}
+                    {%- if translated_heading_check contains 'translation missing' -%}
                       {{- block.settings.heading -}}
                     {%- else -%}
                       {{- translated_heading -}}
