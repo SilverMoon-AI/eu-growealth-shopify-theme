@@ -314,6 +314,56 @@ body.template-product { overflow-x: hidden; }
   }
 }
 
+@media screen and (max-width: 749px) {
+  .template-product .product__info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .template-product .product__title {
+    order: 10;
+  }
+
+  .template-product .jdgm-widget.jdgm-preview-badge {
+    order: 20;
+  }
+
+  .template-product [id^='price-'] {
+    order: 30;
+  }
+
+  .template-product .product__tax,
+  .template-product .installment {
+    order: 31;
+  }
+
+  .template-product .product-form__input:not(.product-form__quantity) {
+    order: 35;
+  }
+
+  .template-product .product-form__quantity {
+    order: 40;
+    margin-top: 1.2rem;
+  }
+
+  .template-product .product-form__buy-buttons-block {
+    order: 50;
+  }
+
+  .template-product .product__highlights {
+    order: 60;
+    margin-top: 2rem;
+  }
+
+  .template-product .product__policies {
+    order: 70;
+  }
+
+  .template-product .share-button {
+    order: 80;
+  }
+}
+
 /* 产品页底部信任图标 - 深绿底白字样式，整体加高更醒目 */
 .product-trust-badges {
   margin-top: 3rem;
@@ -407,7 +457,7 @@ body.template-product { overflow-x: hidden; }
    Sticky bottom purchase bar (product page)
    -------------------------------------------------------------------------- */
 body.template-product {
-  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(8.8rem + env(safe-area-inset-bottom, 0px));
 }
 
 @media screen and (min-width: 750px) {
@@ -576,23 +626,71 @@ body.template-product:has(.section-header.menu-open) .product-sticky-bar {
 }
 
 @media (max-width: 749px) {
+  .product-sticky-bar {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+
   .product-sticky-bar__inner {
-    flex-direction: column;
-    align-items: stretch;
+    min-height: 7.2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    display: grid;
+    grid-template-columns: minmax(6.8rem, auto) minmax(8.8rem, auto) minmax(12rem, 1fr);
+    gap: 0.6rem;
+    align-items: center;
+  }
+
+  .product-sticky-bar__price {
+    min-width: 0;
+  }
+
+  .product-sticky-bar__total-row {
+    display: block;
+  }
+
+  .product-sticky-bar__total-value {
+    font-size: 1.7rem;
+    line-height: 1.1;
+    letter-spacing: 0;
+  }
+
+  .product-sticky-bar__compare {
+    display: block;
+    margin: 0.2rem 0 0;
+    font-size: 1.1rem;
+    line-height: 1.1;
   }
 
   .product-sticky-bar__actions {
-    justify-content: stretch;
+    display: contents;
   }
 
   .product-sticky-bar__qty {
-    flex: 0 0 auto;
+    min-width: 8.8rem;
   }
 
   .product-sticky-bar__btn {
-    flex: 1 1 auto;
     min-width: 0;
+    min-height: 4.8rem;
+    padding: 0 1rem;
+    font-size: 1.35rem;
     justify-content: center;
+  }
+
+  .product-sticky-bar__btn--outline {
+    display: none;
+  }
+
+  .product-sticky-bar__qty-btn {
+    width: 2.8rem;
+    min-height: 4.6rem;
+    font-size: 1.6rem;
+  }
+
+  .product-sticky-bar__qty-input {
+    width: 3.2rem;
+    min-height: 4.6rem;
+    font-size: 1.4rem;
   }
 }
 
