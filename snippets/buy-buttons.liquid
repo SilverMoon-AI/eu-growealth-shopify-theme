@@ -114,6 +114,12 @@
             {{ form | payment_button }}
           {%- endif -%}
         </div>
+        {%- if request.page_type == 'product' -%}
+          <div class="product-form__trust-note" aria-label="Vertrauenshinweise">
+            <span>EU-Lagerabverkauf · Versand aus Spanien · 3–5 Tage · 100% zollfrei</span>
+            <span>PayPal · Klarna · Kreditkarte · 3 Jahre Garantie</span>
+          </div>
+        {%- endif -%}
       {%- endform -%}
     </product-form>
   {%- else -%}

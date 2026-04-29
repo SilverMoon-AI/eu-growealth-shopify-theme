@@ -286,6 +286,34 @@ body.template-product { overflow-x: hidden; }
   letter-spacing: 0.03em;
 }
 
+.template-product .product-form__trust-note {
+  width: 100%;
+  max-width: 44rem;
+  margin: 0.9rem 0 0;
+  color: rgba(var(--color-foreground), 0.72);
+  font-size: 1.28rem;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.template-product .product-form__trust-note span {
+  display: block;
+}
+
+@media screen and (min-width: 750px) {
+  .template-product .product-form__trust-note {
+    font-size: 1.32rem;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .template-product .product-form__trust-note {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    line-height: 1.35;
+  }
+}
+
 /* 产品页底部信任图标 - 深绿底白字样式，整体加高更醒目 */
 .product-trust-badges {
   margin-top: 3rem;
