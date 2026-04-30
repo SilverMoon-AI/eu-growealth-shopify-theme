@@ -81,7 +81,18 @@
                     {%- assign translated_heading = footer_key | t -%}
                     {%- assign translated_heading_check = translated_heading | downcase -%}
                     {%- if translated_heading_check contains 'translation missing' -%}
-                      {{- block.settings.heading -}}
+                      {%- case footer_key -%}
+                        {%- when 'sections.trust_badges.footer_richtlinien' -%}
+                          {{- 'sections.trust_badges.footer_policies' | t -}}
+                        {%- when 'sections.trust_badges.footer_produkte' -%}
+                          {{- 'sections.trust_badges.footer_products' | t -}}
+                        {%- when 'sections.trust_badges.footer_unserunternehmen' -%}
+                          {{- 'sections.trust_badges.footer_ourcompany' | t -}}
+                        {%- when 'sections.trust_badges.footer_kundenservice' -%}
+                          {{- 'sections.trust_badges.footer_support' | t -}}
+                        {%- else -%}
+                          {{- block.settings.heading -}}
+                      {%- endcase -%}
                     {%- else -%}
                       {{- translated_heading -}}
                     {%- endif -%}
